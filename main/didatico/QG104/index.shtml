@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative didatico_start.shtml %}
+{% include didatico_start.shtml %}
 
 
 <p class=section>QG104</p>
@@ -107,5 +107,5 @@ Desenvolvimento de conceitos fundamentais de química para o entendimento dos si
 </code>
 
 
-{% include_relative didatico_end.shtml %}
+{% include didatico_end.shtml %}
 

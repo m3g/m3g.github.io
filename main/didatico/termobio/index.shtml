@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative didatico_start.shtml %}
+{% include didatico_start.shtml %}
 
 <p class=section>SFI5854 - Termodinâmica de Sistemas Biológicos</p>
 
@@ -51,5 +51,5 @@ Freeman, San Francisco, 1980. - Principles of physical biochemistry,
 K.E. Holde, W.C. Johnson e P.S. Ho, Prentice Hall, Upper Saddle River,
 1998.
 
-{% include_relative didatico_end.shtml %}
+{% include didatico_end.shtml %}
 

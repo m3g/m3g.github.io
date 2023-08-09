@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative didatico_start.shtml %}
+{% include didatico_start.shtml %}
 
 
 <p class=section>QP124 - Introdução à Química Quântica e à Espectroscopia</p>
@@ -55,4 +55,4 @@ A discussão de Einstein e Bohr sobre o princípio da incerteza:
 
 <br><br>
 
-{% include_relative didatico_end.shtml %}
+{% include didatico_end.shtml %}

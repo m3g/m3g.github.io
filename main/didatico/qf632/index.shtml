@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative didatico_start.shtml %}
+{% include didatico_start.shtml %}
 
 <p class=section>QF632 - Laboratório de Físico-Química I</p>
 
@@ -36,4 +36,4 @@ QF632. Instituto de Química, UNICAMP. Disponível em
 http://m3g.iqm.unicamp.br/main/didatico/qf632. Acessado em 21 de
 Setembro de 2015.
 
-{% include_relative didatico_end.shtml %}
+{% include didatico_end.shtml %}
