@@ -20,9 +20,9 @@ function popup(mylink, windowname)
 </head>
 <body>
 
-{% include_relative /m3g/main/title.shtml %}
+{% include_relative title.shtml %}
 
-{% include_relative /m3g/main/menu.shtml %}
+{% include_relative menu.shtml %}
 
 <!-- CONTENT STARTS HERE --> 
 

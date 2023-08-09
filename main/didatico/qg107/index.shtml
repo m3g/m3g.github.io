@@ -1,4 +1,4 @@
-{% include_relative /m3g/main/didatico_start.shtml %}
+{% include_relative didatico_start.shtml %}
 
 
 <p class=section>QG107</p>
@@ -11,4 +11,4 @@ Teste de chama:
 <a href=./chama.pdf target=_blank_> [PDF] </a>
 
 
-{% include_relative /m3g/main/didatico_end.shtml %}
+{% include_relative didatico_end.shtml %}

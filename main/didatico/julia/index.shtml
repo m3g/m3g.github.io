@@ -1,4 +1,4 @@
-{% include_relative /m3g/main/didatico_start.shtml %}
+{% include_relative didatico_start.shtml %}
 <p class=section>QP832 - Fundamentos de Simulações em Química</p>
 
 <br>
@@ -60,4 +60,4 @@ para códigos em Fortran.
 
 
 
-{% include_relative /m3g/main/didatico_end.shtml %}
+{% include_relative didatico_end.shtml %}

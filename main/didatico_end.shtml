@@ -3,5 +3,5 @@
 </td></tr></table>
 
 
-{% include_relative /m3g/main/tail.shtml %}
+{% include_relative tail.shtml %}
 

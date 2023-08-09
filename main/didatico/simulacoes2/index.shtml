@@ -1,4 +1,4 @@
-{% include_relative /m3g/main/didatico_start.shtml %}
+{% include_relative didatico_start.shtml %}
 
 <p class=section>QP934/QF939 - Simulações de sistemas dinâmicos: da pandemia ao movimento molecular.</p>
 
@@ -52,5 +52,5 @@ https://cio.com.br/3-cursos-online-para-aprender-a-linguagem-de-programacao-juli
 
 </table>
 
-{% include_relative /m3g/main/didatico_end.shtml %}
+{% include_relative didatico_end.shtml %}
 

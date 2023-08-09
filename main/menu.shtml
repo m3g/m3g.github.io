@@ -14,11 +14,11 @@
         </tr>
         <tr>
           <td class=tdmenu>
-            <a class=menulink href=/m3g/main/home.shtml>Home</a><br>
-            <a class=menulink href=/m3g/main/people.shtml>People</a><br>
-            <a class=menulink href=/m3g/main/bysubject.shtml>Publications</a><br>
-            <a class=menulink href=/m3g/main/software.shtml>Software</a><br>
-            <a class=menulink href=/m3g/main/contact.shtml>Contact</a><br>
+            <a class=menulink href=home.shtml>Home</a><br>
+            <a class=menulink href=people.shtml>People</a><br>
+            <a class=menulink href=bysubject.shtml>Publications</a><br>
+            <a class=menulink href=software.shtml>Software</a><br>
+            <a class=menulink href=contact.shtml>Contact</a><br>
           </td>
         </tr>
         <tr>
@@ -26,7 +26,7 @@
         </tr>
         <tr>
           <td class="tdmenu" bgcolor=#e9c46a align=center>
-            <b><a class=menutitlelink href=/m3g/main/didatico.shtml>Material Didático</a></b> <br>
+            <b><a class=menutitlelink href=didatico.shtml>Material Didático</a></b> <br>
           </td>
         </tr>
         </tr>
@@ -38,13 +38,13 @@
     <td class="tdclean" width=100% valign="top">
      <table width=100% align=center>
        <tr bgcolor=#264653>
-         <td align=center width=33% class=tdmenu><b><a class="menulink" href=/m3g/main/home.shtml>
+         <td align=center width=33% class=tdmenu><b><a class="menulink" href=home.shtml>
              <font color=#e9c46a>Home</font>
          </a></b> </td>
-         <td align=center width=33% class=tdmenu><b><a class="menulink" href=/m3g/main/bysubject.shtml>
+         <td align=center width=33% class=tdmenu><b><a class="menulink" href=bysubject.shtml>
              <font color=#e9c46a>Publications</font>
          </a></b> </td>
-         <td align=center width=33% class=tdmenu><b><a class="menulink" href=/m3g/main/software.shtml>
+         <td align=center width=33% class=tdmenu><b><a class="menulink" href=software.shtml>
              <font color=#e9c46a>Software</font>
          </a></b> </td>
        </tr>

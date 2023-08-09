@@ -1,4 +1,4 @@
-{% include_relative /m3g/main/didatico_start.shtml %}
+{% include_relative didatico_start.shtml %}
 
 <p class=section>FFI0335 - Física III</p><br>
 <b>Turma 2012101</b><br><br>
@@ -70,7 +70,7 @@ avançar.
 <br>
 <li> P. Tipler, Física - Vol. II. Sexta edição. <br>
 
-{% include_relative /m3g/main/didatico_end.shtml %}
+{% include_relative didatico_end.shtml %}
 
 
 

@@ -1,5 +1,5 @@
 
-{% include_relative /m3g/main/head.shtml %}
+{% include_relative head.shtml %}
 
 <p class=section>Material didático</p>
 

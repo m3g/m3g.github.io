@@ -1,4 +1,4 @@
-{% include_relative /m3g/main/didatico_start.shtml %}
+{% include_relative didatico_start.shtml %}
 
 <p class=section>QF637 - Introdução à Espectroscopia e à Termodinâmica Estatística</p>
 
@@ -92,5 +92,5 @@ Material suplementar: <a href=entropia_sistema_isolado.pdf> Entropia de um siste
 
 <br><br>
 
-{% include_relative /m3g/main/didatico_end.shtml %}
+{% include_relative didatico_end.shtml %}
 
