@@ -44,7 +44,7 @@ CellListMap.jl: Efficient and customizable cell list implementation for calculat
 Computer Phys. Commun. 279, 108452, 2022. 
 <a target="_blank" href=https://doi.org/10.1016/j.cpc.2022.108452>[Full Text]</a>
 <a target="_blank" href=./publications/2022b_martinez.pdf>[PDF]</a>
-<a target="_blank" href=http://m3g.github.io/CellListMap.jl>[Associated Software]</a>
+<a target="_blank" href=https://m3g.github.io/CellListMap.jl>[Associated Software]</a>
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>69.</b></td>
@@ -57,7 +57,7 @@ J. Mol. Liq. 347, 117945, 2022.
 <a target="_blank" href=https://doi.org/10.1016/j.molliq.2021.117945>[Full Text]</a>
 <a target="_blank" href=./publications/2022_martinez.pdf>[PDF]</a>
 <a target="_blank"
-href=http://m3g.github.io/ComplexMixtures.jl/stable>[Associated Software]</a>
+href=https://m3g.github.io/ComplexMixtures.jl/stable>[Associated Software]</a>
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>68.</b></td>
@@ -160,7 +160,7 @@ Statistical force-field for structural modeling using chemical cross-linking/mas
 Bioinformatics, 35(17), 3005-3012, 2019.
 <a target="_blank" href=https://academic.oup.com//bioinformatics/advance-article/doi/10.1093/bioinformatics/btz013/5284907?guestAccessKey=ab5645d5-cea6-4c5d-a512-a9f4bdf69f08>[Full Text]</a>
 <a target="_blank"
-href=http://m3g.github.io/topolink/xlff.shtml>[XLFF site]</a>
+href=https://m3g.github.io/topolink/xlff.shtml>[XLFF site]</a>
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>59.</b></td>
@@ -271,7 +271,7 @@ minimum-distance distribution functions.
 J. Chem. Theor. Comp. 13, 6358–6372, 2017
 <a target="_blank" href=http://pubs.acs.org/doi/abs/10.1021/acs.jctc.7b00599>[LINK]</a>
 <a target="_blank" href=./publications/2017_jctc.pdf>[PDF]</a>
-<a target="_blank" href=http://m3g.github.io/mdanalysis/gmd>[Associated software]</a>
+<a target="_blank" href=https://m3g.github.io/mdanalysis/gmd>[Associated software]</a>
 <a target="_blank" href=./publications/2017_jctc_clarification.pdf>[Additional discussion]</a>
 </td></tr>
 
@@ -294,7 +294,7 @@ Bioinformatics, 33, 2106-2113, 2017.
 <a target="_blank" href=https://doi.org/10.1093/bioinformatics/btx124>[LINK]</a>
 <a target="_blank" href=./publications/2017_bioinformatics.pdf>[PDF]</a>
 <a target="_blank"
-href=http://m3g.github.io/atd-scripts>[Associated software]</a>
+href=https://m3g.github.io/atd-scripts>[Associated software]</a>
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>48.</b></td>
@@ -338,7 +338,7 @@ simulations and fractional structural fluctuation analysis.
 </b>
 PLoS ONE 10 (3): e01109264, 2015.
 <a target="_blank" href=http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119264>[LINK]</a>
-<a href=http://m3g.github.io/mdlovofit target=blank>[Software]</a>
+<a href=https://m3g.github.io/mdlovofit target=blank>[Software]</a>
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>44.</b></td>
@@ -375,7 +375,7 @@ Biophys. J. 105(7), 1670-1680, 2013.
 <a href=./publications/2013_biophys_j.pdf>[PDF]</a> 
 <a href=./publications/2013_biophys_j_supp_mat.pdf>[Supplementary Data]</a> 
 <a target="_blank"
-href=http://m3g.github.io/utils/home.shtml#modfrac>[Associated Software]</a>
+href=https://m3g.github.io/utils/home.shtml#modfrac>[Associated Software]</a>
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>41.</b></td>
@@ -462,7 +462,7 @@ behavior of an SH3 domain during molecular dynamics simulations.
 BMC Struct. Biol. 11:46, 2011.
 <a  target="_blank" href=http://www.biomedcentral.com/1472-6807/11/46>[LINK]</a>
 <a target="_blank"
-href=http://m3g.github.io/utils/home.shtml#cylinder>[Associated Software]</a>
+href=https://m3g.github.io/utils/home.shtml#cylinder>[Associated Software]</a>
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>34.</b></td>
@@ -474,7 +474,7 @@ Mapping the Intramolecular Vibrational Energy Flow in Proteins Reveals Functiona
 J. Phys. Chem. Lett. 2, 16, 2073-2078, 2011.
 <a href=./publications/2011_j_phys_chem_lett.pdf>[PDF]</a>
 <a href=./publications/2011_j_phys_chem_lett_supp_info.pdf>[Supplementary Information]</a> 
-<a href=http://m3g.github.io/atd-scripts target="_blank"> [Codes] </a>
+<a href=https://m3g.github.io/atd-scripts target="_blank"> [Codes] </a>
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>33.</b></td>
@@ -598,7 +598,7 @@ Proc. Natl. Acad. Sci USA, 106, 20717-20722, 2009.
 <a href=./publications/2009_pnas.pdf>[PDF]</a>
 <a href=./publications/2009_pnas_sup_inf.pdf>[Supplementary Information]</a>
 <a target="_blank"
-href=http://m3g.github.io/utils/nstates>[Associated software]</a>
+href=https://m3g.github.io/utils/nstates>[Associated software]</a>
 </td></tr>
 
 
@@ -630,9 +630,9 @@ R. Andreani, J. M. Mart&iacute;nez, L. Mart&iacute;nez, F. Yano,
 J. Glob. Optim. 43, 1-22, 2008.
 <a href=./publications/2008_j_glob_optim.pdf>[PDF]</a>
 Software associated to this article: 
-<a target=_blank_ href=http://m3g.github.io/mdlovofit/home.shtml>MDLovoFit </a>,
+<a target=_blank_ href=https://m3g.github.io/mdlovofit/home.shtml>MDLovoFit </a>,
 <a target=_blank_ href=http://www.ime.unicamp.br/~martinez/lovoalign/home.html>LovoAlign</a>,
-<a target=_blank_ href=http://m3g.github.io/lovofit>LovoFit</a>
+<a target=_blank_ href=https://m3g.github.io/lovofit>LovoFit</a>
 </td></tr>
 
 
@@ -693,7 +693,7 @@ Ligand Binding to Thyroid Hormone Receptors: Simulations Using a Novel
 Multipoint Steered Molecular Dynamics Approach,</b>
 J. Phys. Chem. B, 112, 10741-10751, 2008.
 <a href=./publications/2008_j_phys_chem_b.pdf>[PDF]</a>
-Associated software: <a target="_blank" href=http://m3g.github.io/utils/home.shtml#pathdriven>[LINK]</a>
+Associated software: <a target="_blank" href=https://m3g.github.io/utils/home.shtml#pathdriven>[LINK]</a>
 </td></tr>
 
 

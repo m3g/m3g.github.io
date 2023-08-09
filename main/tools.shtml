@@ -94,7 +94,7 @@ The output file <code>output.dat</code>, has the following structure:
 # RESULT5: Sum of the scores of observed links in all observations. 
 # RESULT6: Likelihood of the structural model, based on observations. 
 #
-# More details at: http://m3g.github.io/topolink
+# More details at: https://m3g.github.io/topolink
 #
 #   Score RESULT0 RESULT1 RESULT2 RESULT3 RESULT4   RESULT5       RESULT6  MODEL
  69.59000      16      16      10      10      18   0.00000   0.10000E+01  S_00093408
@@ -182,7 +182,7 @@ models, in the following form:
 </pre>
 Lets call this file <code>scores.dat</code>. The quality score might be
 some modeling score, the <a target=_blank_
-href=http://m3g.github.io/gscore>G-score</a> (the output of
+href=https://m3g.github.io/gscore>G-score</a> (the output of
 G-score is provided already in the correct format), or a measure of
 similarity to a reference model, for example. 
 <br><br>

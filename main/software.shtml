@@ -44,7 +44,7 @@ within a cutoff, for example short-range potentials, forces, neighbour lists, et
 <b>TopoLink</b><br>
 Software for the evaluation of structural models using chemical
 crosslinking mass spectrometry data.
-<a target="_blank" href=http://m3g.github.io/topolink>[Home-Page]</a>
+<a target="_blank" href=https://m3g.github.io/topolink>[Home-Page]</a>
 </td></tr>
 
 <tr><td align=left valign=top><li></td>
@@ -67,7 +67,7 @@ algorithms based on Low-Order-Value-Optimization theory.
 <b>MDLovoFit</b><br>
 Robust alignment method for the automatic classification of conserved
 and flexible substructures in MD simulations.
-<a href=http://m3g.github.io/mdlovofit target="_blank">[Home-Page]</a>
+<a href=https://m3g.github.io/mdlovofit target="_blank">[Home-Page]</a>
 </td></tr>
 
 <tr><td align=left valign=top><li></td>
@@ -75,7 +75,7 @@ and flexible substructures in MD simulations.
 <b>MDAnalysis</b><br>
 A suite of fortran codes to perform analyses of MD simulations performed
 mostly with NAMD or CHARMM.
-<a target="_blank" href=http://m3g.github.io/mdanalysis>[Home-Page]</a>
+<a target="_blank" href=https://m3g.github.io/mdanalysis>[Home-Page]</a>
 </td></tr>
 
 <tr><td align=left valign=top><li></td>
@@ -83,7 +83,7 @@ mostly with NAMD or CHARMM.
 <b>Atd-Scripts</b><br>
 This is a collection of scripts to run the Anisotropic Thermal Difusion method,
 as described in <a href=http://pubs.acs.org/doi/abs/10.1021/jz200830g target="_blank"> this paper.</a>
-<a target="_blank" href=http://m3g.github.io/atd-scripts>[Home-Page]</a>
+<a target="_blank" href=https://m3g.github.io/atd-scripts>[Home-Page]</a>
 </td></tr>
 
 <tr><td align=left valign=top><li></td>
@@ -91,7 +91,7 @@ as described in <a href=http://pubs.acs.org/doi/abs/10.1021/jz200830g target="_b
 <b>LovoFit</b><br>
 Peforms linear fitting of perhaps multidimensional data with the automatic elimination
 of outliers.
-<a target="_blank" href=http://m3g.github.io/lovofit>[Home-Page]</a>
+<a target="_blank" href=https://m3g.github.io/lovofit>[Home-Page]</a>
 </td></tr>
 
 <tr><td align=left valign=top><li></td>
@@ -99,7 +99,7 @@ of outliers.
 <b>Utils</b><br>
 Some utility programs to analyze data. And the script coding the
 <a href=http://pubs.acs.org/doi/abs/10.1021/jp803403c target="_blank">pathdriven</a> method of SMD with variable directions. 
-<a target="_blank" href=http://m3g.github.io/utils>[Home-Page]</a>
+<a target="_blank" href=https://m3g.github.io/utils>[Home-Page]</a>
 </td></tr>
 
 </table>
