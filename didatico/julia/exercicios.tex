@@ -1,0 +1,125 @@
+\documentclass[10pt,a4paper,ssfamily]{exam}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\renewcommand{\baselinestretch}{1.15}
+\usepackage{epsfig}
+\usepackage{nicefrac}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{multicol}    
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{scrextend}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{chemformula}
+\usepackage{mhchem}
+\renewcommand{\t}{\text}
+\newcommand{\listfont}{\bf\fontencoding{OT1}\sffamily\large}
+\newcommand{\titlesfont}{\fontencoding{OT1}\sffamily\large}
+\renewcommand{\baselinestretch}{1.24}
+\newcommand{\oC}{$^\circ$C}
+\newcommand{\sen}{\textrm{sen }}
+\newcommand{\Mg}{Mg$^{2+}$}
+\newcommand{\sol}[1]{\href{http://leandro.iqm.unicamp.br/shtml/didatico/qf935/atividades/#1.f90}{Solução}}
+\newcommand*{\LargeCdot}{\raisebox{-0.25ex}{\scalebox{1.2}{$\cdot$}}}
+
+% Activity envinronment
+
+\newsavebox{\fmbox}
+\newenvironment{ex}
+{\begin{center}\vspace{0.3cm}\begin{lrbox}{\fmbox}\begin{minipage}{12cm}{\bf Atividades}
+\begin{enumerate}\setcounter{enumi}{\exnumber}}
+{\global\chardef\exnumber=\value{enumi}\end{enumerate}\end{minipage}\end{lrbox}\fbox{\usebox{\fmbox}}\vspace{0.3cm}\end{center}}
+
+% Code blocks definitions
+
+\usepackage{listings}
+
+\renewcommand{\t}{\textrm}
+\lstnewenvironment{code}{\lstset{language=[90]Fortran,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  identifierstyle=\color[RGB]{0,102,0}\textbf,
+  xleftmargin=1.5cm,
+  showstringspaces=false,
+  morecomment=[l]{!\ }% Comment only with space after !
+}}{}
+
+\lstdefinestyle{code}{
+  language=[90]Fortran, 
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  identifierstyle=\color[RGB]{0,102,0}\textbf,
+  xleftmargin=1.5cm,
+  showstringspaces=false,
+  morecomment=[l]{!\ }% Comment only with space after !
+}
+\newcommand{\codefile}[1]{\lstinputlisting[style=code]{#1}
+            \begin{center}
+            \href{http://leandro.iqm.unicamp.br/leandro/shtml/didatico/simulacoes/#1}
+                 {\textcolor{blue}{[Clique para baixar o código]}}
+            \end{center}}
+
+\newcommand{\codelink}[1]{
+            \begin{center}
+            \href{http://leandro.iqm.unicamp.br/leandro/shtml/didatico/simulacoes/#1}
+                 {\textcolor{blue}{[Clique para baixar o código]}}
+            \end{center}}
+
+\begin{document}
+
+\pagestyle{plain}
+
+% Start exercise counter
+\global\chardef\exnumber=0
+
+\sffamily
+\pagestyle{empty}
+
+\begin{enumerate}
+\item
+Um canhão lança uma bala do chão, como mostra a figura abaixo.
+\begin{center}
+\includegraphics[width=8cm]{./canhao.pdf}
+\end{center}
+A força da gravidade acelera a bala para baixo, de acordo com a
+aceleração da gravidade, que é $g = 9.8$~m/s$^2$. A velocidade da bala é
+dada por um vetor, porque ela tem duas direções, $x$, e $y$. A bala é
+atirada da posição $(0,0)$, e com velocidade inicial $(10,10)$. O
+movimento é acelerado apenas na direção $y$, e para baixo. Na direção
+$x$ o movimento tem, portanto, velocidade constante, e o movimento é
+descrito pela fórmula $s = s_0 + v_0 t$. Na direção $y$ o movimento é
+acelerado pela gravidade, portanto a fórmula que descreve o movimento é
+$s = s_0 + v_0t + (a/2)t^2$.
+\begin{enumerate}
+\item
+Faça um programa que faça as contas para calcular a posição $(x,y)$ da
+bala em qualquer valor de tempo, $t$, que você definir.
+\item
+Sofistique o seu programa para calcular a trajetória da bala, isto é,
+que salve três vetores, um de tempo, e outros de posições $x$ e $y$.
+\item
+Encontre em que tempo a bala chega ao chão. 
+\item
+Como variam o tempo e a distância horizontal (em $x$) 
+em que bala chega ao chão se você varia o ângulo de lançamento
+(para uma velocidade com mesmo módulo)?
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+\end{document}
+
+

@@ -1,0 +1,96 @@
+{% include_relative /m3g/main/didatico_start.shtml %}
+
+<p class=section>QF637 - Introdução à Espectroscopia e à Termodinâmica Estatística</p>
+
+<br>
+Professor responsável: Leandro Martínez
+<br>
+Horário: Segundas das 16h às 18h e Quartas das 8h as 10h, das Sala IQ03.
+
+<center> <br> <b>
+<a href=./plano.pdf>Plano de Ensino</a>
+</b> <br><br> 
+
+
+Material suplementar:
+<br>
+<a target=_blank_ href=./julia/sorteios_moedas.html>Sorteios de Moedas</a><br>
+<a target=_blank_ href=./julia/sorteio_baldes.html>Sorteios de Bolas em Baldes</a>
+<br><br>
+
+<b>
+<a target="_blank_"
+href=https://docs.google.com/spreadsheets/d/1F3cUQR5AGvAyefDHd-Fp5wAz0K6c3f1ytb-VUfdcCug/edit?usp=sharing
+>[NOTAS]</a></b>
+<br><br>
+</center>
+
+
+<table width=95%>
+<tr><td class=tdmenu>
+<b>Parte 1 - Espectroscopia: Bibliografia e Listas de Exercícios:</b><br>
+</td></tr>
+<tr><td>
+<b>Bibliografia:</b><br>
+<li>D. A. McQuarrie e J. Simon - Physical Chemistry - A Molecular Approach, 1997.<br>
+<li>L. Pauling e E. B. Wilson Jr - Introduction to Quantum Mechanics With Applications to Chemistry, 1963. 
+(Neste livro está a teoria de perturbação dependente do tempo, que não está discutida no McQuarrie,
+a partir da página 294). <br><br>
+<b>Lista de exercícios::</b> <a href=./lista-espectroscopia.pdf target=blank> lista-espectroscopia.pdf </a></br>
+<b>Espectroscopia roto-vibracional (aplicações):</b> 13.1; 13.3; 13.9; 13.12; 13.14; 13.18; 13.20; 13.49</br>
+(também fazem parte da lista obrigatória)
+
+<br><br>
+<b>Revisão:</b> 4-1; 4-3; 4.9; 4.25; 4.28; 5-1; 5-5; 5-8; 5-15; 5.16; 5.29; 5.38<br>
+<b> Material suplementar: </b> <br>
+Espectro roto-vibracional do HCl: <a target="_blank" href=./espectro_hcl.pdf>[PDF]</a><br>
+Espectroscopia Raman: <a target="_blank" href=./haken_wolf_Raman.pdf>[PDF]</a>
+<br><br>
+</td></tr>
+</table>
+
+<table width=95%>
+</tr>
+<tr>
+<td class=tdmenu>
+<b>Parte 2: Termodinâmica Estatística - Bibliografia e Listas de Exercícios:</b><br>
+</td></tr>
+<tr><td>
+<!-- <b> Lista de exercícios:</b> <a target=blank href=./lista-termoestat.pdf>[PDF]</a><br> -->
+<b> Lista de exercícios:</b> <a target=blank href=./lista-termoestat-2019.pdf>[PDF]</a><br>
+<br>
+<b>Livros:</b> <br>
+<u>Capítulo 17 e 18 do McQuarrie - Physical Chemistry.</u> Este tem a abordagem mais
+simples porém muito pouco discutida e detalhada. Parte do capítulo 26
+também será abordada (em particular, as seções 26.2 e 26.8)<br>
+Vale à pena estudar os <u>Capítulos 2, 3, 5 e 9 de D. A. McQuarrie - Statistical
+Mechanics</u>, que corresponde mais exatamente ao tratamento mais
+completo que será feito em aula. No entanto, o livro pressupõe alguns
+conhecimentos que podem soar pouco familiares. Estes passos serão
+discutidos em aula com detalhes também. O conteúdo destes 4 capítulos
+corresponde a toda esta parte da disciplina.<br>
+<b> Exercícios: </b> Todos os exercícios dos capítulos mencionados
+acima, dos dois livros (em particular 17 e 18 de Physical Chemistry e 2
+e 3 de Statistical Mechanics) são recomendados para quem quiser se
+adiantar. A lista de exercícios em PDF contém os exercícios mais relevantes.
+
+<br>
+Material suplementar: <a href=entropia_sistema_isolado.pdf> Entropia de um sistema isolado.</a>
+<br><br>
+
+</td></tr>
+
+</table>
+
+
+<br><br>
+<b>Alguns vídeos interessantes:</b><br>                                                                          
+<li><a target=newpage href="http://www.youtube.com/watch?v=ZJ-0PBRuthc"> Interferência de elétrons individuais</a>
+<li><a target=newpage href="http://www.youtube.com/watch?v=hUJfjRoxCbk"> Richard Feynman on the Double Slit Paradox: Particle or Wave? </a>
+<li><a href="http://www.e-quimica.iq.unesp.br/index.php?option=com_content&view=article&id=85:linhas-espectrais&catid=36:videos&Itemid=55" target=newpage> Linhas espectrais </a><br>
+<li><a target=newpage href="http://www.e-quimica.iq.unesp.br/index.php?option=com_content&view=article&id=73:experimento-de-thonson&catid=36:videos&Itemid=55"> Descoberta do elétron </a>
+
+<br><br>
+
+{% include_relative /m3g/main/didatico_end.shtml %}
+

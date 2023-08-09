@@ -1,0 +1,19 @@
+\BOOKMARK [1][-]{section.1}{Elementos b\341sicos de programa\347\343o}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Estrutura b\341sica do programa}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Primeiras simula\347\365es: cin\351tica qu\355mica}{}% 3
+\BOOKMARK [1][-]{section.3}{Otimiza\347\343o com derivadas}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Minimizando com derivadas}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Fun\347\365es de m\372ltiplas vari\341veis}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Subrotinas e fun\347\365es}{}% 7
+\BOOKMARK [1][-]{section.5}{Minimiza\347\343o sem derivadas}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{Gerador de n\372meros aleat\363rios}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Minimizando x2+y2}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.3}{O m\351todo Simplex}{section.5}% 11
+\BOOKMARK [1][-]{section.6}{Aplicando a otimiza\347\343o a um problema ``real''}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{Resultado experimental}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.2}{Compara\347\343o com a simula\347\343o}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.3}{Descobrindo as constantes de velocidade}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.4}{Refinamentos do programa}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.5}{Usando uma subrotina pronta}{section.6}% 17
+\BOOKMARK [3][-]{subsubsection.6.5.1}{Subrotina minimize\1372d}{subsection.6.5}% 18
+\BOOKMARK [3][-]{subsubsection.6.5.2}{Preparando nosso programa para usar minimize\1372d}{subsection.6.5}% 19

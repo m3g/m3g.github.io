@@ -1,0 +1,53 @@
+{% include_relative /m3g/main/didatico_start.shtml %}
+
+<p class=section>SFI5854 - Termodinâmica de Sistemas Biológicos</p>
+
+<br>
+<b>Cronograma:</b> <a href=./cronograma.pdf> [PDF] </a>
+<br><br>
+<b>Listas de exercícios:</b> <a href=./listas.pdf> [PDF] </a><br>
+Obs: Estas listas podem mudar ao longo do semestre. Mantenha-se informado.
+
+<br><br>
+<table>
+<tr><td><b> Exercícios para a prova:</b></td><td><b> Lista IV - Exercícios 1 a 26</b></td></tr> 
+<tr><td>                                     </td><td><b> Lista III - Exercícios 1 a 25 (exceto 3)</b></td></tr>
+<tr><td>                                     </td><td><b> Lista II - Exercícios 1 a 19.</b></td></tr>
+</table>
+
+<br><br>
+<!-- <a href=./notas.txt>Notas</a> -->
+
+<br><br>
+<b> Ementa: </b>
+1.Cinética da interação com ligantes. Reações unimoleculares;reações
+biomoleculares;mecanismos de Michaelis-Menten;cinética de estados em
+equilíbrio;princípios termodinâmicos de cinéticas de relaxação;caso da
+ribonuclease. 2. Regulação da atividade biológica. Enzimas
+alostéricas;modelo WMC;hemoglobina. 3.Termodinâmica molecular .Mecanismos
+moleculares:potenciais moleculares e interações
+eletrostática;estabilização das interações em macromoléculas:estrutura
+de proteínas e estrutura de ácidos nucléicos;simulação de estruturas
+macromoleculares:minimização de energia, dinâmica molecular, entropia,
+efeito hidrofóbico. 4. Estatística configuracional de cadeias poliméricas.
+Cálculo de propriedades dependentes da conformação; a cadeia
+"random-walk"; a cadeia com rotação livre; cálculos para
+polipeptídeos. 5.A transição "helix-coil". Tratamento termodinâmico da
+transição; funções de partição para o equilíbrio conformacional; o
+modelo do zíper; método da função de partição. 6.Enovelamento de
+proteínas. Transições conformacionais; obtenção dos parâmetros
+termodinâmicos:modelo de dois estados; estudos de equilíbrio; estudos
+cinéticos; interpretação de cinética bifásica. 7.Transições estruturais
+em ácidos nucléicos. Comparação com os estudos em proteínas;estrutura e
+estabilidade de cadeias simples; equilíbrio entre cadeias simples e
+duplas; flutuações estruturais; transições "premelting" em DNA.
+<br><br>
+
+<b>Bibliografia:</b> 
+Biophysical Chemistry - part III, C.R. Cantor e P.R. Schimmel, W.H.
+Freeman, San Francisco, 1980. - Principles of physical biochemistry,
+K.E. Holde, W.C. Johnson e P.S. Ho, Prentice Hall, Upper Saddle River,
+1998.
+
+{% include_relative /m3g/main/didatico_end.shtml %}
+

@@ -1,0 +1,238 @@
+---
+---
+{% include_relative head.shtml %}
+
+<h2>Tools to analyse TopoLink results</h2>
+TopoLink comes with some helper programs that are used to analyze the
+results in large sets of structural models. These packages are available
+upon installation of TopoLink, and are:
+<br><br><table width=80% align=center><tr><td class=tdclean>
+<b>1. <code>evalmodels:</code></b> A package that reads sets of TopoLink output
+files and model quality scores from another source, and writes tables
+to for plotting their correlation.</code><br>
+<b>2. <code>linkcorrelation</code>:</b> A package to analyze the correlation
+between crosslinks in ensembles of models.<br>
+<b>3. <code>linkensemble</code>:</b> A package to read TopoLink output
+data and compute the set of models required to satisfy the observed
+links. <br>
+<b>Appendix:</b> Evaluating structural models with LovoAlign 
+<a href=./lovoalign.shtml>[click here]</a>.
+</b><br>
+</td></tr></table>
+
+<table width=40% align=center><tr><td bgcolor=lightgrey><center>
+<br>
+These tools will be deprecated in favor of the Julia implementation of
+the analysis suite, which is already functional and available at:
+<br><br>
+<a target=_blank_ href=https://github.com/m3g/topolink/blob/master/julia/README.md>TopoLink.jl</a>
+</center><br></td></tr></table>
+
+<h3>1. <code>evalmodels</code></h3>
+<code>evalmodels</code> is simply a package to read the output of
+several TopoLink output files, and some other file containing a model
+evaluation score, and output the list of models with the crosslinking
+statistics associated with this score. 
+<br><br>
+For example, the plot below was obtained from the output of
+<code>evalmodels</code>:
+<center>
+<img src=./evalmodels.png width=500px>
+</center>
+<br>
+The values in the y-axis, i. e. the number of observed links that consistent with
+each structure, were obtained from the TopoLink log files of each model.
+The values in the x-axis, in this case the similarity of each model to
+the crystallographic structure, were obtained by aligning each model
+with the crystallographic model, in this case using
+<code>LovoAlign</code> 
+(<a href=./lovoalign.shtml>click here for details</a>).
+<br><br>
+<code>evalmodels</code> is executed as follows: <pre>
+evalmodels loglist.txt scores.dat output.dat -m1 -c2
+</pre>
+where <code>loglist.txt</code> is a list of TopoLink log files, in the
+following form:
+<pre>
+./logs/model1.log
+./logs/model2.log
+./logs/model3.log
+...
+</pre>
+<code>scores.dat</code> is a table containing the name of the models (or
+model files) and the third-party score that will be used, for example:
+<pre>
+model1   0.754
+model2   0.321
+model3   0.135
+...
+</pre>
+and, finally, the <code>-m1</code> and <code>-c2</code> flags indicate
+the column in <code>scores.dat</code> containing the name of the model
+and the value of the score, respectively (in the example, 1 and 2). The
+name of the models might be file names, only the base name will be
+considered, i. e. "model1", and must coincide with the base name of the
+corresponding TopoLink log file ("model1.log").
+<br><br>
+The output file <code>output.dat</code>, has the following structure:
+<pre3>
+# TopoLink
+#
+# EvalModels output file. 
+#
+# Log file list: log.list
+# Score (possibly LovoAlign log) file: ../analysis/cristal.log
+# Number of models    11001
+#
+# Score: Model quality score, obtained from column     8 of the score file. 
+#
+# RESULT0: Number of consistent observations. 
+# RESULT1: Number of topological distances consistent with all observations. 
+# RESULT2: Number of topological distances NOT consistent with observations. 
+# RESULT3: Number of missing links in observations. 
+# RESULT4: Number of distances with min and max bounds that are consistent.
+# RESULT5: Sum of the scores of observed links in all observations. 
+# RESULT6: Likelihood of the structural model, based on observations. 
+#
+# More details at: http://leandro.iqm.unicamp.br/topolink
+#
+#   Score RESULT0 RESULT1 RESULT2 RESULT3 RESULT4   RESULT5       RESULT6  MODEL
+ 69.59000      16      16      10      10      18   0.00000   0.10000E+01  S_00093408
+ 65.48500      16      16      10      11      21   0.00000   0.10000E+01  S_00090481
+ 63.06000      17      17       9      23       0   0.00000   0.99996E+00  S_00108183
+...
+</pre3>
+<br>
+The first column is the score read from the <code>scores.dat</code>
+file. The other columns contain the different statistics of the crosslinks for
+each model, as described, to be associated with the score of the first column, using
+any plotting software.
+
+<h3>2. <code>linkcorrelation</code></h3>
+<code>linkcorrelation</code> is a package to compute the correlation between the
+satisfaction of links in ensembles of structural models. It produces, as
+output, a matrix of correlations, containing either:
+<list>
+1. The fraction of structures that satisfy both links simultaneously.
+2. The fraction of structures that <u>do</u> <u>not</u> satisfy both links simultaneously.
+3. The fraction of structures that satisfy <u>either</u> one <u>or</u> other link.
+4. The correlation of the crosslink pair: That is, a score in the interval [-1,1] which
+    is -1 if the links are anti-correlated, and 1 if they are correlated. 
+</list>
+<br>
+<i>Running</i> <code>linkcorrelation</code>:
+The package must be run with:
+<pre>
+linkcorrelation loglist.txt -type [type]
+</pre>
+where <code>loglist.txt</code> is a file containing a list of all TopoLink log files to be
+considered, and <code>[type]</code> is an integer number with value 1 to 4, according
+to the desired type of output, as described above. 
+<br><br>
+The <code>loglist.txt</code> file must be of the form:
+<pre>
+./logs/model1.log
+./logs/model2.log
+./logs/model1.log
+...
+</pre>
+For example, these to correlation plots were produced with the output of <code>linkcorrelation</code>:
+<br><br>
+<center>
+Click on the image to open a high resolution image.<br>
+<a target=_blank_ href=./correlations.png><img
+src=./correlations_lowres.png></a>
+</center>
+<br>
+Plot A, on the left, was generated with the "<code>-type 1</code>" option, and
+shows the fraction of structures of structures of the set satisfying
+both crosslinks of the matrix at the same time. In particular, the
+diagonal contains the fraction of structures that satisfy each specific
+crosslink.
+<br><br>
+Plot B, on the right, was generated with the "<code>-type 3</code>"
+option, and shows the fraction of structures that satisfy one link
+<i>OR</i> the other, exclusively (if both links are satisfied, the model
+is not counted). This plot shows anti-correlations between the links.
+The diagonal, in this case, is null, because the each crosslink is
+obviously completely positively correlated with itself. 
+<br><br>
+These plots were generated from the output of
+<code>linkcorrelations</code> using the following python/matplotlib
+script: 
+<a href=./plot_linkcorrelations.py>plot_linkcorrelations.py</a>
+
+<h3>3. <code>linkensemble</code></h3>
+
+<code>linkcorrelation</code> computes minimum and optimal set of models
+required to satisfy the observed links. For example, if one has observed
+26 experimental crosslinks, it is quite typical that no model accounts
+for all 26 crosslinks at the same time. Therefore, one wishes to find a
+set of models representing some conformational variability that takes
+into account all, or at least most, of the observed links.
+<br><br>
+The <code>linkensemble</code> depends on some quality measure for the
+models, in the following form:
+<pre>
+# Coments
+100.00  S_00093408.pdb
+18.704  S_00000001.pdb
+33.889  S_00000002.pdb
+...
+</pre>
+Lets call this file <code>scores.dat</code>. The quality score might be
+some modeling score, the <a target=_blank_
+href=http://leandro.iqm.unicamp.br/gscore>G-score</a> (the output of
+G-score is provided already in the correct format), or a measure of
+similarity to a reference model, for example. 
+<br><br>
+With the <code>scores.dat</code> file in hand, <code>linkensemble</code>
+is run with:
+<pre>
+linkensemble loglist.txt scores.dat linkensemble.dat
+</pre>
+This will produce a file with the following form:
+<pre3>
+# TopoLink
+#
+# LinkEnsemble output file. 
+#
+# Log file list: ../log.list
+# G-score file: S_00093408_align.dat
+# Number of models    11001
+# Number of observed crosslinks:       26
+#
+#   1 MET   A         1  LYS   A        17
+#   2 MET   A         1  LYS   A       113
+#   3 LYS   A         6  GLU   A         9
+...
+#  26 LYS   A       113  SER   A       116
+#
+# Nmodel: Number of crosslinks satisfied by this model. 
+# RelatP: Relative probability of this model (G-score ratio to best model).
+# DeltaG: RelatP converted to DeltaG (kcal/mol).
+# Ntot: Total number of links satisfied by the ensemble up to this model.
+# Next: link indexes according to list above.
+#
+#             Model  Nmodel     RelatP       DeltaG  Ntot   1   2   3   4   ...  26
+       1 S_00093408    16      1.00000     -0.00000    16   0   1   1   1   ...   0
+       2 S_00037416    20      0.68889      0.22067    20   1   1   1   1   ...   1
+       3 S_00060737    17      0.65370      0.25172    21   1   1   1   1   ...   1
+...
+</pre3>
+<br>
+This file contains a list of the observed links, and a list of the
+models, containing the following data: The index of the model, ordered
+by greatest to lowest score; the number of links satisfied by the model,
+the relative score of each model to the best model (which is called
+<code>RelatP</code> because the suggested G-score is a probability); the
+corresponding &Delta;G if the score is a probability; the total number
+of links <i>cumulatively</i> satisfied by the <i>set</i> of models up to
+that model, and the list of links satisfied or not (1 or 0) by the set.
+<br><br>
+For example, the output above indicates that the first model satisfies
+16 links. The second satisfies 20 links, and the third satisfied 17
+links (third column). If the three models are taken in consideration, 21
+links can be observed. The list of links follow each model. 
+
+{% include_relative ./tail.shtml %}

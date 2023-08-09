@@ -1,0 +1,43 @@
+ Nivel: Graduação
+ Disciplina: QG100 - Química                                      
+ Docente: Leandro Martinez                             
+ Oferecimento: 1º Período de2013
+ Situação: 36 vagas - 36 matriculados - 1 vagas reservadas para calouros
+
+
+
+RA			Nome				Curso	Nivel		Modalidade
+121316	Renan Rodriguez Rincon Sartori          	10	G		  
+146656	João Vitor Valério Almeida              	10	G		  
+146692	Jose Yugo Yamaguchi Pellegrini          	10	G		  
+146892	Leonardo Nascimento Parmigiani          	10	G		  
+146927	Leticia Morau Rodrigues                 	10	G		  
+146986	Lucas Buzon de Souza                    	10	G		  
+147001	Lucas Deraco Marangoni                  	10	G		  
+147018	Lucas Gosuen Cunha                      	10	G		  
+147046	Lucas Pini Tanabe                       	10	G		  
+147061	Lucas Suzigan Corniani                  	10	G		  
+147090	Luis Antonio de Lima Guimaraes          	10	G		  
+147099	Luis Henrique da Silva Teixeira         	10	G		  
+147110	Luiz Andre Camargo Mazzariol            	10	G		  
+147165	Marcelo Eduardo Novaes Freire Filho     	10	G		  
+147243	Mariah Marques Sabioni                  	10	G		  
+147389	Matheus Inguaggiato Nora Rosa           	10	G		  
+148767	Lucas Lourenço Goulart                  	10	G		  
+148800	Marcelo Donatti Gubert                  	10	G		  
+148810	Marcos Rassi Torrecillas                	10	G		  
+148848	Matheus Antonio Estevão Rech            	10	G		  
+149098	André Artioli Malavasi                  	10	G		  
+149121	Bruno Mangini Gorski                    	10	G		  
+149248	José Roberto Polli Azevedo              	10	G		  
+149260	Júlio Manta Roberto                     	10	G		  
+149279	Leonardo Watanabe Garcia                	10	G		  
+149291	Lucas Chiconi Capobianco                	10	G		  
+149303	Luís Filipe Pereira Funari              	10	G		  
+149336	Matheus Costa Cruz                      	10	G		  
+149375	Pedro de Araújo Soares Mansinho         	10	G		  
+149396	Renan Sartorio                          	10	G		  
+150719	Lucas Cardoso Vilaça                    	10	G		  
+150723	Lucas Peixoto Paulino da Silva          	10	G		  
+150730	Luís Otávio Martins Todesco             	10	G		  
+151098	Eurico Akihiko Tanaka                   	10	G		  

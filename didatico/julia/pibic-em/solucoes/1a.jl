@@ -1,0 +1,11 @@
+g = -9.8
+t = 0.5
+x0 = 0.
+y0 = 0.
+v0x = 10.
+v0y = 10.
+x = x0 + v0x*t
+y = y0 + v0y*t + (g/2)*t^2
+println(" t = ", t)
+println(" x = ", x)
+println(" y = ", y)

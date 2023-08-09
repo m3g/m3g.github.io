@@ -1,0 +1,56 @@
+{% include_relative /m3g/main/didatico_start.shtml %}
+
+
+<p class=section>QP124 - Introdução à Química Quântica e à Espectroscopia</p>
+
+<br>
+Professores responsáveis: Leandro Martínez e Miguel San Miguel
+
+<table>
+<tr><td class=tdmenu>
+<b>Listas de Exercícios:</b><br>
+Quântica: <a target=_blank_ href=../qf536/lista.pdf>[pdf]</a><br>
+Espectroscopia: <a target=_blank_ href=../qf636/lista-espectroscopia.pdf>[pdf]</a><br>
+</td></tr>
+<tr><td>
+</td></tr>
+
+<br><br>
+<b>Cronograma de tópicos, aulas e avaliações:</b>
+<a target=_blank_ href=https://docs.google.com/document/d/1S9TinQR_ap5ZPot9aiQtyJGYfcJaXa3xym4QBfvAheQ/edit?usp=sharing>[LINK]</a>
+<br><br>
+
+<tr><td>
+<b>Revisão:</b><br>
+Livro: D. A. McQuarrie e J. Simon - Physical Chemistry - A Molecular Approach, 1997.
+<br>
+Capítulo 1: Leitura geral; Exercícios 1.27; 1.29; 1.35; 1.36; 1.37 <br>
+Capítulo matemático A: Exercícios: A-1; A-4; A-5 <br>
+Capítulo 2: Seções 2.2; 2.3; 2.4; Exercícios: 2.4; 2.7 <br>
+Capítulo 3: Seções 3.1; 3.2; 3.3; 3.4; 3.5; Exercícios: 3.1; 3.2; 3.7; 3.11; 3.34 <br>
+Capítulo matemático C: Se houver alguma dúvida, estudar. <br>
+Capítulo 4: Seções 4.1; 4.2; 4.3; 4.4; 4.5; Exercícios: 4.1; 4.3; 4.25; 4.28; 4.29 <br>
+Capítulo matemático D: Se houver alguma dúvida, estudar. <br>
+Capítulo 5: Ler o capítulo e relembrar, principalmente as seções 5.4, 5.6, 5.8 <br>
+Capítulo 6: Ver se há dúvidas na interpretação das soluções. Em particular, seções 6.4; 6.5; 
+6.6; Exercícios: 6.16; 6.20; 6.21
+
+
+</td></tr>
+
+
+</table>
+<br><br>
+A discussão de Einstein e Bohr sobre o princípio da incerteza:
+<a href=http://www.marxists.org/reference/subject/philosophy/works/dk/bohr.htm target=newpage>[LINK]</a>
+
+<br><br>
+<b>Alguns vídeos interessantes:</b><br>                                                                          
+<li><a target=newpage href="http://www.youtube.com/watch?v=ZJ-0PBRuthc"> Interferência de elétrons individuais</a>
+<li><a target=newpage href="http://www.youtube.com/watch?v=hUJfjRoxCbk"> Richard Feynman on the Double Slit Paradox: Particle or Wave? </a>
+<li><a href="http://www.e-quimica.iq.unesp.br/index.php?option=com_content&view=article&id=85:linhas-espectrais&catid=36:videos&Itemid=55" target=newpage> Linhas espectrais </a><br>
+<li><a target=newpage href="http://www.e-quimica.iq.unesp.br/index.php?option=com_content&view=article&id=73:experimento-de-thonson&catid=36:videos&Itemid=55"> Descoberta do elétron </a>
+
+<br><br>
+
+{% include_relative /m3g/main/didatico_end.shtml %}

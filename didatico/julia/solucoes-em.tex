@@ -1,0 +1,105 @@
+\documentclass[10pt,a4paper,ssfamily]{exam}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[utf8]{inputenc}
+\renewcommand{\baselinestretch}{1.15}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{./jlcode/jlcode}
+\usepackage{makeidx}
+\usepackage{multicol}    
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{scrextend}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\listfont}{\bf\fontencoding{OT1}\sffamily\large}
+\newcommand{\titlesfont}{\fontencoding{OT1}\sffamily\large}
+\renewcommand{\baselinestretch}{1.24}
+\newcommand{\oC}{$^\circ$C}
+\newcommand{\sen}{\textrm{sen }}
+\newcommand{\Mg}{Mg$^{2+}$}
+\newcommand{\sol}[1]{\href{http://leandro.iqm.unicamp.br/shtml/didatico/qf935/atividades/#1.f90}{Solução}}
+\renewcommand{\t}{\textrm}
+
+\newsavebox{\fmbox}
+\newenvironment{ex}
+{\begin{center}\vspace{0.3cm}\begin{lrbox}{\fmbox}\begin{minipage}{12cm}{\bf Atividade}
+\begin{enumerate}\setcounter{enumi}{\exnumber}}
+{\global\chardef\exnumber=\value{enumi}\end{enumerate}\end{minipage}\end{lrbox}\fbox{\usebox{\fmbox}}\vspace{0.3cm}\end{center}}
+
+% Code blocks definitions
+
+\usepackage{listings}
+
+\renewcommand{\t}{\textrm}
+\lstnewenvironment{code}{\lstset{language=julia,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  identifierstyle=\color[RGB]{0,102,0}\textbf,
+  xleftmargin=1.5cm,
+  showstringspaces=false,
+  morecomment=[l]{!\ }% Comment only with space after !
+}}{}
+
+\lstdefinestyle{code}{
+  language=julia, 
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  identifierstyle=\color[RGB]{0,102,0}\textbf,
+  xleftmargin=1.5cm,
+  showstringspaces=false,
+  morecomment=[l]{!\ }% Comment only with space after !
+}
+\newcommand{\codefile}[1]{\lstinputlisting[style=code]{#1}
+            %\begin{center}
+            %\href{http://leandro.iqm.unicamp.br/leandro/shtml/didatico/simulacoes/#1}
+            %     {\textcolor{blue}{[Clique para baixar o código]}}
+            %\end{center}
+            }
+
+\begin{document}
+
+
+% Start exercise counter
+\global\chardef\exnumber=0
+\sffamily
+
+\pagestyle{empty}
+
+\begin{center}
+{\bf\Large PIBIC-EM}
+
+Leandro Martínez\\
+leandro@iqm.unicamp.br \\
+\end{center}
+
+\begin{center}
+{\bf Soluções de atividades selecionadas}
+\end{center}
+
+\begin{enumerate}
+\item
+\begin{enumerate}
+\item
+~\codefile{./solucoes-em/ex1a.jl}
+\item
+~\codefile{./solucoes-em/ex1b.jl}
+\newpage
+\item
+~\codefile{./solucoes-em/ex1c.jl}
+\item
+~\codefile{./solucoes-em/ex1d.jl}
+\end{enumerate}
+
+
+
+
+\end{enumerate}
+
+\end{document}
+

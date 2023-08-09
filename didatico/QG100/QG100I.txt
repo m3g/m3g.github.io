@@ -1,0 +1,45 @@
+ Nivel: Graduação
+ Disciplina: QG100 - Química                                      
+ Docente: Leandro Martinez                             
+ Oferecimento: 1º Período de2013
+ Situação: 35 vagas - 36 matriculados
+
+
+
+RA			Nome				Curso	Nivel		Modalidade
+106741	João Pedro Fernandes Colnaghi           	10	G		  
+139539	João Guilherme Garcia Prado             	10	G		  
+146165	Gabriel Seixas Disselli                 	10	G		  
+146174	Gabriel Zambon                          	10	G		  
+146194	Gabriela Kishida Koreeda                	10	G		  
+146283	Guilherme Akio Oi                       	10	G		  
+146291	Guilherme de Abreu Polizel              	10	G		  
+146308	Guilherme Marques Alves                 	10	G		  
+146336	Gustavo Buosi de Almeida Hernandes      	10	G		  
+146360	Gustavo Oliveira Coelho                 	10	G		  
+146382	Hebert Yoshihiro Gonda                  	10	G		  
+146388	Heitor Nigro Lopes                      	10	G		  
+146404	Henrique Beneduzzi Mantovani            	10	G		  
+146421	Henrique Perez Nascimento               	10	G		  
+146435	Higor Augusto Gomes                     	10	G		  
+146463	Igor da Rocha Vingrys                   	10	G		  
+146466	Igor Massayuki Serikava                 	10	G		  
+146476	Inayara Bueno Diamantino Batista        	10	G		  
+146563	Jean Wellington Pereira Claudino        	10	G		  
+148003	Tatiane Fernandes Furlan                	10	G		  
+148086	Tiago de Oliveira Carvalho              	10	G		  
+148120	Vicente Chia An Lin                     	10	G		  
+148129	Victor Corrêa Suleiman                  	10	G		  
+148153	Victor Valente Lopes                    	10	G		  
+148188	Vitor André Teixeira                    	10	G		  
+148194	Vítor Costa Pinheiro                    	10	G		  
+148222	Wagner Alexandre Martins Júnior         	10	G		  
+148596	Guilherme Mori Taiar                    	10	G		  
+148598	Guilherme Pessini                       	10	G		  
+148601	Gustavo Augusto Brites Figueiredo       	10	G		  
+148615	Henrique Araujo Dias de Melo            	10	G		  
+148656	João Pedro de Lima e Silva Azevedo      	10	G		  
+148997	Thales Arantes de Castelo Branco e Souza	10	G		  
+149052	Vitor Hugo Bornschlegell                	10	G		  
+149062	William Elias Avila                     	10	G		  
+150781	Rafael Jun Eguti                        	10	G		  

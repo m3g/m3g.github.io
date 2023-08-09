@@ -1,0 +1,21 @@
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {1}Elementos b\IeC {\'a}sicos de programa\IeC {\c c}\IeC {\~a}o}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Estrutura b\IeC {\'a}sica do programa}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Loops}{2}{subsubsection.1.1.1}
+\contentsline {section}{\numberline {2}Primeiras simula\IeC {\c c}\IeC {\~o}es: cin\IeC {\'e}tica qu\IeC {\'\i }mica}{4}{section.2}
+\contentsline {section}{\numberline {3}Otimiza\IeC {\c c}\IeC {\~a}o com derivadas}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Minimizando com derivadas}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Fun\IeC {\c c}\IeC {\~o}es de m\IeC {\'u}ltiplas vari\IeC {\'a}veis}{11}{subsection.3.2}
+\contentsline {section}{\numberline {4}Subrotinas e fun\IeC {\c c}\IeC {\~o}es}{12}{section.4}
+\contentsline {section}{\numberline {5}Minimiza\IeC {\c c}\IeC {\~a}o sem derivadas}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Gerador de n\IeC {\'u}meros aleat\IeC {\'o}rios}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Minimizando $x^2+y^2$}{15}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}O m\IeC {\'e}todo Simplex}{16}{subsection.5.3}
+\contentsline {section}{\numberline {6}Aplicando a otimiza\IeC {\c c}\IeC {\~a}o a um problema ``real''}{21}{section.6}
+\contentsline {subsection}{\numberline {6.1}Resultado experimental}{21}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Compara\IeC {\c c}\IeC {\~a}o com a simula\IeC {\c c}\IeC {\~a}o}{22}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Descobrindo as constantes de velocidade}{22}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Refinamentos do programa}{23}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Usando uma subrotina pronta}{24}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Subrotina {\tt minimize\_2d}}{25}{subsubsection.6.5.1}
+\contentsline {subsubsection}{\numberline {6.5.2}Preparando nosso programa para usar {\tt minimize\_2d}}{26}{subsubsection.6.5.2}

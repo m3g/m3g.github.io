@@ -1,0 +1,162 @@
+
+Turma D
+                                                              P1                P2
+RA                Nome                                    Q1     Q2         Q1     Q2
+121316      Renan Rodriguez Rincon Sartori                3.0    8.0        8.0    3.0
+146656      João Vitor Valério Almeida                    3.0    1.0        10.    10.
+146692      Jose Yugo Yamaguchi Pellegrini                0.0    4.0        10.    10. 
+146892      Leonardo Nascimento Parmigiani                4.0    1.0        10.    9.0
+146927      Leticia Morau Rodrigues                       5.0    5.0        10.    9.0
+146986      Lucas Buzon de Souza                          0.0    5.0        10.    9.0
+147001      Lucas Deraco Marangoni                        5.0    2.0        9.0    9.0
+147018      Lucas Gosuen Cunha                            5.0    2.0        10.    8.0
+147046      Lucas Pini Tanabe                             8.0    8.0        8.0    8.0
+147061      Lucas Suzigan Corniani                        7.0    4.0        8.0    6.0
+147090      Luis Antonio de Lima Guimaraes                8.0    3.0        6.0    7.0
+147099      Luis Henrique da Silva Teixeira               5.0    5.0        10.    6.0
+147110      Luiz Andre Camargo Mazzariol                  5.0    8.0        10.    9.0
+147165      Marcelo Eduardo Novaes Freire Filho           3.0    9.0        10.    7.0
+147243      Mariah Marques Sabioni                        2.0    5.0        10.    9.0
+147389      Matheus Inguaggiato Nora Rosa                 4.0    2.0        10.    7.0
+148767      Lucas Lourenço Goulart                        0.0    2.0        0.0    6.0
+148800      Marcelo Donatti Gubert                        2.0    6.0        8.0    7.0
+148810      Marcos Rassi Torrecillas                      5.0    5.0        10.    4.0
+148848      Matheus Antonio Estevão Rech                  0.0    4.0        10.    7.0 
+149098      André Artioli Malavasi                        0.0    4.0        7.0    2.0
+149121      Bruno Mangini Gorski                          5.0    7.0        10.    4.0
+149248      José Roberto Polli Azevedo                    10.    2.0        7.0    6.0
+149260      Júlio Manta Roberto                           0.0    1.0        8.0    8.0
+149279      Leonardo Watanabe Garcia                      4.0    3.0        8.0    9.0
+149291      Lucas Chiconi Capobianco                      10.    8.0        10.    4.0
+149303      Luís Filipe Pereira Funari                    0.0    1.0        8.0    4.0
+149336      Matheus Costa Cruz                            3.0    3.0        0.0    1.0
+149375      Pedro de Araújo Soares Mansinho               7.0    4.0        7.0    6.0
+149396      Renan Sartorio                                3.0    3.0        8.0    9.0
+150719      Lucas Cardoso Vilaça                          1.0    2.0        10.    9.0
+150723      Lucas Peixoto Paulino da Silva                0.0    1.0        8.0    3.0
+150730      Luís Otávio Martins Todesco                   5.0    4.0        8.0    5.0
+151098      Eurico Akihiko Tanaka                         8.0    3.0        8.0    4.0
+                                                                            
+                                                                            
+Turma E                                                                     
+                                                                            
+                                                              P1                P2
+RA                Nome                                    Q1     Q2         Q1     Q2 
+97532       Thiago Valle dos Santos                       0.0    5.0        6.0    6.0
+145173      Amadeu Cavalcante Filho                       9.0    10.        7.0    9.0
+145510      Bruno Eiji Okano Yoshida                      8.0    2.0        8.0    9.0
+145542      Caike Moreira de Souza                        3.0    6.0         -      -
+145569      Caio Oliveira Dantas                          0.0    3.0        7.0    6.0
+145585      Caique Sá da Silva                            9.0    9.0        10.    9.0
+145643      Carlos Eduardo Millani                        10.    7.0        10.    10.
+145739      Cleber Franca Carvalho                        5.0    5.0        7.0    10.
+145763      Daniel dos Santos Pedroso                     1.0    2.0        8.0    9.0
+145808      Danilo Cleber Becke                           10.    8.0        10.    9.0
+145991      Felipe Augusto de Araujo da Silva             0.0    1.0        8.0    8.0
+146024      Felipe Heiji Takaoka                          8.0    7.0        9.0    9.0
+146111      Frédéric Louis Ferreira Devloo                0.0    3.0        10.    7.0
+146292      Guilherme de Freitas Lessio                   5.0    9.0        10.    8.0
+146307      Guilherme Malavasi                            3.0    2.0        10.    9.0
+146335      Gustavo Aurélio Fonseca                       10.    4.0        10.    7.0
+146344      Gustavo Eugênio Sella Romano                  0.0    3.0        10.    7.0
+146415      Henrique Hideki Sakata Vasconcellos           3.0    4.0        7.0    8.0
+146646      João Pedro Sandoval de Araújo                 3.0    3.0        4.0    7.0
+146672      Jorge Yoshio F. Murakami de Jesus             2.0    3.0        9.0    7.0
+146864      Leandro Martins dos Santos                    0.0    2.0        5.0    5.0
+147652      Pedro Ribeiro Menotti                         0.0    1.0        6.0    8.0
+147770      Reinaldo Celso de Melo Júnior                 9.0    4.0        5.0    9.0
+147896      Samuel Abreu Gomes                            2.0    10.        10.    10.
+148197      Vítor de Carvalho Gimenes                     8.0    5.0        3.0    5.0
+148249      Yago Matheus de Siqueira Lima                 3.0    4.0        10.    9.0
+148381      Bruno da Costa                                0.0    1.0        8.0    7.0
+148561      Gabriela Takahashi Takiuti                    5.0    1.0        8.0    6.0
+148613      Helena Jatobá Scattone                        0.0    2.0        8.0    8.0
+148695      Kalil el Kadri Monteiro                       5.0    7.0        3.0    5.0
+149058      Vivien Cielusinsky                            6.0    8.0        10.    10.
+150650      Guilherme Campiani Ferreira da Silva          0.0    2.0        8.0    7.0
+150801      Tales Augusto Silveira Reis                   0.0    3.0        10.    10.
+150999      Rodrigo de Oliveira Neto                      0.0    0.0        7.0    7.0
+                                                                            
+Turma I                                                                     
+                                                              P1                P2
+RA                Nome                                    Q1     Q2         Q1     Q2 
+106741      João Pedro Fernandes Colnaghi                 1.0    5.0        10.    5.0
+139539      João Guilherme Garcia Prado                   3.0    10.        9.5    7.0
+146165      Gabriel Seixas Disselli                       5.0    3.0        4.0    3.0
+146174      Gabriel Zambon                                2.0    10.        10.    10.
+146194      Gabriela Kishida Koreeda                      0.0    2.0        8.0    7.0
+146283      Guilherme Akio Oi                             2.0    7.0        6.0    9.0
+146291      Guilherme de Abreu Polizel                    4.0    8.0        10.    8.0
+146308      Guilherme Marques Alves                       10.    4.0        10.    6.0
+146336      Gustavo Buosi de Almeida Hernandes            0.0    4.0        10.    7.0
+146360      Gustavo Oliveira Coelho                       1.0    1.0        10.    8.0
+146382      Hebert Yoshihiro Gonda                        6.0    10.        7.0    6.0
+146388      Heitor Nigro Lopes                            5.0    8.0        10.    9.0
+146404      Henrique Beneduzzi Mantovani                  8.0    4.0        10.    9.5
+146421      Henrique Perez Nascimento                     10.    6.0        10.    10.
+146435      Higor Augusto Gomes                           2.0    5.0        10.    5.0
+146463      Igor da Rocha Vingrys                         2.0    9.0        10.    10.
+146466      Igor Massayuki Serikava                       3.0    2.0        10.    7.0
+146476      Inayara Bueno Diamantino Batista              6.0    5.0        8.0    9.0
+146563      Jean Wellington Pereira Claudino              2.0    3.0        10.    7.0
+148003      Tatiane Fernandes Furlan                      6.0    5.0        10.    7.0
+148086      Tiago de Oliveira Carvalho                    0.0    3.0        10.    6.0
+148120      Vicente Chia An Lin                           9.0    5.0        8.0    4.0
+148129      Victor Corrêa Suleiman                        3.0    7.0        10.    6.0
+148153      Victor Valente Lopes                           -      -          -      -
+148188      Vitor André Teixeira                          1.0    2.0        10.    7.0
+148194      Vitor Costa Pinheiro                          0.0    2.0        5.0    6.0
+148222      Wagner Alexandre Martins Júnior               10.    7.0        7.0    6.0
+148596      Guilherme Mori Taiar                          4.0    2.0        10.    6.0
+148598      Guilherme Pessini                             2.0    1.0        10.    7.0
+148601      Gustavo Augusto Brites Figueiredo             1.0    3.0        10.    9.0
+148615      Henrique Araujo Dias de Melo                  7.0    3.0        6.0    7.0
+148656      João Pedro de Lima e Silva Azevedo            3.0    0.0        7.0    7.0
+148997      Thales Arantes de Castelo Branco e Souza      3.0    3.0        8.0    9.0
+149052      Vitor Hugo Bornschlegell                      10.    5.0        10.    7.0
+149062      William Elias Avila                           8.0    9.0        7.0    10.
+150781      Rafael Jun Eguti                              1.0    1.0        2.0    2.0
+                                                                            
+                                                                            
+Turma J                                                                     
+                                                                            
+                                                                            
+                                                              P1                P2
+RA                Nome                                    Q1     Q2         Q1     Q2 
+29251       Marcelo Montemor                               -      -          -      -
+47020       William Valadam Queiroz                       4.0    2.0        6.0    8.0
+80517       Alexandre Doná                                2.0    4.0        10.    8.0
+83249       André Prando do Prado                         3.0    3.0        10.    8.0
+83658       Jefter Reis                                   1.0    0.0        7.0    6.0
+86402       Pedro Henrique Bittencourt P. dos Santos      0.0    2.0         -      -
+86768       Fernando Henrique Cardoso                     0.0    4.0        6.0    6.0
+90741       Cauki Menezes Costa                           0.0    0.0        7.0    7.0
+93392       Anderson Tetsuo Une Bastos                    0.0    0.0        10.    7.0
+93811       Guilherme Antonio Dutra Morais                9.0    8.0        10.    9.0
+104895      Felipe Santiago de Oliveira                   0.0    6.0        10.    2.0
+115816      Dênnys William Barbosa Martins                5.0    5.0        5.0    3.0
+117439      José Henrique Costa Monteiro da Silva         6.0    5.0        7.0    7.0
+117738      Lucas Moura de Arruda Pastana                 3.0    7.0        8.0    7.0
+117934      Marcos Henrique Gimenez Paulucci              0.0    7.0        8.0    5.0
+118095      Mateus Pinheiro Camargo                       7.0    1.0        6.0    6.0
+118277      Osvaldo Xavier Dias Junior                    4.0    2.0        10.    8.0
+118923      Vinicius Vannucchi Pierre                     9.0    1.0        7.0    8.0
+121003      Hugo Alexandre P. G. de Camargo               2.0    1.0        10.    9.0
+122196      Victor Hugo Gadioli                           4.0    9.0        5.0    7.0
+146906      Leticia da Silva Gonçalves                    10.    6.0        10.    7.0
+146990      Lucas Coiado Mota                             1.0    8.0        10.    8.0
+147204      Marcos Vinicius Ribeiro Ferreira              10.    8.0         -      -
+147549      Ogari Pata Pacheco                            5.0    5.0        4.0    0.0
+147567      Otávio Leite Bastos de Nazaré                 9.0    4.0        10.    7.0
+147601      Paulo Henrique Favero Pereira                 0.0    0.0        1.0    4.0
+147607      Paulo Victor da Silva Lage                    1.0    0.0        7.0    9.0
+147634      Pedro Guilherme Sanches Contieri              5.0    10.        10.    7.0
+149211      Gustavo Villela Taufic                        0.0    1.0        6.0    7.0
+149313      Marcelo Ferreira Morais                       2.0    5.0        10.    9.0
+150916      Douglas Sermarini                             6.0    7.0        10.    10.
+150940      Guilherme Leite Paiva                         5.0    6.0        10.    8.0
+150990      Paulo de Abreu Pinheiro                       0.0    2.0        10.    6.0
+
+
+
+

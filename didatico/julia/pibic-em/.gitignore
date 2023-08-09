@@ -1,0 +1,14 @@
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+deps/deps.jl
+*.aux 
+*.log 
+*.bbl 
+*.fls 
+*.out 
+*latexmk 
+*.toc
+solucoes/*.png
+julia-exemplos/*.png
+solucoes/*.xyz

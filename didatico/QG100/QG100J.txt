@@ -1,0 +1,42 @@
+ Nivel: Graduação
+ Disciplina: QG100 - Química                                      
+ Docente: Leandro Martinez                             
+ Oferecimento: 1º Período de2013
+ Situação: 35 vagas - 35 matriculados
+
+
+
+RA			Nome				Curso	Nivel		Modalidade
+29251	Marcelo Montemor                        	11	G		  
+47020	William Valadam Queiroz                 	41	G		  
+80517	Alexandre Doná                          	34	G		AB
+83249	André Prando do Prado                   	11	G		  
+83658	Jefter Reis                             	41	G		  
+86402	Pedro Henrique Bittencourt P. dos Santos	41	G		  
+86768	Fernando Henrique Cardoso               	41	G		  
+90741	Cauki Menezes Costa                     	49	G		  
+93392	Anderson Tetsuo Une Bastos              	11	G		  
+93811	Guilherme Antonio Dutra Morais          	49	G		  
+104895	Felipe Santiago de Oliveira             	41	G		  
+115816	Dênnys William Barbosa Martins          	49	G		  
+117439	José Henrique Costa Monteiro da Silva   	11	G		  
+117738	Lucas Moura de Arruda Pastana           	11	G		  
+117934	Marcos Henrique Gimenez Paulucci        	11	G		  
+118095	Mateus Pinheiro Camargo                 	11	G		  
+118277	Osvaldo Xavier Dias Junior              	41	G		  
+118923	Vinicius Vannucchi Pierre               	41	G		  
+121003	Hugo Alexandre P. G. de Camargo         	41	G		  
+122196	Victor Hugo Gadioli                     	11	G		  
+146906	Leticia da Silva Gonçalves              	49	G		  
+146990	Lucas Coiado Mota                       	49	G		  
+147204	Marcos Vinicius Ribeiro Ferreira        	49	G		  
+147549	Ogari Pata Pacheco                      	49	G		  
+147567	Otávio Leite Bastos de Nazaré           	49	G		  
+147601	Paulo Henrique Favero Pereira           	49	G		  
+147607	Paulo Victor da Silva Lage              	49	G		  
+147634	Pedro Guilherme Sanches Contieri        	49	G		  
+149211	Gustavo Villela Taufic                  	49	G		  
+149313	Marcelo Ferreira Morais                 	49	G		  
+150916	Douglas Sermarini                       	49	G		  
+150940	Guilherme Leite Paiva                   	49	G		  
+150990	Paulo de Abreu Pinheiro                 	49	G		  

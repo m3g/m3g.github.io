@@ -1,0 +1,43 @@
+ Nivel: Graduação
+ Disciplina: QG100 - Química                                      
+ Docente: Leandro Martinez                             
+ Oferecimento: 1º Período de2013
+ Situação: 35 vagas - 35 matriculados - 1 vagas reservadas para calouros
+
+
+
+RA			Nome				Curso	Nivel		Modalidade
+97532	Thiago Valle dos Santos                 	49	G		  
+145173	Amadeu Cavalcante Filho                 	49	G		  
+145510	Bruno Eiji Okano Yoshida                	49	G		  
+145542	Caike Moreira de Souza                  	49	G		  
+145569	Caio Oliveira Dantas                    	49	G		  
+145585	Caique Sá da Silva                      	49	G		  
+145643	Carlos Eduardo Millani                  	49	G		  
+145739	Cleber Franca Carvalho                  	49	G		  
+145763	Daniel dos Santos Pedroso               	49	G		  
+145808	Danilo Cleber Becke                     	49	G		  
+145991	Felipe Augusto de Araujo da Silva       	49	G		  
+146024	Felipe Heiji Takaoka                    	49	G		  
+146111	Frédéric Louis Ferreira Devloo          	49	G		  
+146292	Guilherme de Freitas Lessio             	49	G		  
+146307	Guilherme Malavasi                      	49	G		  
+146335	Gustavo Aurélio Fonseca                 	49	G		  
+146344	Gustavo Eugênio Sella Romano            	49	G		  
+146415	Henrique Hideki Sakata Vasconcellos     	49	G		  
+146646	João Pedro Sandoval de Araújo           	49	G		  
+146672	Jorge Yoshio F. Murakami de Jesus       	49	G		  
+146864	Leandro Martins dos Santos              	49	G		  
+147652	Pedro Ribeiro Menotti                   	49	G		  
+147770	Reinaldo Celso de Melo Júnior           	49	G		  
+147896	Samuel Abreu Gomes                      	49	G		  
+148197	Vítor de Carvalho Gimenes               	49	G		  
+148249	Yago Matheus de Siqueira Lima           	49	G		  
+148381	Bruno da Costa                          	49	G		  
+148561	Gabriela Takahashi Takiuti              	49	G		  
+148613	Helena Jatobá Scattone                  	49	G		  
+148695	Kalil el Kadri Monteiro                 	49	G		  
+149058	Vivien Cielusinsky                      	49	G		  
+150650	Guilherme Campiani Ferreira da Silva    	49	G		  
+150801	Tales Augusto Silveira Reis             	49	G		  
+150999	Rodrigo de Oliveira Neto                	49	G		  

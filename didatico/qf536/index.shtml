@@ -1,0 +1,55 @@
+{% include_relative /m3g/main/didatico_start.shtml %}
+
+<p class=section>QF536 - Química Quântica</p>
+
+<br>
+Professor responsável: Leandro Martínez
+<br><br>
+Sala IQ-04 - Seg 14:00-16:00 / Qua 8:00-10:00
+<br><br>
+<center>
+<b>As aulas começarão no dia 06/08. Ver cronograma abaixo.</b>
+<br><br>
+<a target=_blank_ href=./cronograma.pdf>Orientações Gerais e Cronograma</a><br>
+<br>
+
+<b><a target="_blank_" href=
+https://docs.google.com/spreadsheets/d/1coXWaCmrf-_cc6kTWwoS_ADAkEfG2Z0LNsZyGkAMu1Y/edit?usp=sharing
+>[NOTAS]</a></b><br>
+<br><br>
+</center>
+
+
+<b>Livro:</b> D. A. McQuarrie e J. Simon - Physical Chemistry - A Molecular Approach, 1997.<br>
+<br>
+
+<table width=95%>
+<tr><td class=tdmenu>
+<center>
+Lista de exercícios: <a target=_blank_ href=./lista.pdf> lista.pdf </a>
+</center>
+</td></tr>
+</table>
+
+<br><br>
+Slides da primeira aula: <a target=_blank_ href=./fenda.pdf>[pdf]</a>
+
+<br><br>
+<b>Alguns vídeos interessantes:</b><br>                                                                          
+<li><a target=newpage href="https://www.youtube.com/watch?v=YoQYnhHQ95U"> Double Slit Experiment by Brian Greene</a>
+<li><a target=newpage href="http://www.youtube.com/watch?v=ZJ-0PBRuthc"> Interferência de elétrons individuais</a>
+<li><a target=newpage href="https://www.youtube.com/watch?v=2mIk3wBJDgE"> Richard Feynman on the Double Slit Paradox: Particle or Wave? </a>
+<li><a href="http://www.e-quimica.iq.unesp.br/index.php?option=com_content&view=article&id=85:linhas-espectrais&catid=36:videos&Itemid=55" target=newpage> Linhas espectrais </a><br>
+<li><a target=newpage href="http://www.e-quimica.iq.unesp.br/index.php?option=com_content&view=article&id=73:experimento-de-thonson&catid=36:videos&Itemid=55"> Descoberta do elétron </a>
+
+<li><a target=newpage href=https://www.youtube.com/channel/UCPLBXvobTRvDjPy41y9hG8g>
+Canal com muitos videos interessantes de ciência, mecânica quântica em 
+particular.
+</a>
+<br><br>
+
+{% include_relative /m3g/main/didatico_end.shtml %}
+
+
+
+

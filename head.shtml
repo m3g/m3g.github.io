@@ -1,0 +1,33 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="http://leandro.iqm.unicamp.br/m3g/main/estilo.css">
+<title>M3G - Institute of Chemistry - UNICAMP</title>
+  <SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+  if (! window.focus)return true;
+  var href;
+  if (typeof(mylink) == 'string')
+       href=mylink;
+  else
+       href=mylink.href;
+  window.open(href, windowname, 'width=650,height=600,scrollbars=yes');
+  return false;
+}
+//-->
+  </SCRIPT>
+</head>
+<body>
+
+{% include_relative /m3g/main/title.shtml %}
+
+{% include_relative /m3g/main/menu.shtml %}
+
+<!-- CONTENT STARTS HERE --> 
+
+<table align=center width=90% valign=top>
+<tr><td>
+
+
+

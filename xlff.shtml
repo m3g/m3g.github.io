@@ -1,0 +1,50 @@
+---
+---
+{% include_relative head.shtml %}
+
+<code><b>XLFF</b></code> is a statistical force-field for modeling protein structure using chemical 
+cross-linking distance constraints. 
+
+<br><br>
+The Rosetta implementation of the force field can be obtained from the
+github repository:
+<br><br>
+<center>
+<a target=_blank_
+href=https://github.com/m3g/xlff/tree/master/Rosetta>
+https://github.com/m3g/xlff/tree/master/Rosetta
+</a>
+</center>
+<br>
+
+<table align=center width=80%>
+<tr><td class=tdclean bgcolor=lightblue>
+A. J. R. Ferrari, F. C. Gozzo, L. Martínez<br>
+<b>Statistical force-field for structural modeling using chemical cross-linking/mass-spectrometry
+distance constraints.</b> <br>
+Bioinformatics, 35(17), 3005-3012, 2019.
+<a target=_blank_ href=https://doi.org/10.1093/bioinformatics/btz013>[LINK]</a>
+</td></tr>
+</table>
+
+<br>
+<center>
+The complete dataset of models and input files reported in the paper are available
+here:
+<br>
+<a href=./xlff/ferrari_2018_bioinformatics.tar.gz>[ferrari_2018_bioinformatics.tar.gz]</a>
+<br>
+(Warning: This a 11GB file which, uncompressed, leads to 55GB of data).
+</center>
+</td>
+
+<td class=tdclean width=30%>
+<img src=./xlff/figure.png width=400px><br>
+The statistical maximum linker-lengths and full statistical 
+potentials improve significantly the probablity of obtaining 
+correctly folded structures.
+</td>
+</tr>
+
+
+{% include_relative ./tail.shtml %}
