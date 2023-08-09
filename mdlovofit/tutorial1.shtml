@@ -1,0 +1,84 @@
+<!--#include virtual="./head.shtml" -->
+<!--#include virtual="./usage.shtml" -->
+
+<center><h3>Tutorial</h3></center>
+<table class="tabnoborder">
+  <tr>
+    <td valign=top class="tdclean" width=100%>
+
+<b><a href="#content">1. Description of MDLovoFit capabilites and expected results.</a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Read this to understand what to get from the package. <br>
+<b><a href="./tutorial2.shtml">2. Step by step tutorial on how to use the
+package in your simulation. </a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Follow the tutorial and get the results from your simulation. <br>
+<br><br>
+
+<center><h3><a name="content"></a>1. Description of MDLovoFit capabilites and expected
+results.</h3><br></center>
+
+First, we will show which information is expected from
+the usage of this package. Two plots are characteristic of the analysis
+of the data performed by MDLovoFit. Figure 1 illustrates the
+analysis of the mobility of a protein structure in a typical MD
+simulation:
+      <br><br>
+      <center><img src=./tutorial_figure1.png><br><b>Figure 1</b></center>
+      <br>
+The panel A of Figure 1 shows the standard RMSD of the protein
+C&alpha; atoms along the simulation. It indicates that the protein
+somewhat diverges from the initial structure. 
+
+<br><br>
+
+Figure 1B is the result of running MDLovoFit with the
+<code>-mapfrac</code> option. It shows the RMSD of the
+alignment of a subset of the atoms, as a function of the size of
+this subset, represented as a fraction of the size of the structure. 
+For each fraction the RMSD is the best possible RMSD that can be
+obtained for every possible subset of that size. The plot 
+shows, for example, that it is possible in this simulation to align
+about 80% of the C&alpha; atoms of the structure to less than 1&Aring;  
+
+<br><br>
+
+Finally, in figure 1C, the RMSD computed by MDLovoFit for the alignment
+of 70% of the C&alpha; atoms is shown. Clearly, the fluctuations of 70%
+of the structure are minimal, while there is a small subset of of 30% 
+of the atoms that deviates from the initial structure and explains 
+the divergence observed in figure 1A. 
+
+<br><br>
+
+The result of figure 1C can, of course, be supported by the
+visualization of the resulting alignment. The structural alignment
+is shown in Figure 2. This figure can also be
+obtained from the output of MDLovoFit (and using 
+<a target=_blank_ href=http://www.ks.uiuc.edu/Research/vmd/>VMD</a>)
+      <br><br>
+      <center><img src=./tutorial_figure2.png><br><b>Figure 2</b></center>
+      <br>
+This figure displays, in blue, the 70% of the C&alpha; atoms of
+the protein which were automatically identified by MDLovoFit as the
+least mobile ones (with RMSD lower than 1&Aring;, as shown in figure
+1C). In red, the figure highlights which regions of the structure
+are more mobile, and diverge from the initial conformation of the
+simulation. 
+
+<br><br> 
+
+With the plots of figures 1B and 1C, and with the above structural
+representation, a more comprehensive view of the mobility of the protein
+is obtained. In the <a href=./tutorial2.shtml>next section</a> we 
+will show how to, in practice, obtain each of these plots. 
+
+<br><br>
+
+Additionally, it is possible to plot the RMSF of the atoms, and to use
+these data to color the structure, using VMD. See the last section of the
+tutorial (next section) for details.  
+
+    </td>
+  </tr>
+</table>
+
+<!--#include virtual="./tail.shtml" -->

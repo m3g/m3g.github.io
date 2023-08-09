@@ -1,0 +1,41 @@
+<!--#include virtual="./head.shtml" -->
+
+<table class="tabnoborder">
+  <tr>
+    <td valign=top class="tdclean">
+      <code>MDLovoFit</code> is a package for the analysis of the mobility and structural
+      fluctuation in Molecular Dynamics simulations. It allows the automatic
+      identification of rigid and mobile regions of protein structures.  
+      <br><br>
+      For example, it is possible to automatically identifiy a stable region
+      of a protein in simulation in which the protein displays high structural
+      flexibility, as illustrated in the figure on the right. The regions of
+      low mobility are automatically detected by the method. 
+      <br><br>
+      The software provides, as output, the Root-Mean-Square Deviations
+      of the conserved structures, and of the divergent structures. A trajectory
+      PDB file is output for the visualization of the results. 
+      <br><br>
+      This software is distributed as FREE software, under the terms of the 
+      <a href=http://www.gnu.org/copyleft/gpl.html target="_blank">General Public Licence.</a> 
+      Please cite the following reference if it was useful:
+      <table align=center><tr><td class="tdclean" bgcolor=lightgrey border=10px>
+        &nbsp;&nbsp;&nbsp;L. Mart&iacute;nez, <b>Automatic identification
+        of mobile and rigid substructures in molecular dynamics simulations and
+        fractional structural fluctuation analysis.</b> <i>PLoS One</i> 10(3): e0119264, 2015. 
+        <a target="_blank" href=http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0119264>[LINK]</a>
+      </td></tr></table>
+      If you have any problem, comment or suggestion regarding this package, please
+      contact Leandro Mart&iacute;nez at <a href=mailto:leandro@iqm.unicamp.br>leandro@iqm.unicamp.br</a>.
+      Please report bugs!
+    </td>
+    <td valign=top width=200px class="tdclean">
+      <img src=./desnat2.png><br>
+      <b> Identification of a conserved core in the Thyroid Hormone Receptor
+      ligand binding domain in a simulation of protein denaturation.</b>
+    </td>
+  </tr>
+</table>
+
+
+<!--#include virtual="./tail.shtml" -->
