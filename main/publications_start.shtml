@@ -1,7 +1,7 @@
-{% include_relative ./title.shtml %}
-{% include_relative ./menu.shtml %}
+{% include_relative title.shtml %}
+{% include_relative menu.shtml %}
 
-{% include_relative ./content_start.shtml %}
+{% include_relative content_start.shtml %}
 
 <p class=section>Publications</p>
 

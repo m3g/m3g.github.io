@@ -14,7 +14,7 @@ As a part of our work, we have developed and continue to maintain several import
 
 
 <td align=center valign=top width=30% class="tdclean" border=0>
-{% include_relative ./picks.shtml %}
+{% include_relative picks.shtml %}
 </td>
 </tr>
 
@@ -32,7 +32,7 @@ and CNPq (302332/2016-2 - Produtividade Fluorescência)
 </td>
 </tr>
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}
 
 
 

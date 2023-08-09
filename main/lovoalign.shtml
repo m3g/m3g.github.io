@@ -100,5 +100,5 @@ BMC Bioinformatics, 8:306, 2007.
 
 
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}
 

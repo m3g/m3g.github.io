@@ -47,4 +47,4 @@ correctly folded structures.
 </tr>
 
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}

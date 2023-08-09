@@ -104,4 +104,4 @@ Some utility programs to analyze data. And the script coding the
 
 </table>
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}

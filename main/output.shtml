@@ -270,7 +270,7 @@ react with the same pairs of atoms were used in different experiments.
 <br><br>
 A topological distance is said to be NOT consistent with the
 observations if it is not consistent with a single observation.
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}
 
 
 

@@ -235,4 +235,4 @@ For example, the output above indicates that the first model satisfies
 links (third column). If the three models are taken in consideration, 21
 links can be observed. The list of links follow each model. 
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}

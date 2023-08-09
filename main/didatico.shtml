@@ -296,4 +296,4 @@ Ciencias de Materiales"</b><br>
 </tr></td></table>
 
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}

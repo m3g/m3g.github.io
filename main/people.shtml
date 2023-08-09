@@ -71,7 +71,7 @@ Students and Post-docs </b><br><br></td></tr>
   </table>
   </td>
   <td align=center> 
-  {% include_relative ./group_photos.shtml %}
+  {% include_relative group_photos.shtml %}
   </tr>
   </table>
 
@@ -251,5 +251,5 @@ da família 11.</i>
 <b>Matheus Mantovani</b><br>
 </td></tr>
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}
 

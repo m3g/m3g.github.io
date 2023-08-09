@@ -1,7 +1,7 @@
 ---
 ---
 {% include_relative head.shtml %}
-{% include_relative ./publications_head.shtml %}
+{% include_relative publications_head.shtml %}
 
 <table with=100% align=center class=tdclean>
 <tr>
@@ -849,4 +849,4 @@ Tese de Doutorado.
 </td></tr>
 
 </table>
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}

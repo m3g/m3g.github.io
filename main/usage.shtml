@@ -210,7 +210,7 @@ within linker reach).
 
 
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}
 
 
 

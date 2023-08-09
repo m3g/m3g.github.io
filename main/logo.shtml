@@ -45,7 +45,7 @@ Hand-made:<br>
 </tr>
 </table>
 
-{% include_relative ./tail.shtml %}
+{% include_relative tail.shtml %}
 
 
 
