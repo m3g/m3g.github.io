@@ -1,7 +1,7 @@
 <head>
-<meta http-equiv="refresh" content="30; url=./index.shtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="https://m3g.github.io/main/estilo.css">
-<title>TOPOLINK - Institute of Chemistry - UNICAMP</title>
+<title>M3G - Institute of Chemistry - UNICAMP</title>
   <SCRIPT TYPE="text/javascript">
 <!--
 function popup(mylink, windowname)
@@ -20,10 +20,14 @@ function popup(mylink, windowname)
 </head>
 <body>
 
-{% include_relative title.shtml %}
+{% include title.shtml %}
 
-{% include_relative menu.shtml %}
+{% include menu.shtml %}
 
 <!-- CONTENT STARTS HERE --> 
+
+<table align=center width=90% valign=top>
+<tr><td>
+
 
 

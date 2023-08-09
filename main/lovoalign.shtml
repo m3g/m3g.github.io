@@ -1,7 +1,7 @@
 
 ---
 ---
-{% include_relative head.shtml %}
+{% include head.shtml %}
 
 <h2>Evaluating structural models with LovoAlign and TopoLink</h2>
 <br>
@@ -100,5 +100,5 @@ BMC Bioinformatics, 8:306, 2007.
 
 
 
-{% include_relative tail.shtml %}
+{% include tail.shtml %}
 

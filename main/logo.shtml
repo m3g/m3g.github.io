@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative head.shtml %}
+{% include head.shtml %}
 
 
 <tr><td width=70% valign=top>
@@ -45,7 +45,7 @@ Hand-made:<br>
 </tr>
 </table>
 
-{% include_relative tail.shtml %}
+{% include tail.shtml %}
 
 
 

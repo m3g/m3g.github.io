@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative head.shtml %}
+{% include head.shtml %}
 
 <h3>Server</h3>
 Here it is possible to run TopoLink online in our server, without downloading
@@ -44,11 +44,11 @@ and installing it. You only need to provide the input files.
     </td>
     <td valign=top class="tdclean"> 
       <select name="residue1">
-        {% include_relative residues.shtml %}
+        {% include residues.shtml %}
       </select>
       -
       <select name="residue2">
-        {% include_relative residues.shtml %}
+        {% include residues.shtml %}
       </select>
       and
       Linker length (C&beta;-C&beta;):
@@ -88,4 +88,4 @@ and installing it. You only need to provide the input files.
 </table>
 </form>
 
-{% include_relative tail.shtml %}
+{% include tail.shtml %}

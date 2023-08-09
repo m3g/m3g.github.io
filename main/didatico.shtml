@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative head.shtml %}
+{% include head.shtml %}
 
 <p class=section>Material didático</p>
 
@@ -296,4 +296,4 @@ Ciencias de Materiales"</b><br>
 </tr></td></table>
 
 
-{% include_relative tail.shtml %}
+{% include tail.shtml %}

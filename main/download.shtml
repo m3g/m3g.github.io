@@ -1,6 +1,6 @@
 ---
 ---
-{% include_relative head.shtml %}
+{% include head.shtml %}
 
 TopoLink is FREE software. It can be used, copied and distributed
 according to the
@@ -168,4 +168,4 @@ https://gibhub.com/m3g/topolink
 </table>
 <br><br>
 
-{% include_relative tail.shtml %}
+{% include tail.shtml %}
