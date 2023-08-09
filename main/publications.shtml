@@ -1,7 +1,7 @@
 ---
 ---
-{% include head.shtml %}
-{% include publications_head.shtml %}
+{% include main/head.shtml %}
+{% include main/publications_head.shtml %}
 
 <table with=100% align=center class=tdclean>
 <tr>
@@ -849,4 +849,4 @@ Tese de Doutorado.
 </td></tr>
 
 </table>
-{% include tail.shtml %}
+{% include main/tail.shtml %}

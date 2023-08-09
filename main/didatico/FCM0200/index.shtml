@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 
 <p class=section>FCM0200 - Física Básica I</p>
@@ -61,4 +61,4 @@ físico, oscilações amortecidas, oscilações forçadas e ressonância.
 <li> H. Moysés Nussensveig - Curso de Física Básica, Vol I: Mecânica<br>
 <li> R. P. Feynman, R. Leighton, M. Sands, Feynman Lectures on Physics.
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}

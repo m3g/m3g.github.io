@@ -1,4 +1,6 @@
-<!--#include virtual="./head.shtml" -->
+---
+---
+{% include mdlovofit/head.shtml %}
 
 <table class="tabnoborder" align=center width=100%>
 <tr>
@@ -37,4 +39,4 @@ to use the software.
 </tr>
 </table>
 
-<!--#include virtual="tail.shtml" -->
+<!--#include virtual="tail.shtml %}

@@ -1,6 +1,6 @@
 ---
 ---
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 <h2>How to use TOPOLINK</h2>
 <br>
@@ -210,7 +210,7 @@ within linker reach).
 
 
 
-{% include tail.shtml %}
+{% include main/tail.shtml %}
 
 
 

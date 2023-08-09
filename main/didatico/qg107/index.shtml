@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 
 <p class=section>QG107</p>
@@ -13,4 +13,4 @@ Teste de chama:
 <a href=./chama.pdf target=_blank_> [PDF] </a>
 
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}

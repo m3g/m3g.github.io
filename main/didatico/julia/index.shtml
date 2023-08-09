@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 <p class=section>QP832 - Fundamentos de Simulações em Química</p>
 
 <br>
@@ -62,4 +62,4 @@ para códigos em Fortran.
 
 
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}

@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 <p class=section>QF530 - Introdução à Química Quântica e à Espectroscopia Molecular</p>
 
@@ -39,7 +39,7 @@ Slides da primeira aula: <a target=_blank_ href=./fenda.pdf>[pdf]</a>
 
 <br><br>
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}
 
 
 

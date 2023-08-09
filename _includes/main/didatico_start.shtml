@@ -1,5 +1,5 @@
 
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 <p class=section>Material didático</p>
 

@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 <p class=section>FFI0180 - Laboratório de Física Geral I</p>
 
@@ -46,5 +46,5 @@
 <li> H. Moysés Nussensveig - Curso de Física Básica, Vol I: Mecânica<br>
 <li> R. P. Feynman, R. Leighton, M. Sands, Feynman Lectures on Physics.
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}
 

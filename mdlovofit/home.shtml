@@ -1,4 +1,6 @@
-<!--#include virtual="./head.shtml" -->
+---
+---
+{% include mdlovofit/head.shtml %}
 
 <table class="tabnoborder">
   <tr>
@@ -38,4 +40,4 @@
 </table>
 
 
-<!--#include virtual="tail.shtml" -->
+<!--#include virtual="tail.shtml %}

@@ -1,6 +1,6 @@
 ---
 ---
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 <code><b>XLFF</b></code> is a statistical force-field for modeling protein structure using chemical 
 cross-linking distance constraints. 
@@ -47,4 +47,4 @@ correctly folded structures.
 </tr>
 
 
-{% include tail.shtml %}
+{% include main/tail.shtml %}

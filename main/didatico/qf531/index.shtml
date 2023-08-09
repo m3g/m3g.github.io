@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 <p class=section>QF531 - Físico-Química II</p>
 
@@ -79,4 +79,4 @@ Referências bibliográficas<br><br>
 4. Physical Chemistry, P. W. Atkins.<br>
 5. Termodinâmica Química, Aécio Pereira chagas, Ed. Unicamp, 1999.<br>
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}

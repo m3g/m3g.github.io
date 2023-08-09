@@ -1,6 +1,6 @@
 ---
 ---
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 <tr><td colspan=2>
 <p class=section>People</p>
@@ -71,7 +71,7 @@ Students and Post-docs </b><br><br></td></tr>
   </table>
   </td>
   <td align=center> 
-  {% include group_photos.shtml %}
+  {% include main/group_photos.shtml %}
   </tr>
   </table>
 
@@ -251,5 +251,5 @@ da família 11.</i>
 <b>Matheus Mantovani</b><br>
 </td></tr>
 
-{% include tail.shtml %}
+{% include main/tail.shtml %}
 

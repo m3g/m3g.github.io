@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 <p class=section>Fundamentos Computacionais de Simulações em Química</p>
 
@@ -108,5 +108,5 @@ Solução de atividades selecionadas:
 
 </table>
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}
 

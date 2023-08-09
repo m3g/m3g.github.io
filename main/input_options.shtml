@@ -1,7 +1,7 @@
 ---
 ---
-{% include head.shtml %}
-{% include usage.shtml %}
+{% include main/head.shtml %}
+{% include main/usage.shtml %}
 
 <center><h3>Input options</h3></center>
 <table class="tabnoborder">
@@ -91,4 +91,4 @@
   </tr>
 </table>
 
-{% include tail.shtml %}
+{% include main/tail.shtml %}

@@ -1,6 +1,6 @@
 ---
 ---
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 <p class=section>Material didático</p>
 
@@ -296,4 +296,4 @@ Ciencias de Materiales"</b><br>
 </tr></td></table>
 
 
-{% include tail.shtml %}
+{% include main/tail.shtml %}

@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 <p class=section>QP135 - Termodinâmica Estatística</p>
 
@@ -81,4 +81,4 @@ adiantar. A lista de exercícios em PDF contém os exercícios mais relevantes.
 
 
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}

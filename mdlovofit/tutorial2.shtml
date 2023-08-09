@@ -1,5 +1,7 @@
-<!--#include virtual="./head.shtml" -->
-<!--#include virtual="./usage.shtml" -->
+---
+---
+{% include mdlovofit/head.shtml %}
+{% include mdlovofit/usage.shtml %}
 
 <center><h3>Tutorial</h3></center>
 <table class="tabnoborder">
@@ -183,4 +185,4 @@ used to build the figure above.
   </tr>
 </table>
 
-<!--#include virtual="tail.shtml" -->
+<!--#include virtual="tail.shtml %}

@@ -1,6 +1,6 @@
 ---
 ---
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 
 <tr><td width=20%>
@@ -104,4 +104,4 @@ Some utility programs to analyze data. And the script coding the
 
 </table>
 
-{% include tail.shtml %}
+{% include main/tail.shtml %}

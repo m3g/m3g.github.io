@@ -1,7 +1,7 @@
-{% include title.shtml %}
-{% include menu.shtml %}
+{% include main/title.shtml %}
+{% include main/menu.shtml %}
 
-{% include content_start.shtml %}
+{% include main/content_start.shtml %}
 
 <p class=section>Publications</p>
 

@@ -1,6 +1,6 @@
 ---
 ---
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 <h2>How to use TOPOLINK</h2>
 <br>
@@ -270,7 +270,7 @@ react with the same pairs of atoms were used in different experiments.
 <br><br>
 A topological distance is said to be NOT consistent with the
 observations if it is not consistent with a single observation.
-{% include tail.shtml %}
+{% include main/tail.shtml %}
 
 
 

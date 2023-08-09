@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 <p class=section>QG100 - Turma C - Segundo Semestre 2013</p>
 
@@ -90,5 +90,5 @@ L. Pauling, General Chemistry. Dover, 1988.
 </code>
 
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}
 

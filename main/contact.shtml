@@ -1,6 +1,6 @@
 ---
 ---
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 <tr><td>
 
@@ -29,5 +29,5 @@ Phone: +55 (19) 3521-3107
 </td></tr>
 </table>
 
-{% include tail.shtml %}
+{% include main/tail.shtml %}
 

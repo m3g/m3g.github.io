@@ -1,7 +1,7 @@
 ---
 ---
-{% include head.shtml %}
-{% include publications_head.shtml %}
+{% include main/head.shtml %}
+{% include main/publications_head.shtml %}
 
 <table with=100% align=center class=tdclean>
 <tr>
@@ -930,4 +930,4 @@ J. Non-Cryst. Solids, 276, 56-60, 2000.
 <!-- end -->
 
 </td></tr></table>
-{% include tail.shtml %}
+{% include main/tail.shtml %}

@@ -1,6 +1,6 @@
 ---
 ---
-{% include didatico_start.shtml %}
+{% include main/didatico_start.shtml %}
 
 <p class=section>QF536 - Química Quântica</p>
 
@@ -50,7 +50,7 @@ particular.
 </a>
 <br><br>
 
-{% include didatico_end.shtml %}
+{% include main/didatico_end.shtml %}
 
 
 

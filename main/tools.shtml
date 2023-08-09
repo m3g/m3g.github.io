@@ -1,6 +1,6 @@
 ---
 ---
-{% include head.shtml %}
+{% include main/head.shtml %}
 
 <h2>Tools to analyse TopoLink results</h2>
 TopoLink comes with some helper programs that are used to analyze the
@@ -235,4 +235,4 @@ For example, the output above indicates that the first model satisfies
 links (third column). If the three models are taken in consideration, 21
 links can be observed. The list of links follow each model. 
 
-{% include tail.shtml %}
+{% include main/tail.shtml %}

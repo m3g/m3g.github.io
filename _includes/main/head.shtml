@@ -20,9 +20,9 @@ function popup(mylink, windowname)
 </head>
 <body>
 
-{% include title.shtml %}
+{% include main/title.shtml %}
 
-{% include menu.shtml %}
+{% include main/menu.shtml %}
 
 <!-- CONTENT STARTS HERE --> 
 
