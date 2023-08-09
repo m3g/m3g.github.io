@@ -9,7 +9,7 @@ One possible evaluation of a set of structural models consists in the
 comparison of each model with a reference structures. The reference
 structure might be some experimental (crystallographic) model, or one
 of the models, admitedly the best one (see, for example the 
-<a href=http://leandro.iqm.unicamp.br/gscore>G-score</a> 
+<a href=http://m3g.github.io/gscore>G-score</a> 
 strategy to classify models).
 <br><br>
 Here we show how to use the <a
@@ -74,8 +74,8 @@ the similarity measure, as described in
 To install the <code>LovoaAlign</code> structural alignment package,
 first download the latest version from:
 <pre>
-<a href=http://leandro.iqm.unicamp.br/lovoalign/versionhistory/downloads>
-http://leandro.iqm.unicamp.br/lovoalign/versionhistory/downloads
+<a href=http://m3g.github.io/lovoalign/versionhistory/downloads>
+http://m3g.github.io/lovoalign/versionhistory/downloads
 </a>
 </pre>
 and install it using:

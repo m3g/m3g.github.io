@@ -3,7 +3,7 @@
 !
 ! L. Martinez. IQ-UNICAMP, Ago 2015
 !
-! http://leandro.iqm.unicamp.br/
+! http://m3g.github.io/
 !
 
 program oscilantes

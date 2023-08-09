@@ -1,1 +1,1 @@
-rsync -av ./* leandro@leandro.iqm.unicamp.br:`pwd`/
+rsync -av ./* leandro@m3g.github.io:`pwd`/
