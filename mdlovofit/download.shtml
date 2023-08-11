@@ -5,7 +5,7 @@
 <table class="tabnoborder" align=center width=100%>
 <tr><td valign=top class="tdclean">
 
-<b>MDLovoFit</b> can be used through its <pre>Julia</pre> interface, without requiring compilation.
+<b>MDLovoFit</b> can be used through its <a href=http://julialang.org>Julia</a> interface, without requiring compilation.
 For using such interface, go to <a href="https://m3g.github.io/MDLovoFit.jl">https://m3g.github.io/MDLovoFit.jl</a>
 <br><br>
 Alternativelly, it can be used following the tutorials in this page, after manual compilation accordingto the 
