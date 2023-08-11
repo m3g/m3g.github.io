@@ -75,7 +75,7 @@ and flexible substructures in MD simulations.
 <b>MDAnalysis</b><br>
 A suite of fortran codes to perform analyses of MD simulations performed
 mostly with NAMD or CHARMM.
-<a target="_blank" href=https://m3g.github.io/mdanalysis>[Home-Page]</a>
+<a target="_blank" href=https://github.com/m3g/mdanalysis>[Home-Page]</a>
 </td></tr>
 
 <tr><td align=left valign=top><li></td>
