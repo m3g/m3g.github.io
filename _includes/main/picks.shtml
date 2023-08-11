@@ -1,5 +1,4 @@
 <script type="text/javascript">
-  {% comment %}
     var currentdate = 0;
     var number = 0;
     function Array (n) {
@@ -16,22 +15,22 @@
     var ii = 0
     text[ii] = "Combining crosslinking and coevolutionary constraints to improve protein fold prediction."
     link[ii] = "https://doi.org/10.1093/bioinformatics/bty074"
-    img[ii] = "./picks/ricardo.png"
+    img[ii] = "/main/picks/ricardo.png"
 
     var ii = 1
     text[ii] = "CellListMap.jl: Computing custom pairwise interactions"
     link[ii] = "https://m3g.github.io/CellListMap.jl"
-    img[ii] = "./picks/celllistmap.svg"
+    img[ii] = "/main/picks/celllistmap.svg"
 
     var ii = 2
     text[ii] = "Statistical force-field for XL distance constraints."
     link[ii] = "https://doi.org/10.1093/bioinformatics/btz013"
-    img[ii] = "./picks/xlff.png"
+    img[ii] = "/main/picks/xlff.png"
 
     var ii = 3
     text[ii] = "On the complementarity of coevolution and XL distance constraints."
     link[ii] = "https://doi.org/10.1002/prot.25843"
-    img[ii] = "./picks/complementary.png"
+    img[ii] = "/main/picks/complementary.png"
 
     var ii = 4
     text[ii] = "Solvation structure of complex solutes by means of minimum distance distribution functions."
@@ -40,13 +39,13 @@
 
     var ii = 5
     text[ii] = "Automatic identification of mobile substructures in protein MD simulations."
-    link[ii] = "http://m3g.iqm.unicamp.br/mdlovofit"
+    link[ii] = "http://m3g.github.io/mdlovofit"
     img[ii] = "https://m3g.github.io/packmol/mdlovofit.png"
 
     var ii = 6
     text[ii] = "TopoLink: Find the shortest path at a protein surface for XL evaluation."
-    link[ii] = "http://m3g.iqm.unicamp.br/topolink"
-    img[ii] = "./picks/topolink_drawing.png"
+    link[ii] = "http://m3g.github.io/topolink"
+    img[ii] = "/main/picks/topolink_drawing.png"
 
     var rand = 1000/text.length
     function randomhl() {
@@ -67,5 +66,4 @@
     document.write("    </td></tr>")
     document.write("</table>")
     document.write("</td></tr></table>")
-   //{% endcomment %}
  </script>
