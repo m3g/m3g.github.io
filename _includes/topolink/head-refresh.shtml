@@ -3,7 +3,6 @@
 <link rel="stylesheet" type="text/css" href="http://leandro.iqm.unicamp.br/topolink/estilo.css">
 <title>TOPOLINK - Institute of Chemistry - UNICAMP</title>
   <SCRIPT TYPE="text/javascript">
-{% comment %}
 function popup(mylink, windowname)
 {
   if (! window.focus)return true;
@@ -15,7 +14,6 @@ function popup(mylink, windowname)
   window.open(href, windowname, 'width=650,height=600,scrollbars=yes');
   return false;
 }
-//{% endcomment %}
   </SCRIPT>
 </head>
 <body>
