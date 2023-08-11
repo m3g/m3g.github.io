@@ -83,4 +83,4 @@ tutorial (next section) for details.
   </tr>
 </table>
 
-{% include tail.shtml %}
+{% include mdlovofit/tail.shtml %}

@@ -185,4 +185,4 @@ used to build the figure above.
   </tr>
 </table>
 
-{% include tail.shtml %}
+{% include mdlovofit/tail.shtml %}

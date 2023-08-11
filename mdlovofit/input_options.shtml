@@ -118,4 +118,4 @@
   </tr>
 </table>
 
-{% comment %}#include virtual="tail.shtml %}
+{% include mdlovofit/tail.shtml %}
