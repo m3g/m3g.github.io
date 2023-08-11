@@ -3,7 +3,7 @@
 {% include mdlovofit/head.shtml %}
 
 <table class="tabnoborder" align=center width=100%>
-<tr><td valign=top class="tdclean">
+<tr><td valign=top class="tdclean" bgcolor="lightgrey">
 
 <b>MDLovoFit</b> can be used through its <a href=http://julialang.org>Julia</a> interface, without requiring compilation.
 For using such interface, go to <a href="https://m3g.github.io/MDLovoFit.jl">https://m3g.github.io/MDLovoFit.jl</a>
