@@ -2,21 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="http://m3g.iqm.unicamp.br/main/estilo.css">
 <title>TOPOLINK - Institute of Chemistry - UNICAMP</title>
-  <SCRIPT TYPE="text/javascript">
-{% comment %}
-function popup(mylink, windowname)
-{
-  if (! window.focus)return true;
-  var href;
-  if (typeof(mylink) == 'string')
-       href=mylink;
-  else
-       href=mylink.href;
-  window.open(href, windowname, 'width=650,height=600,scrollbars=yes');
-  return false;
-}
-//{% endcomment %}
-  </SCRIPT>
+{% include js/popup.js %}
 </head>
 <body>
 <table width=100% align=center>
