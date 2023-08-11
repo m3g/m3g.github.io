@@ -1,0 +1,46 @@
+---
+---
+{% include atd_scripts/head.shtml %}
+
+<table class="tabnoborder">
+  <tr>
+    <td valign=top class="tdclean">
+      <code>ATD-Scripts</code> is a a set of tools for automating simulations using
+      the Anisotropic Thermal Diffusion method, in NAMD. 
+      <br><br>
+       The methods are described in:
+       <br><br>       
+       L. Martínez, A. C. M. Figueira, I. Polikarpov, M. S.Skaf,  <b>Mapping the Intramolecular 
+       Vibrational Energy Flow in Proteins Reveals Functionally Important Residues. </b>
+       J. Phys. Chem. Lett. 2, 16, 2073-2078, 2011.
+       <br><br>       
+       Link: <a target="blank" href=/main/publications/2011_j_phys_chem_lett.pdf> 
+       [Paper] </a>
+       <a target="blank" href=/main/publications/2011_j_phys_chem_lett_supp_info.pdf>[Supplementary Information]</a> 
+       <br><br> 
+       The scripts are provided free of any charge.
+       Please cite this article if these scripts were useful. 
+      <br><br>
+      If you have any problem, comment or suggestion regarding this package, please
+      contact Leandro Mart&iacute;nez at <a href=mailto:leandro@iqm.unicamp.br>leandro@iqm.unicamp.br</a>.
+
+    <br><br>
+    <h3> Computing thermal couplings from PDB files directly via network models:</h3>
+    The scripts required to compute the thermal couplings using network model
+    representations of the protein structure are available at:
+    <pre3>
+    <a target=_blank_ href=https://github.com/luciano-censoni/res-prot-coupling>
+    https://github.com/luciano-censoni/res-prot-coupling
+    </a>
+    </pre3>
+    These methods are described in:<br>
+    L. Censoni, H. S. Muniz, L. Mart&iacute;nez, <b>A network model predicts 
+      the intensity of residue-protein thermal coupling</b>, Bioinformatics, 2017.
+    <a target=_blank_ href=https://doi.org/10.1093/bioinformatics/btx124>[LINK]</a>
+    <br><br>
+    </td>
+  </tr>
+</table>
+
+
+{% include atd_scripts/tail.shtml %}
