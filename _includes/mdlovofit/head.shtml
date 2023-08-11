@@ -15,7 +15,7 @@
     <td class="tdclean" width=100%>
      <table width=100% align=center>
        <tr bgcolor=#66CC99>
-         <td align=center width=33%><b><a class="menulink" href=/mdlovofit/home.shtml>Home</a></b> </td>
+         <td align=center width=33%><b><a class="menulink" href=/mdlovofit>Home</a></b> </td>
          <td align=center width=33%><b><a class="menulink" href=/mdlovofit/tutorial1.shtml>Usage</a></b></td>
          <td align=center width=33%><b><a class="menulink" href=/mdlovofit/download.shtml>Download</a></b></td>
        </tr>

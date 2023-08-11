@@ -3,9 +3,17 @@
 {% include mdlovofit/head.shtml %}
 
 <table class="tabnoborder" align=center width=100%>
+<tr><td valign=top class="tdclean">
+
+<b>MDLovoFit</b> can be used through its <pre>Julia</pre> interface, without requiring compilation.
+For using such interface, go to <a href="https://m3g.github.io/MDLovoFit.jl">https://m3g.github.io/MDLovoFit.jl</a>
+<br><br>
+Alternativelly, it can be used following the tutorials in this page, after manual compilation accordingto the 
+instructions below.
+</td>
+</tr>
 <tr>
 <td valign=top class="tdclean">
-
 Download the latest version of the package from <a href=https://github.com/m3g/MDLovoFit/releases>the github repository</a>. 
 To compile
 it, first, you need a <code>Fortran</code> compiler. The
