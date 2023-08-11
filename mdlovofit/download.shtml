@@ -26,7 +26,7 @@ make<br>
 This procedure will create the executable <code>mdlovofit</code> in the
 directory <code>MDLovoFit-20.0.0/bin</code>. The most practical way to use it
 is to add this directory to your path. <br><br>
-Go to the <a href=./tutorial1.shtml>Usage</a> page for instructions on how
+Go to the <a href=/mdlovofit/tutorial1.shtml>Usage</a> page for instructions on how
 to use the software.
 
 <br><br>
