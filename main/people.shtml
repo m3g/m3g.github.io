@@ -75,7 +75,7 @@ Students and Post-docs </b><br><br></td></tr>
   </tr>
   </table>
 
-<!-- Former members -->
+{% comment %}Former members {% endcomment %}
 
 <tr><td colspan=2 align=left valign=top><b><br>
 Former members </b><br><br></td></tr>

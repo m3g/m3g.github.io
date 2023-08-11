@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="http://m3g.iqm.unicamp.br/main/estilo.css">
 <title>M3G - Institute of Chemistry - UNICAMP</title>
   <SCRIPT TYPE="text/javascript">
-<!--
+{% comment %}
 function popup(mylink, windowname)
 {
   if (! window.focus)return true;
@@ -15,12 +15,12 @@ function popup(mylink, windowname)
   window.open(href, windowname, 'width=650,height=600,scrollbars=yes');
   return false;
 }
-//-->
+//{% endcomment %}
   </SCRIPT>
 </head>
 <body bgcolor=#e9c46a>
 
-<!-- CONTENT STARTS HERE --> 
+{% comment %}CONTENT STARTS HERE {% endcomment %} 
 
 <table align=center width=95% valign=top bgcolor=white>
 <tr><td class=tdmenu><br>

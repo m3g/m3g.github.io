@@ -92,7 +92,7 @@ https://gibhub.com/m3g/topolink
 <table width=90% align=center>
 <tr bgcolor=orange><td colspan=2 align=center><b>All version</b></td></tr>
 <tr bgcolor=lightblue><td>File</td><td>Description</td></tr>
-<!-- NEW_VERSION_HERE -->
+{% comment %}NEW_VERSION_HERE {% endcomment %}
 <tr><td width=190px valign=top><a href=https://github.com/m3g/topolink/archive/19.156.tar.gz> topolink-19.156.tar.gz </a></td><td> Released on Jun 05, 2019 - <a target=newpage href=https://github.com/m3g/topolink/releases/tag/19.156> [change log at github] </a></td></tr>
 <tr><td width=190px valign=top><a href=https://github.com/m3g/topolink/archive/19.066.tar.gz> topolink-19.066.tar.gz </a></td><td> Released on Mar 07, 2019 - <a target=newpage href=https://github.com/m3g/topolink/releases/tag/19.066> [change log at github] </a></td></tr>
 <tr><td width=190px valign=top><a href=https://github.com/m3g/topolink/archive/19.032.tar.gz> topolink-19.032.tar.gz </a></td><td> Released on Feb 01, 2019 - <a target=newpage href=https://github.com/m3g/topolink/releases/tag/19.032> [change log at github] </a></td></tr>

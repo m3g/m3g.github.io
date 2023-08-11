@@ -71,7 +71,7 @@ and installing it. You only need to provide the input files.
     Inter-chain crosslinks only (protein complexes) </td>
   </tr>
 
-  <!--
+  {% comment %}
   <tr><td class=tdclean colspan=3><hr></td></tr>
   <tr>
     <td valign=top class="tdclean"> E-mail:* </td>
@@ -80,7 +80,7 @@ and installing it. You only need to provide the input files.
   <tr>
     <td valign=top class="tdclean" colspan=2> *To whom the results will be sent when done.</td>
   </tr>
-  -->
+  {% endcomment %}
 
   <tr><td class=tdclean colspan=3><hr></td></tr>
   <tr><td colspan=3 align=right class="tdclean"><input type="submit" value="Run TopoLink"></td></tr>

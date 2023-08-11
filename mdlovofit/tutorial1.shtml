@@ -83,4 +83,4 @@ tutorial (next section) for details.
   </tr>
 </table>
 
-<!--#include virtual="tail.shtml %}
+{% comment %}#include virtual="tail.shtml %}

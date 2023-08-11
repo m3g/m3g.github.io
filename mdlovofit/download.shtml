@@ -39,4 +39,4 @@ to use the software.
 </tr>
 </table>
 
-<!--#include virtual="tail.shtml %}
+{% comment %}#include virtual="tail.shtml %}

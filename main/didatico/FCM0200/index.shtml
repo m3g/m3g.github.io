@@ -6,9 +6,9 @@
 <p class=section>FCM0200 - Física Básica I</p>
 
 
-<!-- <b>Cronograma e listas:</b> <a href=./cronograma.pdf> [PDF] </a> -->
+{% comment %}<b>Cronograma e listas:</b> <a href=./cronograma.pdf> [PDF] </a> {% endcomment %}
 
-<!-- <br><a href=./notas.shtml> Notas </a> - Turma 2011101 -->
+{% comment %}<br><a href=./notas.shtml> Notas </a> - Turma 2011101 {% endcomment %}
 
 <br><br>
 <b> Ementa: </b>

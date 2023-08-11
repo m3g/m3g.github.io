@@ -4,7 +4,7 @@
 
 <p class=section>FFI0180 - Laboratório de Física Geral I</p>
 
-<!-- <a href=./notas.shtml> Notas </a> - Turma 2011111 (Quartas-feiras, 13:30 - Campus I) -->
+{% comment %}<a href=./notas.shtml> Notas </a> - Turma 2011111 (Quartas-feiras, 13:30 - Campus I) {% endcomment %}
 
 <br><br>
 <b> Programa: </b> <br>

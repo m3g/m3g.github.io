@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  <!--
+  {% comment %}
     var currentdate = 0;
     var number = 0;
     function Array (n) {
@@ -67,5 +67,5 @@
     document.write("    </td></tr>")
     document.write("</table>")
     document.write("</td></tr></table>")
-   //-->
+   //{% endcomment %}
  </script>

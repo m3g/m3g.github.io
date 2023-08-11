@@ -1,4 +1,4 @@
-<!-- Lateral Menu -->
+{% comment %}Lateral Menu {% endcomment %}
 
 <table width=100% align=center>
   <tr>
@@ -33,7 +33,7 @@
       </table>
     </td>
 
-<!-- Top content menu -->
+{% comment %}Top content menu {% endcomment %}
 
     <td class="tdclean" width=100% valign="top">
      <table width=100% align=center>

@@ -195,7 +195,7 @@ Conformations.
 </b>
 In: Computational Methods in Protein Evolution, Methods in Molecular Biology. vol. 1851. Springer 2019.
 <a target="_blank" href=https://doi.org/10.1007/978-1-4939-8736-8_5>[LINK]</a>
-<!--<a target="_blank" href=./publications/2017_bioinformatics.pdf>[PDF]</a>-->
+{% comment %}<a target="_blank" href=./publications/2017_bioinformatics.pdf>[PDF]</a>{% endcomment %}
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>56.</b></td>
@@ -206,7 +206,7 @@ Prediction of kinetics of protein folding with non-redundant contact information
 </b>
 Bioinformatics, 34(23), 4034-4038, 2018.
 <a target="_blank" href=https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty478/5040312?guestAccessKey=84c20efe-3a38-422b-a10f-eca2ca1de781>[LINK]</a>
-<!--<a target="_blank" href=./publications/2017_bioinformatics.pdf>[PDF]</a>-->
+{% comment %}<a target="_blank" href=./publications/2017_bioinformatics.pdf>[PDF]</a>{% endcomment %}
 <a target="_blank"
 href=http://github.com/luciano-censoni/sarw-lnkf>[Associated software]</a>
 </td></tr>
@@ -221,7 +221,7 @@ of chemical cross-linking and coevolutionary signals.
 </b>
 Bioinformatics, 34(13), 2201-2208, 2018
 <a target="_blank" href=https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty074/4852827?guestAccessKey=3db403f5-5113-4fb1-9989-eebe04457f57>[LINK]</a>
-<!--<a target="_blank" href=./publications/2017_bioinformatics.pdf>[PDF]</a>-->
+{% comment %}<a target="_blank" href=./publications/2017_bioinformatics.pdf>[PDF]</a>{% endcomment %}
 <a target="_blank" href=https://github.com/m3g/DCAXL>[Associated software]</a>
 </td></tr>
 
@@ -235,7 +235,7 @@ Protein Simulations.
 J. Comp. Chem.  39(19), 1249-1258, 2018 
 <a target="_blank" href=http://rdcu.be/HT2g>[Full Text]</a>
 <a target="_blank" href=http://onlinelibrary.wiley.com/doi/10.1002/jcc.25188/full>[LINK]</a>
-<!--<a target="_blank" href=./publications/2017_pccp.pdf>[PDF]</a>-->
+{% comment %}<a target="_blank" href=./publications/2017_pccp.pdf>[PDF]</a>{% endcomment %}
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>53.</b></td>
@@ -257,7 +257,7 @@ Molecular mechanism of activation of <i>Burkholderia cepacia</i> Lipase at aqueo
 </b>
 Phys. Chem. Chem. Phys. 19, 31499-31507, 2017
 <a target="_blank" href=http://pubs.rsc.org/en/content/articlelanding/2014/CP/C7CP04466F#!divAbstract>[LINK]</a>
-<!--<a target="_blank" href=./publications/2017_pccp.pdf>[PDF]</a>-->
+{% comment %}<a target="_blank" href=./publications/2017_pccp.pdf>[PDF]</a>{% endcomment %}
 </td></tr>
 
 <tr><td width=55px valign=top align=right><b>51.</b></td>

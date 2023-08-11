@@ -53,12 +53,12 @@
   Texto de apoio para QF531.
   <a target=_blank_ href=./didatico/qf531/debye.pdf>[PDF]</a>
 
-<!--
+{% comment %}
   <br>
   <li><b> "Atividades e concentrações"</b>, IQ-Unicamp, 2017.
   Texto de apoio para QF431 ou QF531.
   <a target=_blank_ href=./didatico/qf531/atividade.pdf>[PDF]</a>
--->
+{% endcomment %}
 
   <br>
   <li><b> "The meaning of Kirkwood-Buff integrals"</b>, IQ-Unicamp, 2017. 

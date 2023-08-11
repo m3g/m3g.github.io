@@ -1,10 +1,10 @@
 </td></tr>
 </table>
 
-<!-- CONTENT ENDS HERE --> 
+{% comment %}CONTENT ENDS HERE {% endcomment %} 
 
 
-<!-- CONTENT ENDS HERE --> 
+{% comment %}CONTENT ENDS HERE {% endcomment %} 
 
       </td></tr>
       </table>

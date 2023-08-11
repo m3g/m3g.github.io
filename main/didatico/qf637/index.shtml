@@ -58,7 +58,7 @@ Espectroscopia Raman: <a target="_blank" href=./haken_wolf_Raman.pdf>[PDF]</a>
 <b>Parte 2: Termodinâmica Estatística - Bibliografia e Listas de Exercícios:</b><br>
 </td></tr>
 <tr><td>
-<!-- <b> Lista de exercícios:</b> <a target=blank href=./lista-termoestat.pdf>[PDF]</a><br> -->
+{% comment %}<b> Lista de exercícios:</b> <a target=blank href=./lista-termoestat.pdf>[PDF]</a><br> {% endcomment %}
 <b> Lista de exercícios:</b> <a target=blank href=./lista-termoestat-2019.pdf>[PDF]</a><br>
 <br>
 <b>Livros:</b> <br>

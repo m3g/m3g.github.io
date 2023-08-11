@@ -18,7 +18,7 @@ Obs: Estas listas podem mudar ao longo do semestre. Mantenha-se informado.
 </table>
 
 <br><br>
-<!-- <a href=./notas.txt>Notas</a> -->
+{% comment %}<a href=./notas.txt>Notas</a> {% endcomment %}
 
 <br><br>
 <b> Ementa: </b>

@@ -14,7 +14,7 @@ Horário: Quartas das 14h às 16h e Sextas das 10h às 12h, das Sala IQ08.
 <b> As aulas terão início no dia 8 de Agosto! </b>
 </center>
 
-<!--
+{% comment %}
 <center>
 <a href=./cronograma.pdf>Orientações Gerais</a>
 
@@ -35,12 +35,12 @@ href=https://docs.google.com/spreadsheets/d/1jxJlw6tqeCsUV3nEVvc8aG5DZCN3cyHwLrg
 
 <br>
 </center>
--->
+{% endcomment %}
 
-<!--
+{% comment %}
 <br>
 Material suplementar: <a href=entropia_sistema_isolado.pdf> Entropia de um sistema isolado.</a>
--->
+{% endcomment %}
 
 <br><br>
 <b>Termodinâmica Estatística - Bibliografia e Listas de Exercícios:</b><br>

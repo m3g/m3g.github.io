@@ -22,6 +22,6 @@
        <tr>
          <td colspan=3>
 
-<!-- CONTENT STARTS HERE --> 
+{% comment %}CONTENT STARTS HERE {% endcomment %} 
 
 
