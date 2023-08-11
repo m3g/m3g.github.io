@@ -1,6 +1,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="/atd_scripts/estilo.css">
+<link rel="stylesheet" type="text/css" href="/atd-scripts/estilo.css">
 <title>ATD-Scripts - Institute of Chemistry - UNICAMP</title>
 <body>
 
@@ -15,9 +15,9 @@
     <td class="tdclean" width=100%>
      <table width=100% align=center>
        <tr bgcolor=#66CC99>
-         <td align=center width=33%><b><a class="menulink" href=/atd_scripts>Home</a></b> </td>
-         <td align=center width=33%><b><a class="menulink" href=/atd_scripts/usage.shtml>Usage</a></b></td>
-         <td align=center width=33%><b><a class="menulink" href=/atd_scripts/download.shtml>Download</a></b></td>
+         <td align=center width=33%><b><a class="menulink" href=/atd-scripts>Home</a></b> </td>
+         <td align=center width=33%><b><a class="menulink" href=/atd-scripts/usage.shtml>Usage</a></b></td>
+         <td align=center width=33%><b><a class="menulink" href=/atd-scripts/download.shtml>Download</a></b></td>
        </tr>
        <tr>
          <td colspan=3>
