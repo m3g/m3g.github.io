@@ -6,7 +6,7 @@
 <tr><td align="center" valign=top class="tdclean" bgcolor="lightgrey">
 
 <b>MDLovoFit</b> can be used through its <a href=http://julialang.org>Julia</a> interface, without requiring compilation.
-For using such interface, go to <a href="https://m3g.github.io/MDLovoFit.jl">https://m3g.github.io/MDLovoFit.jl</a>
+For using such interface, go to <a href="https://github.com/m3g/MDLovoFit.jl">https://github.com/m3g/MDLovoFit.jl</a>
 </td>
 </tr>
 <tr>
