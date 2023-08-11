@@ -1,0 +1,80 @@
+---
+---
+{% include utils/head.shtml %}
+
+<table class="tabnoborder" width=100%>
+  <tr>
+    <td valign=top class="tdclean">
+
+<h2>Some software that might be useful </h2>
+<br>
+
+  <table width=90% align=center><tr><td>
+  <a name="pathdriven"></a>
+  <h3>pathdriven-tclForces.tcl</h3>
+  <a href=./software/pathdriven-tclForces.tcl>[Download]</a> - Read the
+  comments on the script to use it.
+  <br><br>
+  Applies a generalized SMD force, with variable directions and to
+  multiple atoms. The basic strategy is described in:
+  <br><br>
+  Used in: L. Martínez, I. Polikarpov, M. S. Skaf, <b>Only Subtle Protein
+  Conformational Adaptations Are Required for Ligand Binding to Thyroid
+  Hormone Receptors: Simulations Using a Novel Multipoint Steered
+  Molecular Dynamics Approach</b>, J. Phys. Chem. B, 112, 10741, 2008. 
+  <a target="blank" href=/main/publications/2008_j_phys_chem_b.pdf>[PDF]</a>
+  <br>
+  </tr></td></table>
+  <br>
+
+  <table width=90% align=center><tr><td>
+  <a name="covariance"></a>
+  <h3>covariance.f90</h3>
+  <a href=./software/covariance.f90>[Download]</a> - 
+  Computes the covariance between two vectors, as function of "time",
+that is, as a function of the shift between the two data-sets. 
+  <br>
+  </tr></td></table>
+  <br>
+
+  <table width=90% align=center><tr><td>
+  <a name="modfrac"></a>
+  <h3>modfrac.f90</h3>
+  <a href=./software/modfrac.tar.gz>[Download]</a> - 
+Will obtain the coefficients of the linear combination of the data in
+model data files that best fit the experimental.dat data. The
+coefficients will be between 0 and 1 and their sum will be 1. (if such
+a solution is possible), and therefore might be interpreted as the
+fraction of each model contributing to the experimental result. 
+<br>
+Compile with <code>gfortran -o modfrac modfrac.f90 algencan-pocket.f</code>
+<br><br>
+Used in:
+M. R. B. Batista, L. Martínez, <b>Dynamics of Nuclear Receptor
+Helix-12 switch of transcription activation by modeling time-resolved
+fluorescence anisotropy decays.</b> Biophys. J. 105(7), 1670-1680, 2013.
+<a target="blanck" href=/main/publications/2013_biophys_j.pdf>[PDF]</a>
+  <br>
+  </tr></td></table>
+  <br>
+
+  <table width=90% align=center><tr><td>
+  <a name="cylinder"></a>
+  <h3>cylinder.f</h3>
+  <a href=./software/cylinder.f>[Download]</a> - 
+Computes the maximum cylinder that fits inside a cavity. Read code
+commentaries to obtain further usage information. 
+<br><br>
+Used in this article, please cite it if the software was useful:<br>
+N. Duclert-Savatier, L. Martinez, M. Nilges, T. E. Malliavin, <b>The
+redudancy of NMR restraints can be used to accelerate the unfolding
+behavior of an SH3 domain during molecular dynamics simulations.</b> BMC
+Structural Biology, 2011, 11:46 
+<a target="blank"  href=http://www.biomedcentral.com/1472-6807/11/46>[Full Text]</a>
+  <br>
+  </tr></td></table>
+
+</td></tr></table>
+
+
+{% include utils/tail.shtml %}
