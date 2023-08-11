@@ -1,6 +1,6 @@
 ---
 ---
-{% include atd_scripts/head.shtml %}
+{% include atd-scripts/head.shtml %}
 
 <table class="tabnoborder" align=center width=100%>
 <tr>
@@ -52,4 +52,4 @@ https://github.com/m3g/atd_scripts
 </tr>
 </table>
 
-{% include atd_scripts/tail.shtml %}
+{% include atd-scripts/tail.shtml %}
