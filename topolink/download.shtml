@@ -50,7 +50,7 @@ Proteomics group:
 <b> Standalone executable for Windows 10 (64 bits) (for command-line use)</b>
 <br><br>
 Download the executable from here:
-<a href=http://leandro.iqm.unicamp.br/topolink/Windows_Binaries/Windows10-64bits/topolink.exe>
+<a href=/topolink/Windows_Binaries/Windows10-64bits/topolink.exe>
 [topolink.exe Win10-x86_64]
 </a>
 <br><br>
@@ -77,7 +77,7 @@ make<br>
 This procedure will create the executable <code>topolink</code> in the
 directory <code>topolink/bin</code>. The most practical way to use it
 is to add this directory to your path. <br><br>
-Go to the <a href=./usage.shtml>Usage</a> page for instructions on how
+Go to the <a href=/topolink/usage.shtml>Usage</a> page for instructions on how
 to use the software.
 <br><br>
 
