@@ -1,0 +1,83 @@
+
+<!--#include virtual="../../head.shtml" -->
+
+<center>
+<h3>TopoLink results for: <tt> PDB_NAME  </tt></h3>
+
+ERROR
+
+<table align=center>
+<tr>
+<td align=center class=tdhead width=200px><img src=./links-1.png></td>
+<td align=center class=tdhead width=200px><img src=./links-2.png></td>
+<td align=center class=tdhead width=200px><img src=./links-3.png></td>
+</tr>
+<tr>
+<td align=center colspan=3 class=tdclean><a href=./links.pse>[PyMOL session]</a></td>
+</tr>
+<tr>
+<td align=center colspan=3 class=tdclean>
+<font color="blue">Blue:</font> A valid path was found within linker reach for an observed link (if observed data was provided). <br>
+<font color="orange">Yellow:</font> A path was found (but it is not consistent with the reported observations, if provided, or linker reach).<br>
+<!--<font color="red">Red:</font> No valid path was found for the desired maximum search distance. -->
+</td>
+</tr>
+</table>
+<b>Raw files for this run: </b>
+<br><br>
+<a href=./PDB_NAME target=_blank_>[PDB file]</a>
+<a href=./inputfile.inp target=_blank_>[TopoLink input file]</a>
+<a href=./topolink.log target=_blank_>[TopoLink output file]</a>
+<a href=./links.zip target=_blank_>[ZIP file containing the PDBs of all links]</a>
+<a href=./links target=_blank_>[Folder of PDBs of all links]</a><br>
+<br>
+</center>
+
+<table align=center width=90%>
+<tr><td align=center colspan=13 bgcolor=lightblue><b>Possible links found</b></td></tr> 
+<tr>
+<td align=center colspan=8></td>
+<td align=center colspan=2 bgcolor=lightgrey>Distances</td>
+<td align=center colspan=2>Solvent accessibilities</td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor=lightgrey align=center colspan=3>Residue 1</td>
+<td bgcolor=lightgrey align=center>Atom</td>
+<td bgcolor=lightgrey align=center colspan=3>Residue 2</td>
+<td bgcolor=lightgrey align=center>Atom</td>
+<td bgcolor=lightgrey align=center>Euclidean</td>
+<td bgcolor=lightgrey align=center>Topological</td>
+<td bgcolor=lightgrey align=center>Residue 1</td>
+<td bgcolor=lightgrey align=center>Residue 2</td>
+<td bgcolor=lightgrey align=center>PDB file</td>
+</tr>
+LINK_LIST_FOUND
+</table>
+
+<br><br>
+
+<table align=center width=80%>
+<tr><td align=center colspan=13 bgcolor=lightgreen ><b>Pairs not available for crosslinking</b></td></tr> 
+<tr>
+<td align=center colspan=8></td>
+<td align=center colspan=2 bgcolor=lightgrey>Distances</td>
+<td align=center colspan=2>Solvent accessibilities</td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor=lightgrey align=center colspan=3>Residue 1</td>
+<td bgcolor=lightgrey align=center>Atom</td>
+<td bgcolor=lightgrey align=center colspan=3>Residue 2</td>
+<td bgcolor=lightgrey align=center>Atom</td>
+<td bgcolor=lightgrey align=center>Euclidean</td>
+<td bgcolor=lightgrey align=center>Topological</td>
+<td bgcolor=lightgrey align=center>Residue 1</td>
+<td bgcolor=lightgrey align=center>Residue 2</td>
+<td bgcolor=lightgrey align=center>PDB file</td>
+</tr>
+LINK_LIST_NOTFOUND
+</table>
+
+<!--#include virtual="../../tail.shtml" -->
+

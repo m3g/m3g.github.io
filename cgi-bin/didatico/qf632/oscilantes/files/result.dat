@@ -1,0 +1,117 @@
+  Considere a Ha da fazenda com melhor fertilidade.
+  Quanto material fertilizante contem naturalmente
+  essa Ha, medida em numero de sacas?
+  Fertilidade maxima:   100.000000000000     
+
+
+  Considere a Ha da fazenda com pior fertilidade.
+  Quanto material fertilizante contem naturalmente
+  essa Ha, medida em numero de sacas?
+  Fertilidade minima:   10.0000000000000     
+
+
+  Preco da saca de fertilizante em reais:
+   5.00000000000000     
+
+
+  Preco de venda da tonelada do produto:
+   13.0000000000000     
+
+
+  Fertilidade minima:   10.0000000000000     
+
+  Fertilidade maxima:   100.000000000000     
+
+  (medida em sacas de fertilizante "natural" por Ha)
+
+
+  Na zona de manejo de fertilidade maxima
+  usando aplicacao VARIADA
+  o maximo lucro se obtem 
+ aplicando      0.0 sacas de fertilizante por Ha
+  sendo esse lucro igual a
+      78.0 reais por Ha
+
+
+  A produtividade nesse ponto eh:
+      6.00 toneladas de produto por Ha
+
+
+
+  Na zona de manejo de fertilidade maxima
+  usando aplicacao UNIFORME
+  o maximo lucro se obtem 
+ aplicando      0.0 sacas de fertilizante por Ha
+  sendo esse lucro igual a
+      78.0 reais por Ha
+
+
+  A produtividade nesse ponto eh:
+      6.00 toneladas de produto por Ha
+
+
+  Area total da "fazenda" em Ha (exemplo: 10mil):
+ Area da "fazenda" =        1000. Ha 
+
+
+  Entrar com numero de zonas de manejo (<1000):
+
+ O numero de zonas de manejo é:         5
+
+
+  A area de cada zona de manejo é:   200.000000000000       Ha
+
+  Numero de cenarios desejados:
+ Numero de cenarios aleatorios usados:        3
+
+
+
+  Cenario            1
+
+  Fertilidades de zonas:   28.7418106089427        93.6109211221958        88.7513749160918        44.3582846179901        29.6896050392919     
+
+  Cenario            2
+
+  Fertilidades de zonas:   93.1919128418722        66.4792071469487        26.0345688714725        42.9990370614726        44.8159214439194     
+
+  Cenario            3
+
+  Fertilidades de zonas:   71.1917388365862        29.5546807895126        75.5200466830717        55.4246605095806        82.2692248151066     
+
+
+  Lucros em cada cenario usando aplicacao variada:
+
+  Cenario            1   Lucro:   114031.054676492       reais
+
+  Cenario            2   Lucro:   124316.460692944       reais
+
+  Cenario            3   Lucro:   131119.832347165       reais
+
+
+  Resultados dos calculos:
+
+ Media lucro com aplicacao variada:     123156. reais
+
+ Desvio Padrao:       8603. reais
+
+
+ Fertilidade media usada em aplicacao uniforme:    55.0 sacas/Ha
+
+  Na aplicacao uniforme a quantidade de fertilizante
+ por Ha aplicado sera     0.0 sacas
+
+
+  Lucros em cada cenario usando aplicacao uniforme:
+
+  Cenario            1   Lucro:   114031.054676492       reais
+
+  Cenario            2   Lucro:   124316.460692944       reais
+
+  Cenario            3   Lucro:   131119.832347165       reais
+
+
+  Resultados dos calculos:
+
+  Media lucro com aplicacao uniforme:   123155.782572200       reais
+
+  Desvio Padrao:   8603.31103961728     

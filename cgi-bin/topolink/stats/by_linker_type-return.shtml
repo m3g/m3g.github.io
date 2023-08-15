@@ -1,0 +1,48 @@
+
+<h3>XL statistics</h3>
+<center><h4>Given a linker, how many cross-links should I expect for each pair or residues?</h4></center>
+<br>
+
+
+<form method="post" action="/cgi-bin/topolink/stats/by_linker_type.cgi">
+<table align=center class="tabnoborder">
+<tr>
+  <td align="left" class="tdclean"> Protein type: </td>
+  <td align="left" class="tdclean"> <input type="radio" name="protein_type" value="alpha-beta" CHECKEDALL >All
+                                    <input type="radio" name="protein_type" value="alpha" CHECKEDA > Mostly alpha
+                                    <input type="radio" name="protein_type" value="beta" CHECKEDB > Mostly beta
+  </td>
+</tr>
+<tr>
+  <td align="left" class="tdclean"> Sequence length [50,300]: </td>
+  <td align="left" class="tdclean"> <input type="text" name="protein_size" size="10" maxlength="10" value=PROTEIN_SIZE>
+</tr>
+<tr>
+  <td align="left" class="tdclean">
+    Linker type:
+  </td>
+  <td align="left" class="tdclean">
+  <select name="linker_type">
+    <option value="DSS" DSS_SELECTED >DSS</option>
+    <option value="DSG" DSG_SELECTED >DSG</option>
+    <option value="16Diamine" 16DIAMINE_SELECTED >1,6-diaminohexane</option>
+    <option value="13Diamine" 13DIAMINE_SELECTED >1,3-diaminopropane</option>
+    <option value="Zero-length" ZEROLENGTH_SELECTED >Zero-length</option>
+  </select>
+  </td>
+</tr>
+<tr>
+  <td class="tdclean"></td><td align="right" class="tdclean"><input type="submit" value="Plot"></td></tr>
+</table>
+</form>
+
+<table align=center>
+  <tr><td colspan=2 class="tdclean" align=center><b>Output:</b></td></tr>
+  <tr>
+    <td class="tdclean"align=center>
+      <img width=500px src=PNGPLOT>
+    </td>
+  <td class="tdclean" valign=top>
+    Linker reactivity:
+    <table align=center>
+      <tr><td>Residue</td><td>Residue</td><td>Reach (99%)</td><td align=center>N</td></tr> 

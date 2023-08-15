@@ -1,0 +1,9 @@
+set title "log C(N,r) vs. log(r) plot (see reference above)"
+set xlabel "log (distance)"
+set ylabel "log (correlation integral)"
+set nokey
+set style data linespoints
+set terminal jpeg
+set output "/home/leandro/public_html/fractal/files/check.jpg" 
+plot "/home/leandro/public_html/fractal/files/check.dat" pointtype 5 lw 1, \
+     "/home/leandro/public_html/fractal/files/regr.dat" with lines lw 2

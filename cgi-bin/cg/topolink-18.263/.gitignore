@@ -1,0 +1,6 @@
+*.mod
+*.o
+*bin/*
+*.*.swp
+*input/links/*
+*.log

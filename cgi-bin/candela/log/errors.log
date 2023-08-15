@@ -1,0 +1,117 @@
+couldn't open "/home/leandro/teste.txt": permission denied
+couldn't open "/home/leandro/teste.txt": permission denied
+couldn't open "/home/leandro/teste.txt": permission denied
+Fri Nov  6 09:36:37 BRST 2009
+couldn't open "/home/leandro/teste.txt": permission denied
+Fri Nov  6 09:39:20 BRST 2009
+couldn't open "./files/": illegal operation on a directory
+Fri Nov  6 09:40:03 BRST 2009
+couldn't open "./files/": illegal operation on a directory
+Fri Nov  6 09:41:02 BRST 2009
+./files/
+Fri Nov  6 09:41:33 BRST 2009
+./files/
+Fri Nov  6 09:42:09 BRST 2009
+./files/
+Fri Nov  6 09:51:01 BRST 2009
+can't read "teste": no such variable
+Fri Nov  6 10:30:42 BRST 2009
+couldn't open "/cgi-bin/candela/users.txt": no such file or directory
+Fri Nov  6 10:38:34 BRST 2009
+couldn't read file "./projects.tcl": no such file or directory
+Fri Nov  6 10:38:49 BRST 2009
+couldn't read file "./projects.tcl": no such file or directory
+Fri Nov  6 10:40:48 BRST 2009
+extra characters after close-quote
+Fri Nov  6 10:41:02 BRST 2009
+extra characters after close-quote
+Fri Nov  6 10:41:20 BRST 2009
+can't read "user": variable is array
+Fri Nov  6 10:50:58 BRST 2009
+wrong # args: should be "puts ?-nonewline? ?channelId? string"
+Fri Nov  6 10:55:18 BRST 2009
+invalid command name "}"
+Fri Nov  6 11:03:16 BRST 2009
+extra characters after close-quote
+Fri Nov  6 11:13:00 BRST 2009
+missing "
+Fri Nov  6 11:13:14 BRST 2009
+missing "
+Fri Nov  6 11:14:05 BRST 2009
+can't read "nusers": no such variable
+Fri Nov  6 11:14:28 BRST 2009
+can't read "data(3)": no such element in array
+Fri Nov  6 11:15:23 BRST 2009
+can't read "data(3)": no such element in array
+Fri Nov  6 11:15:56 BRST 2009
+can't read "data(3)": no such element in array
+Fri Nov  6 11:16:23 BRST 2009
+can't read "data(3)": no such element in array
+Fri Nov  6 11:42:21 BRST 2009
+==file== atd_2009.odt {Main text} {06Nov2009 1} {Available to modify} ==file== atd_2009_SI.odt {Supplementary information} {06Nov2009 1} {Available to modify} {}
+Fri Nov  6 11:43:53 BRST 2009
+==file== atd_2009.odt {Main text} {06Nov2009 1} {Available to modify} ==file== atd_2009_SI.odt {Supplementary information} {06Nov2009 1} {Available to modify} {}
+Fri Nov  6 11:44:12 BRST 2009
+==file== atd_2009.odt {Main text} {06Nov2009 1} {Available to modify} ==file== atd_2009_SI.odt {Supplementary information} {06Nov2009 1} {Available to modify} {}
+Fri Nov  6 13:48:29 BRST 2009
+invalid command name "./projects.tcl"
+Fri Nov  6 13:48:55 BRST 2009
+couldn't execute "./projects.tcl": permission denied
+Fri Nov  6 14:02:23 BRST 2009
+can't read "data(1)": no such variable
+Fri Nov  6 14:03:33 BRST 2009
+can't read "project": no such variable
+Fri Nov  6 14:03:43 BRST 2009
+can't read "project": no such variable
+Fri Nov  6 14:03:52 BRST 2009
+can't read "project": no such variable
+Fri Nov  6 14:04:15 BRST 2009
+can't read "project": no such variable
+Fri Nov  6 14:05:01 BRST 2009
+can't read "projects": no such variable
+Fri Nov  6 14:05:06 BRST 2009
+can't read "projects": no such variable
+Fri Nov  6 14:06:49 BRST 2009
+can't read "projects": no such variable
+Fri Nov  6 14:07:05 BRST 2009
+can't read "projects": no such variable
+Fri Nov  6 14:07:14 BRST 2009
+can't read "projects": no such variable
+Fri Nov  6 17:06:39 BRST 2009
+extra characters after close-quote
+Fri Nov  6 17:09:43 BRST 2009
+wrong # args: should be "proc name args body"
+Wed Nov 11 11:10:38 BRST 2009
+invalid command name "::ncgi::exits"
+Wed Nov 11 11:11:26 BRST 2009
+invalid command name "::ncgi::exits"
+Wed Nov 11 11:11:34 BRST 2009
+invalid command name "::ncgi::exits"
+Wed Nov 11 11:12:05 BRST 2009
+can't read "try_again": no such variable
+Wed Nov 11 11:12:07 BRST 2009
+can't read "try_again": no such variable
+Thu Nov 12 15:14:58 BRST 2009
+extra characters after close-quote
+Thu Nov 12 15:25:28 BRST 2009
+invalid command name "}"
+Thu Nov 12 15:25:41 BRST 2009
+invalid command name "}"
+Thu Nov 12 16:47:07 BRST 2009
+syntax error in expression " file exists ./project/$project/files/$filename ": variable references require preceding $
+Thu Nov 12 16:49:00 BRST 2009
+can't read "filename": no such variable
+Thu Nov 12 16:49:24 BRST 2009
+invalid command name "
+            <head></head><body>
+            <form name="reload_page" method="POST" action="/cgi-bin/candela/edit_project.tcl">
+            "
+Thu Nov 12 16:49:53 BRST 2009
+can not find channel named "
+if {  <= "
+Thu Nov 12 16:52:08 BRST 2009
+can't read "new_file": no such variable
+Thu Nov 12 16:52:44 BRST 2009
+can't read "new_file": no such variable
+Thu Nov 12 17:01:26 BRST 2009
+couldn't open "./project/atd/files.txt": no such file or directory

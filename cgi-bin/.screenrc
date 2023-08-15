@@ -1,0 +1,10 @@
+caption always
+#caption string "%{= BW}%n - %t"
+# Green:
+#caption string "%{= gW}%-w %{= rW}%n %t %{= gW}%+w"
+# Blue:
+caption string "%{= BW}%-w %{= rW}%n %t %{= BW}%+w"
+maptimeout 5
+term xterm
+vbell off
+defscrollback 20000

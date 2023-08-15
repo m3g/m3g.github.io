@@ -1,0 +1,36 @@
+
+<h3>TopoLink statistics</h3>
+<br>
+
+<form method="post" action="/cgi-bin/topolink/stats/stat1.cgi">
+<table align=center class="tabnoborder">
+<tr>
+  <td align="left" class="tdclean"> Protein type: </td>
+  <td align="left" class="tdclean"> <input type="radio" name="protein_type" value="alpha-beta" CHECKEDAB >All
+                                    <input type="radio" name="protein_type" value="alpha" CHECKEDAONLY > Mostly alpha
+                                    <input type="radio" name="protein_type" value="beta" CHECKEDBONLY > Mostly beta
+  </td>
+</tr>
+<tr>
+  <td align="left" class="tdclean"> Sequence length [20,300]: </td>
+  <td align="left" class="tdclean"> <input type="text" name="protein_size" size="10" maxlength="10" value=PROTEIN_SIZE>
+</tr>
+<tr>
+  <td align="left" class="tdclean"> Linker length [5,40]: </td>
+  <td align="left" class="tdclean"> <input type="text" name="linker_length" size="10" maxlength="10" value=LINKER_LENGTH>
+</tr>
+<tr>
+  <td class="tdclean"></td><td align="right" class="tdclean"><input type="submit" value="Plot"></td></tr>
+</table>
+</form>
+
+<center>
+<b>Output:</b><br><br>
+<a target=_blank_ href=TMP_FOLDER/data.dat>[Data file]</a><br><br>
+<img width=80% src=TMP_FOLDER/plot.png>
+</center>
+
+
+
+  
+  

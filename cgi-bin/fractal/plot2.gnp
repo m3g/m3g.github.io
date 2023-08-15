@@ -1,0 +1,8 @@
+set title "Data provided"
+set xlabel "x"
+set ylabel "y"
+set nokey
+set style data lines
+set terminal jpeg
+set output "/home/leandro/public_html/fractal/files/data.jpg" 
+plot "/home/leandro/public_html/fractal/files/data2.dat"
