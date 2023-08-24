@@ -1,0 +1,120 @@
+---
+---
+{% include topolink/head.shtml %}
+
+      <code>TOPOLINK</code> is a package to compute topological distances between
+atoms on the surface of proteins and validate structural models using cross-linking
+experimental data.
+<br><br>
+Chemical cross-linking mass spectrometry is powerful experimental method
+for the evaluation of interatomic distances in biomolecular structures.
+These experiments provided upper bounds for the distances between
+residues, by the identification of pairs of atoms in the surface of
+protein which are within the linker reach.    
+<br><br>
+The evaluation of structural models using chemical cross-linking depends
+on the determination of the topological, or surface-accessible,
+distances of the reactive residues in the model, and its comparison with
+experimental observations. 
+<br><br>
+TopoLink is a package designed to compute topological distances and
+evaluate structural models, structured with the experimental result in
+mind. 
+<br><br>
+The user provides a description of the experiments performed, the types
+of cross-links that can be formed in each experiment, and an account of
+the experimental result, and TopoLink determines how consistent a
+structural model is with the experimental results. 
+<br><br>
+This consistency is evaluated by computing all possible cross-links of the
+structure and their correlation with experimental observations.
+<br><br>
+Supporting structure files are provided for the visualization of the topological distances on the
+protein structure, as exemplified in the figures.
+
+<table align=center width=80%>
+<tr><td class=tdclean bgcolor=lightblue>
+A. J. R. Ferrari, M. A. Clasen, L. Kurt, P. C. Carvalho, F. C. Gozzo, L
+Martínez<br>
+<b>TopoLink: Evaluation structural models using chemical crosslinking distance constraints.</b> <br>
+Bioinformatics, 35(17), 3169-3170, 2019. <a target=_blank_ href=https://doi.org/10.1093/bioinformatics/btz014>[LINK]</a>
+</td></tr>
+</table>
+
+
+    </td>
+    <td valign=top align=center width=200px class="tdclean">
+      <img width=200px src=./topolink.png><br>
+      <b> Intra-protein predicted links</b><br>
+      <img width=200px src=./complex1.png><br>
+      <b> Inter-chain links of a complex</b><br>
+    </td>
+<!--
+  </tr>
+  <tr>
+     <td colspan=2 align=center class=tdclean>
+        <img src=./2AXT.png><br>
+        <b> All topological links with less than 30 Angstroms between Lysine residues,<br>
+            on the surface of the Photosystem II protein structure (PDB id: 2AXT)</b>
+-->
+
+   <td align=center valign=top width=30% class="tdclean" border=0>
+
+      <script type="text/javascript">
+        <!--
+          var currentdate = 0;
+          var number = 0;
+          function Array (n) {
+                   this.length = n;
+                   for (var i =1; i <= n; i++) {
+                              this[i] = ' '
+                            }
+                 }
+          var nn = 3
+          text = new Array(nn)
+          link = new Array(nn)
+          img = new Array(nn)
+
+          text[0] = "Combining crosslinking and coevolutionary constraints to improve protein fold prediction."
+          link[0] = "https://doi.org/10.1093/bioinformatics/bty074"
+          img[0] = "http://leandro.iqm.unicamp.br/topolink/examples/ricardo.png"
+
+          text[1] = "Coevolutinary signals and structure-based models for protein fold prediction."
+          link[1] = "https://doi.org/10.1007/978-1-4939-8736-8_5"
+          img[1] = "http://leandro.iqm.unicamp.br/topolink/examples/ricardo2.png"
+
+          text[2] = "Statistical force-field for XL distance constraints."
+          link[2] = "https://doi.org/10.1093/bioinformatics/btz013"
+          img[2] = "http://leandro.iqm.unicamp.br/topolink/xlff/figure.png"
+
+          text[2] = "On the complementarity of coevolution and XL distance constraints."
+          link[2] = "https://doi.org/10.1002/prot.25843"
+          img[2] = "http://leandro.iqm.unicamp.br/topolink/complementary.png"
+
+          var rand = 1000/text.length
+          function randomhl() {
+                      currentdate = new Date()
+                      hl_number = currentdate.getMilliseconds()
+                      hl_number = Math.floor(hl_number/rand)
+                      return [ text[hl_number], link[hl_number], img[hl_number] ]
+                 }
+          var hldata = randomhl()
+          document.write("<table border=0 width=100\%>")
+          document.write("  <tr><td align=center valign=top class=\"tdclean\" border=2 bgcolor=lightgrey>")
+          document.write("      <b>Highlight:</b> "+hldata[0])
+          document.write("      <br><a target=_blank_ href="+hldata[1]+"> [click here] </a>")
+          document.write("      <center>")
+          document.write("        <img width=250px src="+hldata[2]+"><br><br>")
+          document.write("      </center>")
+          document.write("    </td></tr>")
+          document.write("</table>")
+         //-->
+       </script>
+
+    </td>
+
+{% include topolink/tail.shtml %}
+
+
+
+
