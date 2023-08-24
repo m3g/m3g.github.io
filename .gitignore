@@ -1,3 +1,15 @@
 _site
 topolink/xlff/ferrari_2018_bioinformatics.tar.gz
 topolink/serverfiles
+
+# Ignore LaTeX intermediate files
+*.aux
+*latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.dvi
+*.out
+*.bbl
+*.blg
