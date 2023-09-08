@@ -7,9 +7,14 @@
 <p class=section>Software</p>
 </td>
 <td align=right>
-<table><tr><td class=tdmenu>
+<table><tr>
+<td class=tdmenu>
 &nbsp;&nbsp;<a target=_blank_ href=https://github.com/m3g>[Software repository at GITHUB]</a>&nbsp;&nbsp
-</td></tr></table>
+</td>
+<td class=tdmenu>
+&nbsp;&nbsp;<a target=_blank_ href=https://juliahub.com/ui/Search?q=m3g&type=packages>[Software at JuliaHub]</a>&nbsp;&nbsp
+</td>
+</tr></table>
 </td>
 </tr>
 </table>
