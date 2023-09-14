@@ -171,16 +171,16 @@ except :
   QuitPage("ERROR: Could not run TopoLink on the server. Please report the error to: leandromartinez89@gmail.com")
 
 #
-# Create temporary index.shtml file on output dir
+# Create temporary index.html file on output dir
 #
 
-index_base=open("./index_temp_base.shtml","r")
+index_base=open("./index_temp_base.html","r")
 html_base=index_base.read()
 index_base.close()
 
 html_base=html_base.replace("PDB_NAME",pdb_name)
 
-html_out=open(output_dir+"/index.shtml","w")
+html_out=open(output_dir+"/index.html","w")
 html_out.write(html_base)
 html_out.close()
 
@@ -189,7 +189,7 @@ html_out.close()
 
 head_and_tail.htmlTop()
 print r'<html>'
-print r'<meta HTTP-EQUIV="REFRESH" content="0; url='+output_dir+r'/index.shtml">'
+print r'<meta HTTP-EQUIV="REFRESH" content="0; url='+output_dir+r'/index.html">'
 print r'</html>'
 
 

@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
-set basehtml "http://leandro.iqm.unicamp.br/leandro/shtml/didatico/qf632/PengRobinson"
-set fileshtml "$basehtml/files"
-set files "/home/leandro/public_html/leandro/shtml/didatico/qf632/PengRobinson/files"
+set basehtml "http://leandro.iqm.unicamp.br/leandro/html/didatico/qf632/PengRobinson"
+set filehtml "$basehtml/files"
+set files "/home/leandro/public_html/leandro/html/didatico/qf632/PengRobinson/files"
 
 puts "Content-type: text/html"
 puts ""
@@ -57,7 +57,7 @@ exec -ignorestderr ./PengRobinson $tc $pc $w $acp $bcp $ccp $dcp $tr $pr $te $p 
 #puts "</table>"
 puts $msg
 
-puts "<br><br><a href=http://leandro.iqm.unicamp.br/leandro/shtml/didatico/qf632/PengRobinson>\[voltar\]</a>"
+puts "<br><br><a href=http://leandro.iqm.unicamp.br/leandro/html/didatico/qf632/PengRobinson>\[voltar\]</a>"
 
 puts "<br><br><b>Dados fornecidos:</b><br><br>"
 for { set ival 1 } { $ival <= $nval } { incr ival } {

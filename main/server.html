@@ -1,0 +1,91 @@
+---
+---
+{% include main/head.html %}
+
+<h3>Server</h3>
+Here it is possible to run TopoLink online in our server, without downloading
+and installing it. You only need to provide the input files.
+<br><br>
+
+<br>
+
+<form action="/cgi-bin/topolink/server/topolink.cgi" method="post" ENCTYPE="multipart/form-data">
+
+<table align=center class="tabnoborder">
+  <tr>
+    <td valign=top class="tdclean"> Structure file (PDB or mmCIF): </td>
+    <td valig=top class="tdclean" colspan=2> 
+      <input type="file" name="pdb_file" size="34"> 
+    </td>
+  </tr>
+  <tr><td class=tdclean colspan=3><hr></td></tr>
+
+  <tr><td class=tdclean colspan=3>Choose one input option: </td></tr>
+
+  <tr>
+    <td valign=top class="tdclean"> 
+      <input type="radio" name="input_type" value="linker_type" checked> Linker type: 
+    </td>
+    <td valign=top class="tdclean"> 
+      <select name="linker_type">
+        <option value="DSS" DSS_SELECTED >DSS</option>
+        <option value="DSG" DSG_SELECTED >DSG</option>
+        <option value="16Diamine" 16DIAMINE_SELECTED >1,6-diaminohexane</option>
+        <option value="13Diamine" 13DIAMINE_SELECTED >1,3-diaminopropane</option>
+        <option value="Zero-length" ZEROLENGTH_SELECTED >Zero-length</option>
+      </select>
+    </td>
+    <td class=tdclean></td>
+  </tr>
+
+  <tr>
+    <td valign=top class="tdclean"> 
+      <input type="radio" name="input_type" value="residue_pair"> Residue pair:
+    </td>
+    <td valign=top class="tdclean"> 
+      <select name="residue1">
+        {% include main/residues.html %}
+      </select>
+      -
+      <select name="residue2">
+        {% include main/residues.html %}
+      </select>
+      and
+      Linker length (C&beta;-C&beta;):
+      <input type="text" name="linker_length" size="10" maxlength="10" value=17.8>
+      <a href=./stats/length_help.html onClick="return popup(this,'Help')">[?]</a>
+    </td>
+    <td class=tdclean></td>
+  </tr>
+
+  <tr>
+    <td valign=top class="tdclean"> 
+      <input type="radio" name="input_type" value="input_file"> TopoLink input file: 
+    </td>
+    <td valig=top class="tdclean" colspan=2>
+       <input type="file" name="topolink_input" size="34">
+       <a target=_blanck_ href=./example.txt>[Input file example]</a></td>
+  </tr>
+  <tr>
+    <td valign=top colspan=3 valign=top class="tdclean" colspan=2><input type="checkbox" name="interchain" value="interchain">
+    Inter-chain crosslinks only (protein complexes) </td>
+  </tr>
+
+  {% comment %}
+  <tr><td class=tdclean colspan=3><hr></td></tr>
+  <tr>
+    <td valign=top class="tdclean"> E-mail:* </td>
+    <td valign=top class="tdclean" colspan=2><input type="text" name="email" size="35" value=" ">
+  </tr>
+  <tr>
+    <td valign=top class="tdclean" colspan=2> *To whom the results will be sent when done.</td>
+  </tr>
+  {% endcomment %}
+
+  <tr><td class=tdclean colspan=3><hr></td></tr>
+  <tr><td colspan=3 align=right class="tdclean"><input type="submit" value="Run TopoLink"></td></tr>
+
+</table>
+</form>
+
+{% include main/tail.html %}

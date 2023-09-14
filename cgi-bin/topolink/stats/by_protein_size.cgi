@@ -210,7 +210,7 @@ if linker_option == 'by_residue_pair' :
 
 # Return page
 
-return_page=open("./by_protein_size-return.shtml","r")
+return_page=open("./by_protein_size-return.html","r")
 return_page=return_page.read()
 
 return_page=return_page.replace(checked,"checked")
@@ -250,7 +250,7 @@ return_page = return_page.split("\n")
 for return_line in return_page : 
 
   if return_line[4:13] == "PAIR_LIST" :
-    pair_list = open("../../../topolink/stats/pairs.shtml","r")
+    pair_list = open("../../../topolink/stats/pairs.html","r")
     pair_list = pair_list.read()
     pair_list = pair_list.split("\n")
     for line in pair_list :

@@ -142,7 +142,7 @@ plt.savefig(pngplot)
 
 # Return page
 
-return_page=open("./by_linker_type-return.shtml","r")
+return_page=open("./by_linker_type-return.html","r")
 return_page=return_page.read()
 
 return_page=return_page.replace(checked,"checked")

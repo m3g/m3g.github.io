@@ -10,7 +10,7 @@ set topolink_dir "../../../topolink"
 
 # html header
 
-set head [ open $topolink_dir/head.shtml r ] 
+set head [ open $topolink_dir/head.html r ] 
 set head [ read $head ] 
 set head [ split $head "\n" ]
 foreach line $head { 
@@ -74,7 +74,7 @@ puts $msg
 
 
 catch {
-  set returnpage [ open ./stat1-return.shtml "r" ] 
+  set returnpage [ open ./stat1-return.html "r" ] 
   set returnpage [ read $returnpage ]
   set returnpage [ split $returnpage "\n" ]
   foreach line $returnpage {
@@ -109,7 +109,7 @@ catch {
 } msg
 puts $msg
 
-set tail [ open $topolink_dir/tail.shtml r ] 
+set tail [ open $topolink_dir/tail.html r ] 
 set tail [ read $tail ] 
 set tail [ split $tail "\n" ]
 foreach line $tail { 

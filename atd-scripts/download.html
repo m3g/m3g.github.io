@@ -1,0 +1,55 @@
+---
+---
+{% include atd-scripts/head.html %}
+
+<table class="tabnoborder" align=center width=100%>
+<tr>
+<td valign=top class="tdclean">
+
+Download the latest version of the package from this site. Unpack the scripts
+with:
+<table width=80% align=center class="tdclean"><tr><td>
+<code>
+tar -xzf atd_scripts-{version}.tar.gz<br>
+cd atd_scripts<br>
+make<br>
+</code>
+<br>
+Add the <code>atd_scripts/bin</code> directory to your path.
+</tr></td></table>
+
+Install the xmgrace template file, which is an enhanced template
+containing more colors that allow for the plotting of the graphs used
+here:
+
+<table align=center><tr><td class="tdclean"><pre>
+make grace
+</pre></td></tr></table>
+
+Note: This will override your
+<code>~/.grace/templates/Default.agr</code> file, and
+copy it to Default.agr.BAK. Generally that is fine, but if you have
+changed your Default.agr for some reason, backup it.
+
+<br>
+<center>
+GIT repository:
+<a target=_blank_ href=https://github.com/m3g/atd_scripts>
+https://github.com/m3g/atd_scripts
+</a>
+</center>
+<br>
+<table width=90% align=center>
+<tr bgcolor=lightblue><td>File</td><td>Description</td></tr>
+<!-- NEW_VERSION_HERE -->
+<tr><td width=190px valign=top><a href=https://github.com/m3g/atd_scripts/archive/16.341.3.tar.gz> atd_scripts-16.341.3.tar.gz </a></td><td> Release 16.341.3 </td></tr>
+<tr><td width=190px valign=top><a href=https://github.com/m3g/atd_scripts/archive/16.341.2.tar.gz> atd_scripts-16.341.2.tar.gz </a></td><td> Release 16.341.2 </td></tr>
+<tr><td width=190px valign=top><a href=https://github.com/m3g/atd_scripts/archive/16.341.tar.gz> atd_scripts-16.341.tar.gz </a></td><td> Release 16.341 </td></tr>
+</table>
+<br><br>
+
+</td>
+</tr>
+</table>
+
+{% include atd-scripts/tail.html %}

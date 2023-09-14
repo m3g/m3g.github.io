@@ -1,6 +1,6 @@
 #!/usr/bin/tclsh
 
-set pagepath="http://leandro.iqm.unicamp.br/leandro/shtml/didatico/qf632/PengRobinson"
+set pagepath="http://leandro.iqm.unicamp.br/leandro/html/didatico/qf632/PengRobinson"
 
 puts "Content-type: text/html"
 puts ""

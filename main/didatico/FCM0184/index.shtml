@@ -1,9 +1,0 @@
----
----
-{% include main/didatico_start.shtml %}
-
-
-<p class=section>FCM0184 - Laboratório de Física Geral III</p>
-
-
-{% include main/didatico_end.shtml %}

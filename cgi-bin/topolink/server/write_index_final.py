@@ -70,13 +70,13 @@ def LinkLine(line,pdb_name,found) :
 
 print output_dir, pdb_name
 
-index_base=open("./index_final_base.shtml","r")
+index_base=open("./index_final_base.html","r")
 html_base=index_base.read()
 index_base.close()
 html_base=html_base.replace("PDB_NAME",pdb_name)
 html_base=html_base.split("\n")
 
-html_out=open(output_dir+"/index.shtml","w")
+html_out=open(output_dir+"/index.html","w")
 
 # Check if there are errors in the topolink log file
 

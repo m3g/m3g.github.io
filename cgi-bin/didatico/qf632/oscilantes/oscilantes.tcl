@@ -1,6 +1,6 @@
 #!/usr/bin/tclsh
 
-set pagepath="http://leandro.iqm.unicamp.br/leandro/shtml/didatico/qf632/oscilantes"
+set pagepath="http://leandro.iqm.unicamp.br/leandro/html/didatico/qf632/oscilantes"
 
 puts "Content-type: text/html"
 puts ""
