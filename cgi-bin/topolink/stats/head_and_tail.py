@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-url="http://leandro.iqm.unicamp.br/topolink" 
+url="http://m3g.github.io/topolink" 
 source_files="../../../topolink"
 
 def htmlTop() :
