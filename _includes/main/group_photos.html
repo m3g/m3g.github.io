@@ -1,42 +1,55 @@
 <script type="text/javascript">
- var imlocation = "./";
- var currentdate = 0;
- var image_number = 0;
- function ImageArray (n) {
-   this.length = n;
-   for (var i =1; i <= n; i++) {
-     this[i] = ' '
-   }
- }
- var n_images = 10
- image = new ImageArray(n_images)
- text = new ImageArray(n_images)
- image[0] = './group_photos/grupo2015.jpg'   
-  text[0] = "Mariana, Tayane, Luciano, Emília, Gabriel, and Ivan, 2015"
- image[1] = './group_photos/grupo2017.png'   
-  text[1] = "Guilherme, Leandro, Gabriel, Antônio, Luciano, 2017"
- image[2] = './group_photos/grupo2017b.png' 
-  text[2] = "Guilherme, Tayane, Adriano, Gabriel, Leandro, Antônio, and Luciano, 2017"
- image[3] = './group_photos/pibicem2019.png' 
-  text[3] = "Leandro, Alex, and Michael, receiving the honorable mention for their high-school research project, 2019."
- image[4] = './group_photos/group2021_online.png' 
-  text[4] = "Leandro, Brenda, Guilherme, Felipe, Filipe, Allan, Ander, Vinicius, Pamella, Alexandre, Diego, 2021."
- image[5] = './group_photos/grupo2022.jpg' 
-  text[5] = "Felipe, Vinicius, Pamella, Ander, Guilherme, Leandro, 2022."
- image[6] = './group_photos/grupo2023_1.jpg' 
-  text[6] = "Leandro presenting at the 2023 Brazilian Biophysical Society Meeting."
- image[7] = './group_photos/grupo2023_2.jpg' 
-  text[7] = "Lucas presenting at the 2023 Brazilian Biophysical Society Meeting."
- image[8] = './group_photos/defesa_pamella_2023.jpg' 
-  text[8] = "Alessandro, Munir, Pamella, and Leandro, Pamella dissertation thesis, 2023."
- image[9] = './group_photos/2023_aniversario.png' 
-  text[9] = "Lucas, Leandro, Pamella, and Jéssica, 2023."
- var rand = 1000/image.length
+let pics = [
+  {
+    image: './group_photos/grupo2015.jpg',
+    caption: "Mariana, Tayane, Luciano, Emília, Gabriel, and Ivan, 2015"
+  },
+  {
+    image: './group_photos/grupo2017.png',
+    caption: "Guilherme, Leandro, Gabriel, Antônio, Luciano, 2017"
+  },
+  {
+    image: './group_photos/grupo2017b.png',
+    caption: "Guilherme, Tayane, Adriano, Gabriel, Leandro, Antônio, and Luciano, 2017"
+  },
+  {
+    image: './group_photos/pibicem2019.png',
+    caption: "Leandro, Alex, and Michael, receiving the honorable mention for their high-school research project, 2019."
+  },
+  {
+    image: './group_photos/group2021_online.png',
+    caption: "Leandro, Brenda, Guilherme, Felipe, Filipe, Allan, Ander, Vinicius, Pamella, Alexandre, Diego, 2021."
+  },
+  {
+    image: './group_photos/grupo2022.jpg',
+    caption: "Felipe, Vinicius, Pamella, Ander, Guilherme, Leandro, 2022."
+  },
+  {
+    image: './group_photos/grupo2023_1.jpg',
+    caption: "Leandro presenting at the 2023 Brazilian Biophysical Society Meeting."
+  },
+  {
+    image: './group_photos/grupo2023_2.jpg',
+    caption: "Lucas presenting at the 2023 Brazilian Biophysical Society Meeting."
+  },
+  {
+    image: './group_photos/defesa_pamella_2023.jpg',
+    caption: "Alessandro, Munir, Pamella, and Leandro, Pamella dissertation thesis, 2023."
+  },
+  {
+    image: './group_photos/2023_aniversario.png',
+    caption: "Lucas, Leandro, Pamella, and Jéssica, 2023."
+  }
+];
+ var rand = 1000/pics.length
  function randomimage() {
       currentdate = new Date()
       image_number = currentdate.getMilliseconds()
       image_number = Math.floor(image_number/rand)
-      return [image[image_number],text[image_number]]
+      return [
+        pics[image_number].image,
+        pics[image_number].caption
+       ]
  }
  var imgdata = randomimage()
  document.write("<img width=485px src='" + imlocation + imgdata[0]+ "'><br>"+ imgdata[1]);
