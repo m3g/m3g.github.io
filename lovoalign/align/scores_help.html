@@ -1,0 +1,103 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../estilo2.css">
+<title>LOVOALIGN: Protein Structural Alignment</title>
+</head>
+<body>
+<table>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>The SCORE of a structural alignment</p>
+
+The quality of the alignment between two structures is evaluated by
+measures that are usually called <i>scores</i>. Scores must take into
+account two properties of a structural alignment: 1) The number of atoms
+in the correspondence and, 2) the quality of the superposition between
+corresponding atoms.    
+<br><br>
+
+For example, the frequently used Root-Mean-Square-Deviation (RMSD), is
+<i>not</i> a valid score by itself: two proteins may share a
+very similar core, but differ in a mobile loop or hinge. The
+superposition of the mobile loop and hinge will result in a large value
+for the RMSD between the two structures, and we will not be able to
+recognize the similarity of the cores.
+<br><br>
+
+Because of this, several scores have been proposed that are able, using
+a single value, indicate the quality of the alignment. In LovoAlign we
+have implemented three of them, which we believe are the most relevant.
+Each has its particular properties that may be of interest in specific
+cases:
+<br><br>
+
+<b>1 - TM-Score</b><br><br>
+The TM-Score was proposed by Zhang and Skolnick 
+<a target=newpage
+href=http://www3.interscience.wiley.com/journal/109674933/abstract>[ref]</a>.
+This score was weighted according the size of the structures being
+compared and by the study of the quality of general alignments, in such
+a way that it varies between 0 and 1, from a bad to a good
+superposition. It was shown that scores below 0.17 indicate that the
+superposition is not better than the superposition of two random
+structures. Because of the quality of this score as an absolute measure
+of the quality of protein alignments, it is recommended as the default choice
+for the comparison of two protein structures.  
+<br><br>
+
+<b>2 - Structal score</b><br><br>
+The Structal score was proposed by Levitt and co-workers
+<a target=newpage href=http://dx.doi.org/10.1016/0960-9822(93)90255-M>[ref]</a>.
+It has a similar structure than the TM-Score, but it is parametrized as:
+<center><img src=structal_score.gif></center>
+where the sum is performed over all corresponding atoms, <i>d</i> is the
+distance between corresponding atoms, and <i>n<sub>g</sub></i> is the
+number of gaps. The TM-Score has a similar structure but different
+parametrization, and does not penalize gaps by default. Therefore, the
+use of the Structal score may be interesting when one wants to avoid
+gaps in the sequence alignment, and particularly it is possible, in
+LovoAlign, to control the gap penalty (this can also be done for the other
+scores). The disadvantage of Structal relative to TM-Score is that its
+value is dependent on the size of the proteins being compared, in such a
+way that one cannot use it to compare the quality of the alignments of
+different structures. It can be
+useful and provide meaningful results for pairwise alignments.
+<br><br>
+
+<b>3 - Triangular score</b><br><br> 
+The Triangular score is very simple.  It is maximal when the position of
+corresponding atoms coincide, and decreases linearly to zero for a
+distance defined by the user (the default value in LovoAlign being 3.0
+Angstroms). This score, therefore, can be used for the identification of
+common cores in protein structures, as it will totally neglect the
+substructures that are poorly aligned. Furthermore, by using this score
+one is able to personally and intuitively determine what one considers
+as a good alignment. For instance, one can state that only atoms which
+are closer than 2 Angstroms should be considered. The optimization of
+this score will find the best superposition of the structures that
+maximizes the number of atoms that can be aligned within that tolerance.
+It can be demonstrated, furthermore 
+<a target=newpage href=http://www.biomedcentral.com/1471-2105/8/306>[ref]</a>, 
+that the RMSD found for these atoms is the best one for the given
+correspondence, in such a way that the RMSD obtained using this score,
+for the corresponding atoms, is meaningful.  For the other score, one
+could similarly compute the RMSD of the atoms which are within a desired
+tolerance, but the alignment of these atoms would not be the perfect
+one, and could be improved by an additional rigid-body alignment. The
+optimization of the Triangular score automatically satisfies this
+requirement. Furthermore, the Triangular score for non-bijective
+alignments can be computed very rapidly 
+<a target=newpage href=http://www.biomedcentral.com/1471-2105/8/306>[ref]</a>,
+and this can be important for database comparisons.    
+<br><br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>

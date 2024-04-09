@@ -1,0 +1,42 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../estilo2.css">
+<title>LOVOALIGN: Protein Structural Alignment</title>
+</head>
+<body>
+<table>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>Penalization for GAPS</p>
+
+Sequential (usually protein) alignments can be penalized by the presence
+of gaps. A gap is a hole in the sequential correspondence between atoms
+of the structures. For example, a structural alignment corresponding to
+the following sequence alignment,
+<table align=center>
+<tr><td><tt>144&nbsp;&nbsp;</tt></td>
+<td><tt>GSHMEEMIRSLQQRPEPT---WDLIHIAT</tt></td>
+<td><tt>&nbsp;&nbsp;193</tt></td></tr>
+<tr><td><tt>202&nbsp;&nbsp;</tt></td>
+<td><tt>EE--LQ--KSIGHKPEPTDEEWELIKTVT</tt></td>
+<td><tt>&nbsp;&nbsp;247</tt></td></tr>
+</table>
+contains three gaps. If one thinks that our alignment should be strictly
+sequential, it is possible to increase the penalization for gaps. The
+scores are designed, on the other side, to automatically use or not gap
+penalties. For instance, the Structal score uses a default penalty of
+10. per gap, but the TM-Score does not penalize them. The penalization
+for gaps can, nevertheless, be adjusted in order to provide different
+alignment results which may fit better the expectations of the user.   
+<br><br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>

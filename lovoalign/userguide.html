@@ -1,0 +1,347 @@
+<head>
+<link rel="stylesheet" type="text/css" href="estilo2.css">
+<title>LOVOALIGN: Protein Structural Alignment</title>
+</head>
+<body>
+<a name=top></a>
+<table>
+<tr><td colspan=2><p class=title></p></tr></td>
+<tr><td valign=top>
+<p class=download><a href=home.html>Home</a></p>
+<!--<p class=download><a href=./align/index.html>Server</a></p>-->
+<p class=download><a href=software.html>Download</a></p>
+<p class=download><a href=userguide.html>Userguide</a></p>
+<p class=download><a href=references.html>Citation</a></p>
+<p class=download><a href=contact.html>Contact/Help</a></p>
+</td>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>User guide</p>
+LovoAlign can be used to to align pairs of proteins, to align a protein
+to a database of protein structures or to perform an all-on-all
+structural alignment of a database.
+<br>
+<br>
+<b>Index</b><br>
+<a href="#pair">1. Aligning a pair of proteins.</a><br>
+<a href="#onetoall">2. Aligning one structure to a protein
+database.</a><br>
+<a href="#allonall">3. Performing an all-on-all database
+comparison.</a><br>
+<!-- 
+<a href="#lovoresult">4. Sorting the results with lovoresult. </a><br>
+-->
+<a href="#customize">4. Align general structures with customized
+selections </a><br>
+<a href="#optional">5. Advanced and optional parameters.</a><br>
+<a href="#scripts">6. Scripts for analysing results.</a><br>
+<a name=pair></a>
+<br>
+<table width=100%><tr><td>
+<b>Aligning a pair of proteins</b>
+</td><td align=right><a href=#top>[top]</a><td></tr></table>
+<br>
+The simplest way to run <i>lovoalign</i> to align a pair of protein
+structure is to run it by:<br><br>
+<tt>lovoalign -p1 pdb1.pdb -p2 pdb2.pdb -o pdbout.pdb </tt>
+<br><br>
+where <tt>pdb1.pdb</tt> and <tt>pdb2.pdb</tt> are the pdb files
+containing the structures of each protein. <tt>pdbout.pdb</tt> is the
+name of the output file that will contain the structure on
+<tt>pdb1.pdb</tt> aligned to the second structure.
+<br><br>
+If you want to align, for example, the chain "A" of the first protein A
+to the chain "C" of the second protein, use:<br><br>
+<tt>lovoalign -p1 pdb1.pdb -c1 A -p2 pdb2.pdb -c2 C -o pdbout.pdb </tt>
+<br><br>
+If "-c1" was not found in the command line, all chains of the first
+protein will be considered in the alignment. The same for "-c2" and the
+second protein.<br><br>
+When alignning a pair of protein, you might want to obtain the RMSF
+profile of the alignment. To do so, add the option: <br><br>
+<tt>
+-rmsf rmsf.dat
+</tt>
+<br><br>
+The <tt>rmsf.dat</tt> file will contain the RMSF plot. 
+<br><br>Additionally, you 
+might want the RMSF trend, defined by the profile of the fraction of atoms that are
+closer than each threshold. To obtain that plot, use:
+<br><br>
+<tt>
+-rmsftrend rmsftrend.dat
+</tt>
+<br>
+<a name=onetoall></a><br>
+<table width=100%><tr><td>
+<b>Aligning a protein structure to a structure database</b>
+</td><td align=right><a href=#top>[top]</a><td></tr></table>
+<br>
+The <i>lovoalign</i> package may be used to align a structure to a whole
+database of protein structures. Aligning one structure with about 300 CA
+atoms to the whole PDB (~30,000 structures) takes half an hour in a
+typical personal computer.
+A database of protein structures consists in a collection of structure
+files in the pdb format (as the pdb database itself). In order to obtain
+an alignment of a single protein to a whole database, two simple steps
+must be taken:<br><br>
+1. Obtain a list of the files to which the structure will be be
+compared. For example, if the database contains three pdb structures,
+the pdb list would be (lets call it <tt>list.dat</tt>): <br><br>
+<tt>
+file1.pdb <br>
+file2.pdb <br>
+file3.pdb
+</tt>
+<br><br>
+The list must contain the full path of the files considering the
+directory in which <i>lovoalign</i> is going to be run. <br><br>
+2. Considering that <tt>structure.pdb</tt> is the pdb file of the protein
+that is going to be compared to the database, <i>lovoalign</i> must be
+run by: <br><br>
+<tt>lovoalign -p1 structure.pdb -pdblist list.dat > align.log</tt><br><br>
+In this case the <tt>align.log</tt> 
+output file contain very concise results for each alignment: 
+<br><br>
+<tt>
+PROTS: B1yh1.pdb B1vl6.pdb    334    373 <br>
+METHOD:     4    1   10.000     14       0.70389E+00       0.59591E+00
+<br>
+SCORE1:   0.19185E+04    267  0.14279E+02     19 <br>
+</tt>
+<br>
+The <tt>PROTS</tt> line contains the protein names and their number of
+CA
+atoms. <br>
+The <tt>METHOD</tt> line contains, in order: a specifier of the
+method used (default: 6 for database comparisons and 4 for a pair
+alignment); a specificiation of the type of initial point
+used (default: 1); the score penalty for gaps; the number of iterations
+used in the alignment; the time used in this
+alignment in seconds; the time used not considering post-procesing of
+the data.<br> 
+The <tt>SCORE1</tt> line contains, in order: The
+<i>STRUCTAL</i> score obtained for this alignment; the number of atoms in
+the bijection; the <i>RMSD</i> of the bijected atoms; the number of gaps
+in the bijection.
+<br>
+<a name=allonall>
+<br>
+<table width=100%><tr><td>
+</a><b>Performing an all-on-all database comparison</b>
+</td><td align=right><a href=#top>[top]</a><td></tr></table>
+<br>
+Performing an all-on-all database structural alignment with
+<i>lovoalign</i> is very simple. First, obtain a pdb file for each
+protein. Second, obtain a file containing a list of the pdb files to be
+considered, as was explained above. Once you have the list of pdb files,
+run lovoalign with:
+<br><br>
+<tt>lovoalign -pdblist list.dat > align.log </tt>
+<br><br>
+The output will be similar to the one explained for the single-protein
+to database comparison.
+<br>
+<a name=customize>
+<br>
+<table width=100%><tr><td>
+</a><b>Customizable alignments</b>
+</td><td align=right><a href=#top>[top]</a><td></tr></table>
+<br>
+Any selection of atoms (protein atoms or not) can be aligned with
+lovoalign. For doing so, you have some options:
+<br><br>
+1. Create different files for each atom selection you want to
+align. Then, align the structures using the "-all" option, with which
+all the atoms in the structure will be considered.
+<br><br>
+2. Modify your PDB file by changing the beta-factor and occupancy
+values. With the options "-beta1", "-beta2", "-ocup1", "-ocup2", only
+the atoms with beta-factors or occupancy values different than zero will
+be considered. For example, using
+<br><br>
+<tt>lovoalign -p1 prota.pdb -p2 protb.pdb -beta1 -ocup2</tt>
+<br><br> 
+The atoms with beta-factor different than zero of protein
+1 will be considered, and the atoms with occupancy values
+different than zero for protein 2 will be considered. Alignments of
+general structures can be performed this way. Section of residues 
+can be selected with the "-rmin1" ... "-rmax2" options.
+<br>
+<!--
+<a name=lovoresult>
+<br>
+<table width=100%><tr><td>
+</a><b>Sorting the alignments with lovoresult</b>
+</td><td align=right><a href=#top>[top]</a><td></tr></table>
+<br>
+The lovoresult program (also available for download) sorts the results
+in a database comparison for each single protein. It must be run
+with
+<br><br>
+<center><tt>lovoresult protein.pdb align.log > ordered.dat
+</tt></center>
+<br>
+Here, <tt>protein.pdb</tt> is the name of the pdb file containing the protein of
+interest. May be the single protein file used in an protein-to-database
+alignment or any protein file in an all-on-all database comparison.
+<tt>align.log</tt> is the log file of the lovoalign database run. Finally,
+you can output the ordered alignments from best to worst to the some
+output file, which we call here <tt>ordered.dat</tt>. 
+<br>
+-->
+<a name=optional>
+<br>
+<table width=100%><tr><td>
+</a><b>Advanced usage and optional parameters</b>
+</td><td align=right><a href=#top>[top]</a><td></tr></table>
+<br>
+The <i>lovoalign</i> package actually contains 6 methods for structural
+alignment implemented and several optional parameters to be set.
+<br><br>
+<i>User interactive run:</i> 
+<br><br>
+The method used and other parameters may be set
+user-intearctivelly be running <i>lovoalign</i> without
+command-line arguments.<br><br>
+<i>Setting optional parameters in the command-line:</i><br><br>
+<table border=0 width=100%>
+<tr><td>Parameter&nbsp;&nbsp;</td><td>Possible&nbsp;values&nbsp;&nbsp;
+</td><td>Meaning</td></tr>
+<tr><td colspan=3><hr></td></tr>
+<tr><td>-print</td><td>0 or 1</td><td>Concise or extensive
+output</td></tr>
+<tr><td>-g</td><td>real number</td><td>Penalty for gaps in the
+bijection</td></tr>
+<tr><td>-all</td><td>none</td><td>Consider all atoms (not only CA) for
+the alignment</td></tr>
+<tr><td>-m</td><td>1, 2 or 3</td><td>Method used (see
+below)</td></tr>
+<tr><td valign=top>-maxtrial</td>
+<td valign=top>integer</td>
+<td>Maximum number of trials to obtain the global optimium alignment (default: 1000 
+for pairwise alignments, 4 for database comparisons)
+</td></tr>
+<tr><td valign=top>-ismall</td>
+<td valign=top>0 or 1</td>
+<td>Value 1 forces the smallest protein to be protein 1 in a protein
+pair alignments (affects the time of methods 5 and 6).
+</td></tr>
+<tr><td valign=top>-maxit</td>
+<td valign=top>integer</td>
+<td>Maximum number of iterations allowed for methods 2 to 6
+</td></tr>
+<tr><td valign=top>-f</td>
+<td valign=top>real number</td>
+<td>Fraction of CA atoms to be considered for methods 5 and 6
+</td></tr>
+<tr><td valign=top>-pfac</td>
+<td valign=top>real number</td>
+<td>Factor multiplying the internal distance in initial point
+</td></tr>
+<tr><td valign=top>-bijeoff</td>
+<td valign=top>none</td>
+<td>Do not output the bijection between atoms
+</td></tr>
+<tr><td valign=top>-beta1</td>
+<td valign=top>none</td>
+<td>Consider only atoms of first protein that have beta > 1.
+</td></tr>
+<tr><td valign=top>-beta2</td>
+<td valign=top>none</td>
+<td>Consider only atoms of second protein that have beta > 1.
+</td></tr>
+<tr><td valign=top>-ocup1</td>
+<td valign=top>none</td>
+<td>Consider only atoms of first protein that have occupancy > 1.
+</td></tr>
+<tr><td valign=top>-ocup2</td>
+<td valign=top>none</td>
+<td>Consider only atoms of second protein that have occupancy > 1.
+</td></tr>
+<tr><td valign=top>-rmin1</td>
+<td valign=top>integer</td>
+<td>Consider only atoms of first protein with residue number > rmin1
+</td></tr>
+<tr><td valign=top>-rmax1</td>
+<td valign=top>integer</td>
+<td>Consider only atoms of first protein with residue number < rmax1
+</td></tr>
+<tr><td valign=top>-rmin2</td>
+<td valign=top>integer</td>
+<td>Consider only atoms of first protein with residue number > rmin2
+</td></tr>
+<tr><td valign=top>-rmax2</td>
+<td valign=top>integer</td>
+<td>Consider only atoms of first protein with residue number < rmax2
+</td></tr>
+
+<tr><td valign=top>-seqfix</td>
+<td valign=top>none</td>
+<td>Use fixed sequence alignment based on input sequence of residues.</td>
+</td></tr>
+<tr><td valign=top>-seqnum</td>
+<td valign=top>none</td>
+<td>Use fixed sequence alignment based on residue numbering of the PDB files.</td>
+</td></tr>
+<tr><td valign=top>-fasta</td>
+<td valign=top>filename</td>
+<td>Use fixed sequence alignment based on fasta alignment file provided.</td>
+</td></tr>
+
+<tr><td valign=top>-noini</td>
+<td valign=top>none</td>
+<td>Do not use pseudoprotein initial point.
+</td></tr>
+
+<tr><td valign=top>-nglobal</td>
+<td valign=top>[integer]</td>
+<td>Number of times the best alignment must be found until
+one is convinced of finding the global optimum. Default: 3. Runs
+faster if nglobal is smaller.
+</td></tr>
+
+<tr><td valign=top>-rmsf</td>
+<td valign=top>filename</td>
+<td>Writes rmsf profile of the alignment to file.
+</td></tr>
+
+<tr><td valign=top>-rmsftrend</td>
+<td valign=top>filename</td>
+<td>Writes rmsf trend profile to file (fraction of pairs with rmsf smaller than 
+threshold).
+</td></tr>
+
+<tr><td colspan=3><hr></td></tr>
+<table>
+<br>
+<i>Methods:</i><br><br>
+1: Maximize the STRUCTAL score. <br>
+2: Maximize the TM-score. <br>
+3: Maximize the Triangular score. <br>
+<br>
+<a name=scripts>
+<br>
+<table width=100%><tr><td>
+</a><b>Scripts for analysing results</b>
+<br>
+<br>
+</td><td align=right><a href=#top>[top]</a><td></tr></table>
+<li> <a href=./scripts/matrix.tcl>matrix.tcl</a>:
+This TCL script reads the output file generated by an all-on-all
+comparison performed with lovoalign and writes a file
+containing symmetric score and rmsd matrices, which are often
+used as input in other classification packages. 
+<br>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>

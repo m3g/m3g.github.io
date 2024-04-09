@@ -1,0 +1,47 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../estilo2.css">
+<title>LOVOALIGN: Protein Structural Alignment</title>
+</head>
+<body>
+<table>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>The Non-Bijective Triangular score</p>
+
+The Non-Bijective triangular score is a variation of the Triangular
+score. Actually its formulation is the same, but when using
+non-bijective formulation, the correspondence does not need to be
+sequential, neither monotone, neither bijective, that is, different
+atoms from one structure can be associated with the same atom of the
+second structure.
+<br><br>
+The non-bijective formulation must be used for general alignments for
+which one does not expect sequentiality, as for alignments of ligands,
+or of parts of proteins including the side chains. Actually the
+non-bijective algorithm is very versatile in such a way that one could
+align any kind of structure.  
+<br><br>
+A important side-effect of the use of the non-bijective approach is the
+speed by which the correspondence, and thus the alignment, can be
+computed. For instance, since for each atom one must identify only the
+nearest atom of the other structure, an algorithm was devised that has
+a cost, in practice, linearly dependent on the size of the
+<i>smallest</i> of the two structures being compared 
+<a target=newpage href=http://www.biomedcentral.com/1471-2105/8/306>[ref]</a>. 
+This can be very
+significant for database comparisons or for difficult alignment
+requiring many initial points.
+
+<br><br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>

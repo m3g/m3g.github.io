@@ -1,0 +1,55 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../estilo2.css">
+<title>LOVOALIGN: Protein Structural Alignment</title>
+</head>
+<body>
+<table>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>Sequential and Non-Sequential alignments</p>
+
+LovoAlign is able to perform alignments for which one expects that the
+correspondence between atoms is sequential or not. 
+
+<br><br> 
+Sequential correspondences correspond to most Protein alignments, since
+one expects that if two residues are consecutive in one structure, they
+should be consecutive in the other structure. The <i>bijection</i> of a
+sequential alignment can be represented by the sequence-alignment, as in
+this case: 
+
+<table align=center>
+<tr><td><tt>144&nbsp;&nbsp;</tt></td>
+<td><tt>GSHMEEMIRSLQQRPEPT---WDLIHIAT</tt></td>
+<td><tt>&nbsp;&nbsp;193</tt></td></tr>
+<tr><td><tt>202&nbsp;&nbsp;</tt></td>
+<td><tt>EE--LQ--KSIGHKPEPTDEEWELIKTVT</tt></td>
+<td><tt>&nbsp;&nbsp;247</tt></td></tr>
+</table>
+
+<br><br>
+
+Non-sequential alignments are interesting when one do not expect such
+kind of regularity. For example, if the alignment of two <i>ligands</i>
+is considered, there is no rule on how the atoms of the ligands should
+be written or ordered in the structure files. Therefore, one should not
+expect that ATOM&nbsp;1 from the first ligand correspond to ATOM&nbsp;1
+from the second ligand, nor any kind of sequentiality between the
+correspondence between the atoms. For cases like these, one should
+perform a non-sequential alignment. Non-sequential alignments are
+generally harder than sequential ones, so if one suspects that some
+sequentiality should be present, it is worth trying the sequential
+alternative always. 
+<br><br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>
