@@ -17,7 +17,7 @@ c         ordered from best match (greatest score) to
 c         worst match.
 c
 c  For being used with lovoalign:
-c  http://www.ime.unicamp.br/~martinez/lovoalign
+c  https://m3g.github.io/lovoalign
 c
 c  L. Martinez, 2007
 c

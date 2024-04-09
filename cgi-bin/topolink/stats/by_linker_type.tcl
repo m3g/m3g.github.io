@@ -5,7 +5,7 @@ puts ""
 
 # Start page
 
-set url "http://m3g.github.io/topolink"
+set url "https://m3g.github.io/topolink"
 set topolink_dir "../../../topolink"
 
 # html header
