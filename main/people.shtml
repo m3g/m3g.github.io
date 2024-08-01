@@ -45,11 +45,6 @@ Students and Post-docs </b><br><br></td></tr>
 
     <tr><td align=right valign=top><li></td>
     <td>
-    <b>Guilherme Fahur Bottino (PhD)</b><br>
-    </td></tr>
-
-    <tr><td align=right valign=top><li></td>
-    <td>
     <b>Eduard D. S. Mourão (PhD)</b><br>
     </td></tr>
 
@@ -93,6 +88,18 @@ Former members </b><br><br></td></tr>
 </td></tr>
 
 <tr><td align=left valign=top colspan=2><b><br>Doctorate students</b></td></tr>
+
+<tr><td align=right valign=top><li></td>
+<td>
+<b>Guilherme Fahur Bottino</b><br>
+Doutor em Ciências, IQ/UNICAMP, 2024.
+<i>
+Previsão da estrutura secundária de proteínas por
+processamento de sequências empregando um modelo de
+linguagem acessível e ultra-paralelizado.
+</i>
+<a href=./publications/doutorado_guilherme.pdf target="_blank_"> [PDF] </a>
+</td></tr>
 
 <tr><td align=right valign=top><li></td>
 <td>
@@ -180,7 +187,7 @@ Estudo da solvatação de proteínas por líquidos iônicos usando funções de 
 </td></tr>
 
 <tr><td align=right valign=top><li></td>
-<td><b>Guilherme F. Bottino</b><br>
+<td><b>Guilherme Fahur Bottino</b><br>
 Mestrado em Química - IQ/UNICAMP 2019:
 <i>
 Métodos Estatísticos de Seleção de Restrições "Cross-Linking" para a Determinação
