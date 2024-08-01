@@ -1,0 +1,216 @@
+---
+---
+{% include main/head.html %}
+
+<h2>How to use TOPOLINK</h2>
+<br>
+The package is accompanied by an example input file, which is found in
+the <code>topolink/input</code> directory. It is mostly
+self-explicative. Possibly the best way to get started is to open
+the input file and look at it. An example input is available 
+<a target=_blank_ 
+href=https://github.com/m3g/topolink/blob/master/input/inputfile.inp
+>[here]</a>, and the
+structure file to be used in this example is 
+<a target=_blank_ 
+href= https://github.com/m3g/topolink/blob/master/input/protein.pdb
+>[here]</a>.
+<br><br>
+The executable must be run with:
+<pre>
+topolink inputfile.inp > topolink.log 
+</pre>
+Alternatively, the PDB file of the structure can be provided on the
+command line as the second argument, overwriting the definition
+given in the input file:
+<pre>
+topolink inputfile.inp model.pdb > topolink.log
+</pre>
+<br>
+<table align=center width=80%>
+<tr><td colspan=2 class=tdclean><h3> Sections: </h3></td</tr>
+<tr><td width=50% class=tdclean bgcolor=orange align=center><a href=./usage.html><b>INPUT</b></a></td>
+    <td width=50% class=tdclean bgcolor=orange align=center><a href=./output.html><b>OUTPUT</b></a></td></tr>
+</table>
+</center>
+<br><br>
+<br>
+<h3>Basic structure of the input file</h3>
+<br>
+The basic <code>TopoLink</code> input file contains:
+<list>
+1. The name of the PDB file of the model to be evaluated.
+2. The type of links to be computed.
+3. The specification of the linker used and experimental observations.
+4. Technical options.
+</list>
+<br><br>
+<b>1. Name of model file and output of linkers computed.</b>
+<br><br>
+The name of the input file is provided with:
+<pre>
+pdbfile model.pdb
+</pre>
+and this definition can be overwritten by providing the name of the file
+in the command line, to facilitate the execution of TopoLink for
+multiple models with the same input file, as described above.
+<br><br>
+TopoLink can output coordinates for the topological paths obtained, by
+using  
+<pre>
+printlinks yes
+linkdir ./links
+</pre>
+where <code>./links</code> is the directory where the PDB files of the
+links will be written (the directory must exist). 
+Note that there can be many links, so multiple
+files will be created. The files created are simple PDB files which can
+be open in any structure visualization software together with the model
+PDB file to visualize the topological distance. For the execution of
+TopoLink in multiple models, it is recommended not to write link files,
+using <code>printlinks no</code>.
+<br><br>
+<b>2. Types of links to be computed</b>
+<br><br>
+The next important parameter of the TopoLink input file is the
+definition of which links are to be searched and computed. There are
+three options: 
+<pre>
+compute observed
+compute all
+compute reactive
+</pre>
+When using <code> compute observed</code>, only the links that were
+observed experimentally (see below) will be computed. 
+<br><br>
+If <code>compute all</code> is used instead, <u>all</u> possible crosslinks will be
+computed. That means that, given the definition of the linker used,
+TopoLink will search for consistent topological distances for every pair
+of residues that could, by the chemical nature of the linker and the residues
+involved, be attached by the linker.
+<br><br>
+Finally, <code>compute reactive</code> tells TopoLink to consider that
+only residues that were experimentally observed to react (by participating in
+observed crosslinks or dead-ends) are reactive. Then, TopoLink
+will search for topological distances consistent with the linker used
+only between these pairs of "observed-reactive" residues.    
+<br><br>
+Additionally, the user may optionally choose to compute only the crosslinks
+between different chains of the PDB file, for instance to
+compute inter-proteins crosslinks in a complex. To do so, just add the
+<pre>
+interchain
+</pre>
+option to the input file. All intra-protein links will be skiped. 
+<br><br>
+<b>3. Specification of linker types and experimental observations </b>
+<br><br>
+The linker types and observations are specified in the TopoLink input
+file using an experiment-based structure, as follows:
+<pre3>
+experiment DSS
+  #        ResType  Chain  ResNum   AtomType    ResType  Chain  ResNum   AtomType  MaxDist 
+  linktype   MET     all       1       N          LYS     all     all       CB        30.
+  linktype   LYS     all     all      CB          SER     all     all       CB        24.
+  ...
+
+  # Observed cross-links
+  observed LYS A   6 SER A  113
+  observed SER A   9 LYS A  113
+  ...
+ 
+  # Observed dead-ends
+  deadend LYS A 6
+  deadend SER A 71
+  ...
+end experiment DSS
+</pre3>
+<br>
+The <code>experiment</code> line defines the name of the experiment. For
+example, the name of the reactant used.  
+<br><br>
+The <code>linktype</code> lines define the reactivity of the linker
+model used in this experiment. For example, the first
+<code>linktype</code> line here specifies that Methyonine 1 can be linked by this reactant to 
+any Lysine residue. This link can occur if the distance between atom N of the
+MET residue to atom CB of the LYS of the LYS residues is at most 30.
+Angstroms. The second <code>linktype</code> line in the example defines
+that any LYS residue can be linked to any SER residue, and this link can
+be formed if the CB atoms of these residues are far from each other by
+at most 24 Angstroms. Add <code>linktype</code> lines until the
+reactivity of the linker used is completely defined.  
+<br><br>
+Next, there is a report of what was experimentally observed. Each
+<code>observed</code> line specifies an observed crosslink. For example,
+the first line in the example shows that a crosslink was found
+experimentally between LYS 9 of chain A and SER 113 of chain A. Note
+that each of these observations must be consistent of one
+<code>linktype</code> listed.
+<br><br>
+Finally, the observed reactivity of the side chains can be reported in
+terms of <code>deadends</code>. This might be important for the
+following: If a deadend was observed for a residue, this residue must be
+solvent exposed. Therefore, if it is close to another reactive residue,
+the pair of residues should have formed a crosslink. If TopoLink finds
+that two residues are reactive and are close enough to form the link,
+but the link was not observed, it will report that the link is
+<u>missing</u> from the observations. This is one of the statistics than
+can be used to evaluate the consistency of the model with the
+experimental observations.  
+<br><br>
+<b> 4. Technical options </b>
+<br><br>
+The TopoLink example input file contains also several technical options
+which generally should not be of concern. Some of them, however, deserve
+some attention:
+<pre>
+search_limit relative 1.5
+</pre>
+This option specifies the maximum distance up to which the search for 
+paths will be performed. Here, in the example, TopoLink will search for
+paths at most 1.5 greater than the maximum linker length defined in
+each 'linktype' definition. Increase this number if you want to know
+the topological distances even if they are much greater than the linker
+length. The greater the search range, the longer the search for paths
+takes. This keyword accepts, instead of the 'relative' option, two other
+alternatives: 'sum', and 'fixed'. If the 'sum' option is chosen,
+followed by a distance, in angstroms, the search will be performed for
+the length of the linker increased by that distance (5 Angs, for
+example). If 'fixed' is chosen, the distance is the absolute distance
+for path search, for example, 40 Angs. 
+<pre>
+endread ENDMDL
+</pre>
+Sometimes the PDB files contain more than one structure (two chains, for
+example). If the user wants that only of the structures is read, he/she
+can add a keyword, <code>ENDMDL</code> in the example, until which
+TopoLink will read the PDB file. The file will be ignored after that
+keyword. If no keyword is defined or the keyword is not found, the file
+will be read to the end and all structures will be considered in the
+calculations.
+<pre>
+readatoms [all/heavy/backbone/backplusCB]
+</pre>
+Defines the protein atoms to be considered when computing surface
+accessible topological distances. Normally the reasonable choice is to
+consider <code>heavy</code> atoms, as the volume of hydrogen atoms is
+not important. However, other choices are available.
+<pre>
+pgood 0.70 # Probability of observing a link which is within linker reach
+pbad  0.01 # Probability of observing a link which is NOT within linker reach
+</pre>
+If the experimentalist can estimate the sensitivity and false-positive
+probability of the experiment, these parameters can be used to estimate
+the likelihood of the experimental result. <code>pgood</code> is the
+probability of observing a link if two atoms are reactive (that is, are
+exposed to solvent and within linker reach), and <code>pbad</code> is
+the experimental probability of a false-positive (that is, that the
+experiment reports the existence of a link for two residues that are not
+within linker reach). 
+
+
+
+{% include main/tail.html %}
+
+
+

@@ -1,0 +1,55 @@
+<head>
+<link rel="stylesheet" type="text/css" href="estilo2.css">
+<title>LOVOALIGN: Protein Structural Alignment</title>
+</head>
+<body>
+<table>
+<tr><td colspan=2><p class=title></p></tr></td>
+<tr><td valign=top>
+<p class=download><a href=index.html>Home</a></p>
+<!-- <p class=download><a href=./align/index.html>Server</a></p> -->
+<p class=download><a href=software.html>Download</a></p>
+<p class=download><a href=userguide.html>Userguide</a></p>
+<p class=download><a href=references.html>Citation</a></p>
+<p class=download><a href=contact.html>Contact/Help</a></p>
+</td>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>Contact and Support</p>
+
+If you experience any problem using the LovoAlign software, please
+write to <br><br>
+Leandro Mart&iacute;nez: leandromartinez98@gmail.com
+<br><br>
+If you are interested in algorithmic details, see the references and
+visit the pages of J. M. Mart&iacute;nez 
+<a href=http://www.ime.unicamp.br/~martinez target=newpage>(click here)</a>
+and Roberto Andreani
+<a href=http://www.ime.unicamp.br/~andreani target=newpage>(click here)</a>.
+<br><br>
+Other software developed by the group can be found at the pages 
+of J. M. Mart&iacute;nez (above) or <a target=newpage href=http://m3g.iqm.unicamp.br/> L. Mart&iacute;nez (click here)</a> or at the page of the Tango Optimization Project
+<a href=http://www.ime.usp.br/~egbirgin/tango target=newpage>(click here)</a>.
+<br><br>
+<b>Solutions to simple common problems:</b> <br><br>
+<b>P:</b> I have downloaded the lovoalign.f code and compiled it. When I
+try to run the program it simply returns "Segmentation fault" or no
+message at all. In windows it may open a window with strange
+messages.<br>
+<b>S:</b>The package is trying to allocate more memory than the
+available memory of your computer. Edit the source code and reduce
+the "maxatom" and "maxfiles" parameters as indicated in the
+commentaries. If you are running only single protein to protein
+alignments, you can set "maxfiles" to 1.
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>

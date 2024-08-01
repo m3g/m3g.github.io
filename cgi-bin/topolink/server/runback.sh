@@ -32,7 +32,7 @@ fi
 #
 #Please find the output your TopoLink run at: 
 #
-#http://leandro.iqm.unicamp.br/topolink/serverfiles/$tmpdir/index.shtml
+#http://leandro.iqm.unicamp.br/topolink/serverfiles/$tmpdir/index.html
 #
 #This link will be available for about 3 days.
 #

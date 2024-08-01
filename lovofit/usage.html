@@ -1,0 +1,35 @@
+---
+---
+{% include lovofit/head.html %}
+
+<table class="tabnoborder">
+  <tr>
+    <td valign=top class="tdclean" width=100%>
+
+  Performs a linear fitting of (perhaps multidimensional) data to target
+values, automatically eliminating outliers. Needs lapack. <br><br>
+<center>Compile with: 
+<code>gfortran -o lovofit lovofit.f90 -llapack</code></center>
+<center>Run with: <code>lovofit ./data.dat > fit.dat </code></center>
+<br>
+where <code>data.dat</code> contains the data file in the form:
+<code><pre>
+          2 135 0.8
+          [Y1] [x11] .... [x1N]
+          [Y2] [x11] .... [x2N]
+          ...
+</pre></code>
+where '2' is the number of parameters (the dimension of the domain plus one), '135' is
+the number of data points, and '0.8' is the fraction of the data to be explicitly considered
+in the alignment (in this case 20% of the data will be considered as outliers). 
+[Y1] are the target values (data to be fitted) and [X..] are the domain
+points. The output file will contain, in the header, the parameters of the fit, and
+a table of the predicted data vs. the given data. The final column will be an indicator
+of the usage, or not, of that point to the parameter estimation. Run with the <code>-print 2</code> option to 
+automatically generate a xmgrace plot. 
+
+    </td>
+  </tr>
+</table>
+
+{% include lovofit/tail.html  %}

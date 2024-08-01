@@ -1,0 +1,83 @@
+<head>
+<link rel="stylesheet" type="text/css" href=estilo2.css>
+<title>LOVOALIGN: Protein Structural Alignment</title>
+</head>
+<body>
+<table>
+<tr><td colspan=2><p class=title></p></tr></td>
+<tr><td valign=top>
+<p class=download><a href=./index.html>Home</a></p>
+<!--<p class=download><a href=./align/index.html>Server</a></p>-->
+<p class=download><a href=./software.html>Download</a></p>
+<p class=download><a href=./userguide.html>Userguide</a></p>
+<p class=download><a href=./references.html>Citation</a></p>
+<p class=download><a href=./contact.html>Contact/Help</a></p>
+</td>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>Download</p>
+
+The latest release of LovoAlign is available as a Fortran90 source code at:<br><br> 
+<center>
+<a target=newpage href=https://github.com/m3g/lovoalign/releases/latest>
+https://github.com/m3g/lovoalign/releases/latest
+</a>
+</center>
+<br>
+Download the featured file from the repository above and compile
+it using a Fortran compatible compiler. In Unix or Linux, just follow
+the common procedure (you must have the gfortran compiler and lapack installed*):
+<br>
+<pre><code>
+         tar -xzvf lovoalign-VERSION.tar.gz
+         cd lovoalign/src
+         make
+</code></pre>
+<br>
+If no error was detected, the <i>lovoalign</i> executable is ready. See
+the Userguide for instructions on how to use it.
+<br><br>
+*In debian based Linux systems (Ubuntu, Mint), you can install gfortran and lapack using:
+<pre> <code>
+          sudo apt-get install gfortran liblapack-dev </code> </pre>
+
+
+<!--  HERE IS THE REFERENCE TO LOVORESULT 
+<br><br>
+<b>You can also download the lovoresult utility.</b>
+<br> 
+This small program
+sorts the results of a database comparison from best to worst match. 
+<br><br>
+<center>
+<a href=./lovoresult.f><tt>lovoresult.f</tt></a>
+</center>
+<br>
+Compile it with
+<br><br>
+<center><tt>f77 -O3 lovoresult.f -o lovoresult</tt></center>
+<br>
+See the userguide for instructions on how to use it.
+<br><br>
+<b>New version coming...</b>
+<br><br>
+If you wish to work with the TM-score, download the latest version
+from the repository:
+<a href=http://lovoalign.googlecode.com target=newpage>
+http://lovoalign.googlecode.com</a> 
+This
+version also is developed for STRUCTAL and Triangular score maximization and
+the code is much clearer. If your intention is to modify it, download
+this one. This version will soon become the default one.
+                                                            -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>

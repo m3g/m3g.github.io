@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
-set basehtml "http://leandro.iqm.unicamp.br/leandro/shtml/didatico/qf632/oscilantes"
-set fileshtml "$basehtml/files"
-set files "/home/leandro/public_html/leandro/shtml/didatico/qf632/oscilantes/files"
+set basehtml "http://leandro.iqm.unicamp.br/leandro/html/didatico/qf632/oscilantes"
+set filehtml "$basehtml/files"
+set files "/home/leandro/public_html/leandro/html/didatico/qf632/oscilantes/files"
 
 puts "Content-type: text/html"
 puts ""
@@ -66,8 +66,8 @@ exec -ignorestderr sed -e s/DADOSRAND/dados_$rand/ plot.gnp > $files/plot_$rand.
 
 exec -ignorestderr rm -rf $files/dados_$rand.jpg
 exec -ignorestderr gnuplot $files/plot_$rand.gnp 2>@ stderr
-puts "Arquivo de dados: <a href=$fileshtml/dados_$rand.dat>dados_$rand.dat</a><br>"
-puts "<img src=$fileshtml/dados_$rand.jpg>" 
+puts "Arquivo de dados: <a href=$filehtml/dados_$rand.dat>dados_$rand.dat</a><br>"
+puts "<img src=$filehtml/dados_$rand.jpg>" 
 
 puts "<br><br>"
 puts "<b>Dados:</b> <br>"
@@ -82,7 +82,7 @@ puts "k<sub>-2</sub> = $value(8) &nbsp;&nbsp;&nbsp;"
 puts "k<sub>3</sub> = $value(9) &nbsp;&nbsp;&nbsp;"
 puts "k<sub>-3</sub> = $value(10)<br>"
 puts "Tempo = $value(11)<br><br>"
-puts "<a href=http://leandro.iqm.unicamp.br/leandro/shtml/didatico/qf632/oscilantes>\[voltar\]</a>"
+puts "<a href=http://leandro.iqm.unicamp.br/leandro/html/didatico/qf632/oscilantes>\[voltar\]</a>"
 
 } msg
 puts $msg

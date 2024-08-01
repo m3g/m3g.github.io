@@ -1,0 +1,228 @@
+---
+---
+{% include atd-scripts/head.html %}
+
+<table width=90%><tr><td class="tdclean">
+
+<h2>How to use the scripts:</h2>
+
+<h3>1. Prepare a structure that can actually be simulated with NAMD</h3>
+
+Every ATD simulation starts from a pre-equilibrated structure.
+Therefore, you must have a system setup which can be run with NAMD, as
+if you were about to run a production simulation. This is a prerequisite
+for using these scripts, and how to do that is described in NAMD
+tutorials and manuals. Anyway, you probably should be familiar with
+molecular dynamics simulations before trying to use novel techniques.
+
+<h3>2. Setup the ATD scripts:</h3>
+
+You must have TCL, gfortran and xmgrace installed in your system. And we
+suppose you are running some linux flavor.
+
+<table align=center><tr><td class="tdclean"><pre>
+tar -xzvf atd_scripts.VERSION.tar.gz
+cd atd_scripts
+make
+</pre></td></tr></table>
+
+Install the xmgrace template file, which is an enhanced template
+containing more colors that allow for the plotting of the graphs used
+here:
+
+<table align=center><tr><td class="tdclean"><pre>
+make grace
+</pre></td></tr></table>
+
+Note: This will override your
+<code>~/.grace/templates/Default.agr</code> file, and
+copy it to Default.agr.BAK. Generally that is fine, but if you have
+changed your Default.agr for some reason, backup it.
+
+<h3>3. Modify the input files:</h3>
+
+The <code>"atd_scripts/input_example"</code> directory contains three files, which
+exemplify how the ATD scripts are to be run:
+<br><br>
+
+<code>trbeta_equilibrated.pdb:</code> This is the structure file, which is a PDB file which contains an equilibrated molecular system, probably extracted from a previous equilibrium simulation.
+<br><br>
+
+<code>trbeta.psfgen:</code> This is the psfgen script that must be modified so that
+the ATD scripts are able to build all the simulated systems. It must
+generate, at the end, adequate PSF and PDB files for your system, using
+the PDB file provided above and the topology files which must be
+provided. This file must be modified according to your system, except
+where the example file clearly indicates you must not.
+<br><br>
+
+<code>atd_script.inp:</code> This is the main file that will be used as
+input for all scripts provided. You must modify it by providing the
+correct path for the psfgen file above, the parameter files, and psfgen
+and namd2 executables. Also, you must modify the path to the standard
+NAMD input file, described below.
+<br><br>
+
+<code>NAMD_standard_ATD_input.namd:</code> This is the NAMD input file
+for running each ATD simulation. Generally, you will not need to modify
+it, but of course you may want to change simulation parameters. In that
+case, you can do modifications, always preserving the default input and
+output names (in capital letters), which are used by the scripts.
+<br><br>
+
+<h3>4. Run ATD simulations</h3>
+
+Go to the directory were your <code>"atd_scripts.inp"</code> file is located. You
+will run everything from there.
+<br><br>
+
+Then, you have to run the scripts by using the following steps:
+<br><br>
+
+<b>4.1. Setup input files</b>
+
+<center><code>atd_prepare.tcl atd_scripts.inp [native/GLY/ALA...]</code></center><br>
+
+This script will create the input files for running ATD simulations for
+every residue of your protein, either in native state, or mutated (one
+by one) to any other residue, for example GLY or ALA. For example, in
+order to prepare input for GLY mutants, run:
+<br><br>
+<center><code>atd_prepare.tcl atd_scripts.inp GLY</code></center>
+<br>
+
+<b>4.2. Running simulations</b>
+<center><code> atd_run.tcl atd_scripts.inp GLY </code></center></br>
+
+The input files for the simulations were created by
+<code>atd_prepare.tcl</code>. Now
+you actually run the ATD simulations using <code>atd_run.tcl</code>, using the same
+syntax. Actually, after this is script is finished, the ATD simulations
+are done. Next, there are some scripts for data analysis.
+<br><br>
+
+<b>4.3. Computing temperatures</b> 
+<center><code>atd_temperatures.tcl atd_script.inp GLY</code></center><br>
+
+Using the same input syntax, this script will compute for every
+simulation the temperature of every other residue along the simulation.
+It creates on the directory of every simulation a
+"<code>temperature.dat</code>"
+file, containing this information, which is used for the subsequent
+analyzes.
+<br><br>
+
+<b>4.4. Create the global thermal diffusion plot</b>
+<center><code>atd_total.tcl atd_script.inp [native/GLY/ALA...]</code></center><br>
+
+This script will read the output of the previous temperature run and plot
+the final and average temperatures of the protein as a function of the heating of each 
+residue. Also, it writes a file containing the final temperature 
+of the protein ordered from higher to lower according the residue heated.
+The three files are output to the <code>output/graphs</code> directory.
+
+<br><br>
+<b>4.5. Create maps of thermal diffusion</b>
+<center><code>atd_map.tcl atd_script.inp GLY [temp_min] [temp_max]</code></center><br>
+
+This script will create the thermal diffusion maps for the simulations
+specified (in this case, the GLY mutatns). You can adjust the color
+scale of the map with the optional [temp_min] and [temp_max] values. The
+map created is <code>xmgrace</code> file (<code>.agr</code>), which will be located at the
+"<code>output/graphs</code>" directory.
+<br><br>
+Note: In order to view color scale correctly with xmgrace, you need to
+put the "<code>Default.agr</code>" file, provided with the scripts, in
+the "<code>~/.grace/templates/</code>" directory.
+<br><br>
+
+<b>4.6. Compute side-chain contributions</b> 
+<center><code>atd_sidechains.tcl atd_script.inp GLY</code></center><br>
+
+After you have run both a mutant (GLY or ALA or something else) and the
+native simulation, you can compute the side chain contributions for
+thermal diffusion. This script does that. Running it will produce a
+graph, also for xmgrace, which will be placed also on the
+"<code>output/graphs</code>" directory, and will be called something like
+"<code>to_GLY.side_chains_average.agr</code>" or
+"<code>to_GLY.side_chains.final.agr</code>". The
+"average" graph contains the side chain contributions to the average
+temperature of the protein during the ATD simulation, and the "final"
+graph contains the contribution to the final temperature of the protein
+at the ATD run (remember that ATD simulations are out of equilibrium,
+thus the "average" temperature is not necessarily more meaningful than
+that the final temperature).
+<br><br>
+
+<b>4.7. Scripts to monitor and control running simulations:</b><br><br>
+
+<center><code>atd_check.tcl atd_script.inp GLY</code></center>
+</br>
+
+This script will check the running status of the simulations, in this
+case the "GLY" mutant simulations. It will report how many of them are
+finished, running, or crashed.
+<br><br>
+
+<center><code>atd_clean.tcl atd_script.inp GLY</code></center></br>
+
+This script will remove all files created by a previous ATD run for some
+simulation. Usually you run it if you thing something went very wrong.
+Use with care.  
+
+<h3>5. Analysis</h3>
+
+The plots created in the "<code>output/graphs</code>" directories contain all the
+analyzes performed in the reference paper above. Have fun looking at
+them and trying to find something meaningful, we hope so! Good luck.
+
+
+<h3> 6. Time dependence of heat propagation</h3>
+
+In order to create a plot of the time-dependence of heat propagation, as
+the graph in Figure 4C of the JPCL article, the "<code>time_dep</code>"
+program is provided.
+<br><br>
+
+A simulation must be run in which a the temperature coupling is assigned
+to whatever group you want to heat, and you need to generate a velocity
+trajectory file using the "<code>velDCDfile</code>" input parameter in
+your <code>namd2</code> input file, as, for example:
+<br><br>
+<center><code>velDCDfile velocities.dcd</code></center><br>
+
+When the simulation is finished, you will run the time_dep program using:
+
+<br><br><center><code>
+time_dep simulation.psf velocities.dcd PROT 0. 300. > time_dep.dat
+</code></center><br>
+
+Where "<code>simulation.psf</code>" is the simulation PSF file,
+<code>velocities.dcd</code> is the
+velocity trajectory file, <code>PROT</code> is the name of the segment for which the
+map will be built, and 0. and 300. are the minimum and maximum
+temperatures of the scale. <code>time_dep.dat</code> file will be created and will
+contain a list of the temperature and color for every residue in every
+frame.
+<br><br>
+
+In order to create the plot, open <code>xmgrace</code> and:
+<br><br>
+<b>1.</b> Import the <code>time_dep.dat</code> file as "Block Data" with
+the "<code>XYCOLOR</code>" option, where X is column 1 (the time), Y1 is column 2 (the residue
+number) and Y2 is column 4 (the color).
+<br><br>
+<b>2.</b> Remove the line (Line properties; Type:None)
+<br><br>
+<b>3.</b> Add "Square Symbols". In the "Symbols" tab, remove the Symbol outline (Style:None) and chose Pattern:Solid Black.
+<br><br>
+<b>4.</b> Adjust the size of the symbols, the scale and the width of the graph in order that the plot looks nice.
+<br><br>
+
+The colors are in a scale from 200 (blue) to 226 (red), according to the
+definitions of the <code>Default.agr</code> file which is installed
+using the "<code>make grace</code>" command, explained above. 
+
+</td></tr></table>
+
+{% include atd-scripts/tail.html %}

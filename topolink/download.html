@@ -1,0 +1,100 @@
+---
+---
+{% include topolink/head.html %}
+
+TopoLink is FREE software. It can be used, copied and distributed
+according to the
+<a target=_blank_ href=https://www.gnu.org/licenses/gpl-3.0.html>
+General Public License v3.0</a>. In order to keep our motivation
+in developing and distributing the package, please cite:
+<table align=center width=80%>
+<tr><td class=tdclean bgcolor=lightblue>
+A. J. R. Ferrari, M. A. Clasen, L. Kurt, P. C. Carvalho, F. C. Gozzo, L
+Martínez<br>
+<b>TopoLink: Evaluation structural models using chemical crosslinking distance constraints.</b> <br>
+Bioinformatics, 35(17), 3169-3170, 2019. <a target=_blank_ href=https://doi.org/10.1093/bioinformatics/btz014>[LINK]</a>
+</td></tr>
+</table>
+
+<b> Windows 10 (64 bits) version with graphical user interface: </b>
+<table><tr>
+<td class=tdclean>
+Download the zip file, extract it and execute the TopolinkUI_Installer:
+<a href=
+"http://patternlabforproteomics.org/topolinksharp/downloads/installer/TopoLinkUI_latest.zip"
+>
+<br><br>
+<center>
+[GUI - Installer - ZIP file]
+</a>
+<br><br>
+(for all features, <a target=_pymol_ href=http://pymol.org>PyMol</a> must be installed)
+</center>
+<br><br>
+The graphical user interface is developed by the PatternLab for
+Proteomics group:
+<a target=_blank_ href=http://patternlabforproteomics.org>
+<i>PatternLab</i>
+</a>
+<br><br>
+</td>
+<td class=tdclean align=center>
+<a target=_newpage_ href=./GUI_large.png>
+<img src=./GUI_small.png><br>
+[Click to enlarge]
+</a>
+</td>
+</tr>
+</table>
+
+<b> Standalone executable for Windows 10 (64 bits) (for command-line use)</b>
+<br><br>
+Download the executable from here:
+<a href=/topolink/Windows_Binaries/Windows10-64bits/topolink.exe>
+[topolink.exe Win10-x86_64]
+</a>
+<br><br>
+Save the executable and add the path to it in your PATH environment variable. The package
+is run from the command prompt as indicated in the user guide.
+<br><br>
+
+<b> Multi-platform source code for command line use </b>
+<br><br>
+Download the latest version of the package from this site. To compile
+it, first, you need a <code>Fortran</code> compiler. The
+<a href=http://gcc.gnu.org/wiki/GFortran target="_blank">GNU Fortran
+Compiler</a>, <code>gfortran</code>,
+is available in standard repositories of every GNU-Linux distribution.
+<br><br>
+If you have a <code>Fortran</code> compiler installed, do:
+<table width=80% align=center class="tdclean"><tr><td>
+<code>
+tar -xzf topolink-{version}.tar.gz<br>
+cd topolink/src<br>
+make<br>
+</code>
+</tr></td></table>
+This procedure will create the executable <code>topolink</code> in the
+directory <code>topolink/bin</code>. The most practical way to use it
+is to add this directory to your path. <br><br>
+Go to the <a href=/topolink/usage.html>Usage</a> page for instructions on how
+to use the software.
+<br><br>
+
+<center>
+GIT repository:
+<a target=_blank_ href=https://github.com/m3g/topolink>
+https://gibhub.com/m3g/topolink
+</a>
+</center>
+
+<br>
+<table width=90% align=center>
+<tr bgcolor=orange><td colspan=2 align=center><b>All version</b></td></tr>
+<tr bgcolor=lightblue><td>File</td><td>Description</td></tr>
+{% comment %} NEW_VERSION_HERE {% endcomment %}
+<tr><td width=190px valign=top><a href=https://github.com/m3g/topolink/archive/19.156.tar.gz> topolink-19.156.tar.gz </a></td><td> Released on Jun 05, 2019 - <a target=newpage href=https://github.com/m3g/topolink/releases/tag/19.156> [change log at github] </a></td></tr>
+</table>
+<br><br>
+
+{% include topolink/tail.html %}

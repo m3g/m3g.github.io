@@ -1,0 +1,81 @@
+.thebody {
+width: 740px;
+align: center;
+}
+.title {
+background: white url('title.png') no-repeat;
+position: relative;
+top: 0px;
+left: 0px;
+width: 730px;
+height: 67px;
+display: block;
+}
+.download {
+position: relative;
+top: 5px;
+left: 0px;
+}
+.download a, .download a:visited {
+font: bold 12px/24px arial, helvetica, sans-aerif;
+background: white url('download1.png') no-repeat;
+color: black;
+width: 110px;
+height: 25px;
+display: block;
+text-decoration: none;
+text-align: center;	
+center center;
+}
+.download a:hover {
+background: white url('download2.png') no-repeat;
+}
+.section {
+position: relative;
+top: 0px;
+left: 0px;
+font: bold 16px/24px arial, helvetica, sans-aerif;
+color: black;
+text-decoration: none;
+center center;
+}
+.content {
+font: 13px/24px arial, helvetica, sans-aerif;
+width: 560px;
+position: relative; 
+color: black;
+font-family: arial;
+}
+.midbar {
+position: relative;
+top: 5px;
+left: 10px;
+background-image: url("midbar.png");
+background-repeat: repeat-y;
+}   
+.upbar{
+position: relative;
+top: 0px;
+background-image: url("upbar.png");
+background-position: 0 0;
+background-repeat: no-repeat;
+padding-top: 15px;
+}
+.dobar {
+background-image: url("dobar.png");
+background-position: 0 100%;
+background-repeat: no-repeat;
+padding-left: 15px;
+padding-right: 15px;
+padding-bottom: 15px;
+}
+td {
+font: 13px/24px arial, helvetica, sans-aerif;
+}
+a:visited {
+text-decoration: none;
+}
+
+a:link {
+text-decoration: none;
+}

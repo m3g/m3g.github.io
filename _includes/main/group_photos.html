@@ -1,0 +1,51 @@
+<script type="text/javascript">
+let pics = [
+  {
+    image: './group_photos/grupo2015.jpg',
+    caption: "Mariana, Tayane, Luciano, Emília, Gabriel, and Ivan, 2015"
+  },
+  {
+    image: './group_photos/grupo2017.png',
+    caption: "Guilherme, Leandro, Gabriel, Antônio, Luciano, 2017"
+  },
+  {
+    image: './group_photos/grupo2017b.png',
+    caption: "Guilherme, Tayane, Adriano, Gabriel, Leandro, Antônio, and Luciano, 2017"
+  },
+  {
+    image: './group_photos/pibicem2019.png',
+    caption: "Leandro, Alex, and Michael, receiving the honorable mention for their high-school research project, 2019."
+  },
+  {
+    image: './group_photos/group2021_online.png',
+    caption: "Leandro, Brenda, Guilherme, Felipe, Filipe, Allan, Ander, Vinicius, Pamella, Alexandre, Diego, 2021."
+  },
+  {
+    image: './group_photos/grupo2022.jpg',
+    caption: "Felipe, Vinicius, Pamella, Ander, Guilherme, Leandro, 2022."
+  },
+  {
+    image: './group_photos/grupo2023_1.jpg',
+    caption: "Leandro presenting at the 2023 Brazilian Biophysical Society Meeting."
+  },
+  {
+    image: './group_photos/grupo2023_2.jpg',
+    caption: "Lucas presenting at the 2023 Brazilian Biophysical Society Meeting."
+  },
+  {
+    image: './group_photos/defesa_pamella_2023.jpg',
+    caption: "Alessandro, Munir, Pamella, and Leandro, Pamella dissertation thesis, 2023."
+  },
+  {
+    image: './group_photos/cces2024.png',
+    caption: "Ana Beatriz, Jéssica, Pâmella, Camila, Leandro, Eduard, Felipe, Lucas, CCES meeting, 2024."
+  },
+  {
+    image: './group_photos/2023_aniversario.png',
+    caption: "Lucas, Leandro, Pamella, and Jéssica, 2023."
+  }
+];
+let randomIndex = Math.floor(Math.random() * pics.length);
+let rndpic = pics[randomIndex];
+document.write("<img width=485px src='" +rndpic.image+ "'><br>"+rndpic.caption);
+</script>

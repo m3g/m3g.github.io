@@ -4,8 +4,8 @@ set ylabel "Concentrações (u. a.)"
 #set nokey
 set style data linespoints
 set terminal jpeg
-set output "/home/leandro/public_html/leandro/shtml/didatico/qf632/PengRobinson/files/DADOSRAND.jpg" 
-plot "/home/leandro/public_html/leandro/shtml/didatico/qf632/PengRobinson/files/DADOSRAND.dat" using 1:2 title "[A]" with lines lw 2, \
-     "/home/leandro/public_html/leandro/shtml/didatico/qf632/PengRobinson/files/DADOSRAND.dat" using 1:3 title "[B]" with lines lw 2, \
-     "/home/leandro/public_html/leandro/shtml/didatico/qf632/PengRobinson/files/DADOSRAND.dat" using 1:4 title "[C]" with lines lw 2, \
-     "/home/leandro/public_html/leandro/shtml/didatico/qf632/PengRobinson/files/DADOSRAND.dat" using 1:5 title "[D]" with lines lw 2
+set output "/home/leandro/public_html/leandro/html/didatico/qf632/PengRobinson/files/DADOSRAND.jpg" 
+plot "/home/leandro/public_html/leandro/html/didatico/qf632/PengRobinson/files/DADOSRAND.dat" using 1:2 title "[A]" with lines lw 2, \
+     "/home/leandro/public_html/leandro/html/didatico/qf632/PengRobinson/files/DADOSRAND.dat" using 1:3 title "[B]" with lines lw 2, \
+     "/home/leandro/public_html/leandro/html/didatico/qf632/PengRobinson/files/DADOSRAND.dat" using 1:4 title "[C]" with lines lw 2, \
+     "/home/leandro/public_html/leandro/html/didatico/qf632/PengRobinson/files/DADOSRAND.dat" using 1:5 title "[D]" with lines lw 2

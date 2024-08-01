@@ -16,7 +16,7 @@
 # Hormone Receptors: Simulations Using a Novel Multipoint Steered
 # Molecular Dynamics Approach, J. Phys. Chem. B, 112, 10741, 2008.
 #
-# More information: http://leandro.iqm.unicamp.br
+# More information: http://m3g.iqm.unicamp.br
 #
 # -----------------------------------------------------------------------------------------
 #

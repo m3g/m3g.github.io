@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-url="http://leandro.iqm.unicamp.br/topolink" 
+url="https://m3g.github.io/topolink" 
 source_files="../../../topolink"
 
 def htmlTop() :
@@ -8,20 +8,20 @@ def htmlTop() :
   print ""
 
 def pageHead() :
-  file=open(source_files+"/head.shtml","r")
+  file=open(source_files+"/head.html","r")
   for line in file :
-    if "title.shtml" in line :
-      title_file=open(source_files+"/title.shtml","r")
+    if "title.html" in line :
+      title_file=open(source_files+"/title.html","r")
       title_file=title_file.read()
       print title_file
-    if "menu.shtml" in line :
-      menu_file=open(source_files+"/menu.shtml","r")
+    if "menu.html" in line :
+      menu_file=open(source_files+"/menu.html","r")
       menu_file=menu_file.read()
       print menu_file
     print line
 
 def pageTail() :
-  file=open(source_files+"/tail.shtml")
+  file=open(source_files+"/tail.html")
   file_html=file.read()
   print file_html
 

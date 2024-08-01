@@ -1,0 +1,67 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../estilo2.css">
+<title>LOVOALIGN: Protein Structural Alignment</title>
+</head>
+<body>
+<table>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>How to define selections</p>
+
+The LovoAlign Sever uses 
+<a href=http://www.ks.uiuc.edu/Research/vmd/ target=newpage>VMD</a>
+in background to define the selections. Therefore, the selections can
+use the powerful syntax of 
+<a href=http://www.ks.uiuc.edu/Research/vmd/ target=newpage>VMD</a>.
+Some examples are given below, and
+references to the 
+<a href=http://www.ks.uiuc.edu/Research/vmd/ target=newpage>VMD</a>
+user guide are provided for more advanced usage.
+<br><br>
+Here are some illustrative examples can quickly introduce the user
+to the 
+<a href=http://www.ks.uiuc.edu/Research/vmd/ target=newpage>VMD</a>
+selection syntax.
+<br><br>
+<table>
+<tr><td>1.</td><td> Select only C&alpha; atoms:</td></tr> 
+<tr><td></td><td><tt> name CA </tt></td></tr>
+<tr><td>2.</td><td> Select only C&alpha; atoms belonging to Arginines:</td></tr> 
+<tr><td></td><td><tt> name CA and resname ARG </tt></td></tr>
+<tr><td>3.</td><td> Select the backbone: </td></tr> 
+<tr><td></td><td><tt> name CA N CB </tt></td></tr>
+<tr><td>3.</td><td> Select only the backbone of chain B: </td></tr> 
+<tr><td></td><td><tt> chain B and (name CA N CB) </tt></td></tr>
+<tr><td>4.</td><td> Select the HEME group: </td></tr> 
+<tr><td></td><td><tt> resname HEME </tt></td></tr>
+<tr><td>5.</td><td> Select only the atoms 5. &Aring; from the HEME
+group: </td></tr> 
+<tr><td></td><td><tt> within 5. of resname HEME </tt></td></tr>
+</table>
+
+<br><br><b> Acknowledgements to VMD: </b><br><br>
+
+VMD was developed by the Theoretical and Computational Biophysics Group 
+in the Beckman Institute for Advanced Science and Technology at the 
+University of Illinois at Urbana-Champaign.
+
+<br><br>
+
+VMD references: <br>
+Humphrey, W., Dalke, A. and Schulten, K., `VMD -Visual Molecular   
+Dynamics', J. Molecular Graphics, 1996, vol. 14, pp. 33-38.
+<br> 
+<a
+href=http://www.ks.uiuc.edu/Research/vmd/>http://www.ks.uiuc.edu/Research/vmd/</a>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>

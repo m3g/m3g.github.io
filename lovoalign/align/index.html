@@ -1,0 +1,129 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../estilo2.css">
+<title>LOVOALIGN: Protein Structural Alignment</title>
+<SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=650,height=600,scrollbars=yes');
+return false;
+}
+//-->
+</SCRIPT>
+</head>
+<body>
+<table>
+<tr><td colspan=2><p class=title></p></tr></td>
+<tr><td valign=top>
+<p class=download><a href=../index.html>Home</a></p>
+<!--<p class=download><a href=./index.html>Server</a></p>-->
+<p class=download><a href=../software.html>Download</a></p>
+<p class=download><a href=../userguide.html>Userguide</a></p>
+<p class=download><a href=../references.html>References</a></p>
+<p class=download><a href=../contact.html>Contact/Help</a></p>
+</td>
+<td valign=top>
+<div class=thebody>
+<div class=midbar>
+<div class=upbar>
+<div class=dobar>
+<div class=content>
+<p class=section>Online server<br>
+<!-- 
+<font color=red> Currently under develpment - not working right now! </font>
+-->
+</p>
+
+<form action="../../cgi-bin/lovoalign/align.cgi" method="post" ENCTYPE="multipart/form-data">
+
+<table width=100%>
+
+<tr><td colspan=2 bgcolor=white align=right><b>Click on the <font color=darkblue>[?]</font> for help on each option.</b></td></tr>
+<tr><td colspan=2 bgcolor=lightblue><b>Type of alignment:</b>
+                 <a href=type_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a>
+                 </td></tr>
+<tr><td colspan=2> <input type=radio name="type_of_alignment" value="Sequential" checked>
+                  Sequential alignment <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Score to be maximized:
+                  <input type=radio name="score" value="TM-score" checked><i>TM-Score</i>
+                  <input type=radio name="score" value="Structal"><i>Structal</i>
+                  <input type=radio name="score" value="Triangular"><i>Triangular score*</i>
+                  <a href=scores_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Penalization for gaps:
+                  <input type=radio name="use_gap" value="default_gap" checked><i>Default</i>
+                  <input type=radio name="use_gap" value="custom_gap"><i>Custom:</i>
+                  <input type="text" name="custom_gap_value" size="5" value="0.">
+                  <a href=gaps_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a>
+                  </td></tr>
+
+<tr><td colspan=2><input type=radio name="type_of_alignment" value="Non-Sequential"> 
+                  Non-sequential alignment (it is reasonable to uncheck
+the "Write sequence" option)<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  In this case, the <i>non-bijective triangular*</i> score will be maximized.  
+                  <a href=nonbscore_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a><br>
+                  </td></tr>
+<tr><td colspan=2 align=right>*Distance cutoff for triangular scores:<input type="text" name="triangular_cutoff" size="5" value="3.0">&#xC5;</td></tr>
+
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr><td colspan=2 bgcolor=lightblue><b>Options:</b></td></tr>
+<tr><td colspan=2><input type=checkbox name="write_sequence" checked> 
+                  Write sequence alignment (meaningful for one-atom-per-residue selections only)
+                  <a href=writeseq_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a><br></td></tr>
+<tr><td colspan=2><input type=checkbox name="init1" checked> 
+                  Use squential internal distance initial point
+                  <a href=init1_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a><br></td></tr>
+<!--
+<tr><td colspan=2><input type=checkbox name="init3" checked> 
+                  Use 
+                  <input type="text" name="n_init3" size="5" value="5">
+                  random initial points (up to 100). 
+                  <a href=init3_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a><br></td></tr>
+-->
+
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr><td colspan=2 bgcolor=lightblue><b>Structures (PDB format): (1 will be aligned to 2)</b></td></tr>
+    <tr><td>Structure 1: </td><td><input type="file" name="file1" size="35">
+    <tr><td>Selection: </td><td><input type="text" name="sel1" size="35" value="name CA">
+    <a href=selection_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a><br></td></tr>
+    <tr><td><br></td></tr>
+    <tr><td>Structure 2: </td><td><input type="file" name="file2" size="35"></td></tr>
+    <tr><td>Selection: </td><td><input type="text" name="sel2" size="35" value="name CA">
+    <a href=selection_help.html onClick="return popup(this, 'Help')"><font color=darkblue><b>[?]</b></font></a><br></td></tr>
+    <tr><td><br></td></tr>
+
+<tr><td colspan=2 align=right><input type="submit" value="Align"></td></tr>
+<tr><td></td><td></td></tr>
+
+
+<tr><td colspan=2>&nbsp;</td></tr>
+<tr><td colspan=2 valign=top bgcolor=lightblue><b>Note:</b></td><td></td>
+<tr><td colspan=2 valign=top>
+
+The output contains all atoms of the original pdb file rotated and
+translated according to the best alignment obtained for the chain or
+molecule considedarkblue.
+
+</td><td></td>
+
+
+</td></tr>
+</form>
+</table>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</body>

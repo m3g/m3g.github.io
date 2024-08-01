@@ -1,0 +1,104 @@
+
+---
+---
+{% include main/head.html %}
+
+<h2>Evaluating structural models with LovoAlign and TopoLink</h2>
+<br>
+One possible evaluation of a set of structural models consists in the
+comparison of each model with a reference structures. The reference
+structure might be some experimental (crystallographic) model, or one
+of the models, admitedly the best one (see, for example the 
+<a href=https://m3g.github.io/gscore>G-score</a> 
+strategy to classify models).
+<br><br>
+Here we show how to use the <a
+href=https://m3g.github.io/lovoalign>LovoAlign</a>
+structural alignment package in combination with the
+<code>evalmodels</code> tool, to generate the data of the example plot
+below, which shows the correlation of the number of links satisfied by
+each model with the similarity to a reference structure:
+<br>
+<center>
+<img src=./evalmodels.png width=500px>
+</center>
+<br><br>
+LovoAlign is a structural alignment package which obtains optimal
+alignments by directly minimizing consistent similarity measures,
+as the TM-score.  
+<br><br>
+After installing LovoAlign (see below), the alignment of all models of
+the ensemble with a reference structure can be performed with the single
+command:
+<pre>
+lovoalign -seqnum -p1 reference.pdb -pdblist pdblist.txt > align.log
+</pre> 
+where <code>reference.pdb</code> is the PDB file of the reference 
+structure, <code>pdblist.txt</code> is a list of PDB files of the
+models, and <code>align.log</code> is the file that contains the
+results. The <code>-seqnum</code> option is used if the sequence
+of the reference and model structures is the same, that is, if there
+is no ambiguity in the sequence alignment (generally the case for
+sets of structural models).
+<br><br>
+The <code>pdblist.txt</code> is a file of the form
+<pre>
+./models/model1.pdb
+./models/model2.pdb
+./models/model3.pdb
+...
+</pre>
+The output of this alignment will produce a file containing the
+following information:
+<pre>
+voltar: output of lovoalign
+</pre>
+in which, the first column contains the model name and, for example, the
+8th column contains the GDT_TS score, a common measure of model quality.
+Given this output file, you can run <code>evalmodels</code> with:
+<pre>
+evalmodels loglist.txt align.log output.dat -m1 -c8
+</pre>
+to generate the <code>output.dat</code> file that contains the
+statistics of the crosslinks as a function of the <code>GDT_TS</code>,
+in this example. Recalling that <code>-m1</code> indicates that the
+model names are in the first column of the <code>align.log</code> file,
+and <code>-c8</code> indicates that the 8th column of the file was
+considered. The file <code>output.dat</code> contains the data required
+to associate any of the statistics of crosslink satisfaction with the
+the similarity measure, as described in 
+<a href=./tools.html>[Tools]</a>.
+
+<h3>Installing LovoAlign</h3>
+
+To install the <code>LovoaAlign</code> structural alignment package,
+first download the latest version from:
+<pre>
+<a href=https://m3g.github.io/lovoalign/versionhistory/downloads>
+https://m3g.github.io/lovoalign/versionhistory/downloads
+</a>
+</pre>
+and install it using:
+<pre>
+tar -xzvf lovoalign-[version].tar.gz
+cd lovoalign/src
+./configure
+make
+</pre>
+and <b>add the <code>lovoalign/bin</code> directory to your path.</b>
+<br><br>
+LovoAlign is also free software, please cite the following paper if the
+package was useful:
+<br>
+<table width=60% align=center><tr><td class=tdclean bgcolor=lightgrey>
+L. Mart&iacute;nez, R. Andreani, J. M. Mart&iacute;nez,
+<b>Convergent algorithms for protein structural alignment.</b>
+BMC Bioinformatics, 8:306, 2007.
+<a target=_blank_ href=http://www.biomedcentral.com/1471-2105/8/306/abstract>[Full Text]</a>
+</td></tr></table>
+
+
+
+
+{% include main/tail.html %}
+
