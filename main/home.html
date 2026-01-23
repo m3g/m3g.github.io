@@ -2,39 +2,25 @@
 ---
 {% include main/head.html %}
 
-<tr><td width=70% valign=top>
-<p class=section>Home</p>
+<section class="home-intro">
+  <h2 class="section-title">Home</h2>
+  <p>Our research focuses on understanding the molecular interactions that occur in complex systems, particularly solutions containing macromolecules in mixtures of solvents. To achieve this, we employ Molecular Dynamics Simulations and develop custom software tools for analyzing the structure and thermodynamics of these solutions using simulation data.</p>
+  <p>Additionally, our group has extensive experience in applying large-scale optimization techniques to address computational chemistry and biochemistry problems.</p>
+  <p>As a part of our work, we have developed and continue to maintain several important tools. These include the Packmol package, which is used to generate initial configurations for molecular simulations, the ComplexMixtures.jl package, which is used for analyzing the structure of solutions, and other general tools for developing high-performing tools to study particle simulations, particularly using the Julia programming language.</p>
+</section>
 
-Our research focuses on understanding the molecular interactions that occur in complex systems, particularly solutions containing macromolecules in mixtures of solvents. To achieve this, we employ Molecular Dynamics Simulations and develop custom software tools for analyzing the structure and thermodynamics of these solutions using simulation data.
-<br><br>
-Additionally, our group has extensive experience in applying large-scale optimization techniques to address computational chemistry and biochemistry problems.
-<br><br>
-As a part of our work, we have developed and continue to maintain several important tools. These include the Packmol package, which is used to generate initial configurations for molecular simulations, the ComplexMixtures.jl package, which is used for analyzing the structure of solutions, and other general tools for developing high-performing tools to study particle simulations, particularly using the Julia programming language.
-</td>
+<aside class="research-pick">
+  {% include main/picks.html %}
+</aside>
 
-
-<td align=center valign=top width=30% class="tdclean" border=0>
-{% include main/picks.html %}
-</td>
-</tr>
-
-<tr>
-<td colspan=2>
-<br><br>
-<center>
-<img src=./page_images/logos.png width=375px><br>
-We thank Fapesp for research grants 2018/24293-0, 2019/17874-0 (Coaraci Supercomputer), 2013/08293-7 (Center for Computing in Engineering and Sciences at Unicamp), 
-and CNPq (grant 301909/2022-9).
-<br><br>
-<img src="./page_images/zulip-icon-square.svg" height=25px>
-We also thank the sponsoring of <a target=_zulip_ href="https://zulip.com">Zulip Chat.</a>
-</center>
-</td>
-</tr>
-
+<section class="sponsors">
+  <img src="./page_images/logos.png" alt="Funding logos" class="sponsor-logos">
+  <p>We thank Fapesp for research grants 2018/24293-0, 2019/17874-0 (Coaraci Supercomputer), 2013/08293-7 (Center for Computing in Engineering and Sciences at Unicamp), and CNPq (grant 301909/2022-9).</p>
+  <p class="zulip-thanks">
+    <img src="./page_images/zulip-icon-square.svg" alt="Zulip" class="zulip-icon">
+    We also thank the sponsoring of <a href="https://zulip.com" target="_blank">Zulip Chat.</a>
+  </p>
+</section>
 
 {% include main/tail.html %}
-
-
-
 

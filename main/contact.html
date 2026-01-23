@@ -2,32 +2,75 @@
 ---
 {% include main/head.html %}
 
-<tr><td>
+<style>
+  .contact-card {
+    background: var(--card-bg, #fff);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+  }
+  .contact-card h3 {
+    color: var(--cp1, #1a365d);
+    margin: 1.5rem 0 0.75rem 0;
+    font-size: 1.1rem;
+  }
+  .contact-card h3:first-child {
+    margin-top: 0;
+  }
+  .contact-card p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: var(--text-color, #333);
+  }
+  .contact-card a {
+    color: var(--cp2, #2c7a7b);
+  }
+  .email-primary {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .email-backup {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  .address-block {
+    background: #f8f9fa;
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--cp2, #2c7a7b);
+  }
+  .address-block p {
+    margin: 0.25rem 0;
+  }
+  .phone {
+    font-size: 1rem;
+    margin-top: 1rem !important;
+  }
+</style>
 
-<p class=section>Contact</p>
+<section class="page-section">
+  <h2 class="section-title">Contact</h2>
 
-The best way to contact me is by e-mail: 
-<a href=mailto:leandro@iqm.unicamp.br>leandro@iqm.unicamp.br</a> <br>
-In case of failure, try: <a href=mailto:leandromartinez98@gmail.com>
-leandromartinez98@gmail.com</a>
+  <div class="contact-card">
+    <h3>Email</h3>
+    <p class="email-primary">
+      The best way to contact me is by e-mail: <a href="mailto:leandro@iqm.unicamp.br">leandro@iqm.unicamp.br</a>
+    </p>
+    <p class="email-backup">
+      In case of failure, try: <a href="mailto:leandromartinez98@gmail.com">leandromartinez98@gmail.com</a>
+    </p>
 
-<br><br>
-
-<b>Address:</b><br>
-
-Prof. Dr. Leandro Mart&iacute;nez<br>
-Instituto de Química / UNICAMP  <br>
-Rua Josué de Castro s/n <br>
-Cidade Universitária "Zeferino Vaz", Barão Geraldo <br>
-13083-861 Campinas, SP <br>
-Brasil
-<br><br>
-Phone: +55 (19) 3521-3107
-
-<br>
-
-</td></tr>
-</table>
+    <h3>Address</h3>
+    <div class="address-block">
+      <p><strong>Prof. Dr. Leandro Martínez</strong></p>
+      <p>Instituto de Química / UNICAMP</p>
+      <p>Rua Josué de Castro s/n</p>
+      <p>Cidade Universitária "Zeferino Vaz", Barão Geraldo</p>
+      <p>13083-861 Campinas, SP</p>
+      <p>Brasil</p>
+      <p class="phone"><strong>Phone:</strong> +55 (19) 3521-3107</p>
+    </div>
+  </div>
+</section>
 
 {% include main/tail.html %}
-
