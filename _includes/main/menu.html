@@ -1,57 +1,38 @@
-{% comment %}Lateral Menu {% endcomment %}
+<!-- Mobile menu toggle -->
+<button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 
-<table width=100% align=center>
-  <tr>
-    <td class="tdclean" valign="top">
-      <table width=140px align=center>
-        <tr>
-          <td class="tdclean0" height=0px></td>
-        </tr>
-        <tr>
-          <td bgcolor=#e76f51 class=tdmenu>
-            <b>Main:</b> <br>
-          </td>
-        </tr>
-        <tr>
-          <td class=tdmenu>
-            <a class=menulink href=/main/home.html>Home</a><br>
-            <a class=menulink href=/main/people.html>People</a><br>
-            <a class=menulink href=/main/publications_by_subject.html>Publications</a><br>
-            <a class=menulink href=/main/software.html>Software</a><br>
-            <a class=menulink href=/main/contact.html>Contact</a><br>
-          </td>
-        </tr>
-        <tr>
-          <td class="tdclean0" height=30px></td>
-        </tr>
-        <tr>
-          <td class="tdmenu" bgcolor=#e9c46a align=center>
-            <b><a class=menutitlelink href=/main/didatico.html>Material Didático</a></b> <br>
-          </td>
-        </tr>
-        </tr>
-      </table>
-    </td>
+<!-- Navigation -->
+<nav class="main-nav" id="main-nav">
+  <div class="nav-top">
+    <a href="/main/home.html">Home</a>
+    <a href="/main/people.html">People</a>
+    <a href="/main/publications_by_subject.html">Publications</a>
+    <a href="/main/software.html">Software</a>
+    <a href="/main/didatico.html">Material Didático</a>
+    <a href="/main/contact.html">Contact</a>
+  </div>
+  <div class="nav-sidebar" id="nav-sidebar">
+    <div class="nav-section">
+      <a href="/main/home.html">Home</a>
+      <a href="/main/people.html">People</a>
+      <a href="/main/publications_by_subject.html">Publications</a>
+      <a href="/main/software.html">Software</a>
+      <a href="/main/didatico.html">Material Didático</a>
+      <a href="/main/contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="nav-overlay" onclick="toggleMobileMenu()"></div>
 
-{% comment %}Top content menu {% endcomment %}
-
-    <td class="tdclean" width=100% valign="top">
-     <table width=100% align=center>
-       <tr bgcolor=#264653>
-         <td align=center width=33% class=tdmenu><b><a class="menulink" href=/main/home.html>
-             <font color=#e9c46a>Home</font>
-         </a></b> </td>
-         <td align=center width=33% class=tdmenu><b><a class="menulink" href=/main/publications_by_subject.html>
-             <font color=#e9c46a>Publications</font>
-         </a></b> </td>
-         <td align=center width=33% class=tdmenu><b><a class="menulink" href=/main/software.html>
-             <font color=#e9c46a>Software</font>
-         </a></b> </td>
-       </tr>
-       <tr>
-         <td colspan=3 class=tdmenu>
-
-          <table class="tabnoborder" align=center width=100%>
-          <tr><td class="tdclean">
-
+<script>
+function toggleMobileMenu() {
+  document.getElementById('nav-sidebar').classList.toggle('open');
+  document.getElementById('nav-overlay').classList.toggle('open');
+  document.querySelector('.mobile-menu-toggle').classList.toggle('open');
+}
+</script>
 
