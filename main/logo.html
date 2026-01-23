@@ -2,61 +2,137 @@
 ---
 {% include main/head.html %}
 
+<style>
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    .logo-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .logo-card {
+    background: var(--card-bg, #fff);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .logo-card.dark {
+    background: #333;
+  }
+  .logo-card h4 {
+    color: var(--cp1, #1a365d);
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+  }
+  .logo-card.dark h4 {
+    color: #fff;
+  }
+  .logo-card img {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.2s ease;
+  }
+  .logo-card img:hover {
+    transform: scale(1.05);
+  }
+  .logo-card a {
+    display: inline-block;
+    color: var(--cp2, #2c7a7b);
+    text-decoration: none;
+  }
+  .logo-card.dark a {
+    color: #81e6d9;
+  }
+  .logo-card-wide {
+    grid-column: 1 / -1;
+  }
+  .logo-card-wide img {
+    max-width: 300px;
+  }
+  .pdf-link {
+    display: block;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: var(--cp2, #2c7a7b);
+    color: #fff !important;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .pdf-link:hover {
+    background: var(--cp1, #1a365d);
+  }
+</style>
 
-<tr><td width=70% valign=top>
-<p class=section>Logo</p>
+<section class="page-section">
+  <h2 class="section-title">Logo</h2>
 
-<table align=center width=90%>
-<tr>
-<td class=tdmenu align=center width=50%>
-SVG:<br> 
-<a target=_blank_ href="./logo/m3g.svg"><img src="./logo/m3g.svg"></a>
-</td>
-<td class=tdmenu align=center width=50%>
-PDF:<br> 
-<a target=_blank_ href="./logo/m3g.pdf">[m3g.pdf]</a>
-</td>
-</tr>
-<tr>
-<td class=tdmenu align=center width=50%>
-PNG small:<br> 
-<a target=_blank_ href="./logo/m3g-small.png"><img width=200px src="./logo/m3g-large.png"></a>
-</td>
-<td class=tdmenu align=center width=50%>
-PNG large:<br> 
-<a target=_blank_ href="./logo/m3g-large.png"><img width=200px src="./logo/m3g-large.png"></a>
-</td>
-</tr>
-<tr>
-<td colspan=2 class=tdmenu align=center>
-Hand-made:<br> 
-<a target=_blank_ href="./logo/m3g-hand.png"><img width=300px src="./logo/m3g-hand.png"></a>
-</td>
-</tr>
-<tr>
-<td class=tdmenu align=center width=50% bgcolor=#333333>
-<font color="white"> Negative PNG:</font><br> 
-<a target=_blank_ href="./logo/m3g_negative.png"><img width=200px src="./logo/m3g_negative.png"></a>
-</td>
-<td class=tdmenu align=center width=50% bgcolor=#333333>
-<font color="white">Negative SVG:</font><br> 
-<a target=_blank_ href="./logo/m3g_negative.svg"><img width=200px src="./logo/m3g_negative.svg"></a>
-</td>
-</tr>
-<tr>
-<td class=tdmenu align=center width=50%>
-Wide SVG:<br> 
-<a target=_blank_ href="./logo/m3g_wide.svg"><img width=200px src="./logo/m3g_wide.svg"></a>
-</td>
-<td class=tdmenu align=center width=50% bgcolor=#333333>
-<font color="white">Wide Negative SVG:</font><br> 
-<a target=_blank_ href="./logo/m3g_wide_negative.svg"><img width=200px src="./logo/m3g_wide_negative.svg"></a>
-</td>
-</tr>
-</table>
+  <div class="logo-grid">
+    <div class="logo-card">
+      <h4>SVG</h4>
+      <a target="_blank" href="./logo/m3g.svg">
+        <img src="./logo/m3g.svg" alt="M3G Logo SVG">
+      </a>
+    </div>
+
+    <div class="logo-card">
+      <h4>PDF</h4>
+      <a target="_blank" href="./logo/m3g.pdf" class="pdf-link">Download m3g.pdf</a>
+    </div>
+
+    <div class="logo-card">
+      <h4>PNG Small</h4>
+      <a target="_blank" href="./logo/m3g-small.png">
+        <img src="./logo/m3g-large.png" alt="M3G Logo PNG Small">
+      </a>
+    </div>
+
+    <div class="logo-card">
+      <h4>PNG Large</h4>
+      <a target="_blank" href="./logo/m3g-large.png">
+        <img src="./logo/m3g-large.png" alt="M3G Logo PNG Large">
+      </a>
+    </div>
+
+    <div class="logo-card dark">
+      <h4>Negative PNG</h4>
+      <a target="_blank" href="./logo/m3g_negative.png">
+        <img src="./logo/m3g_negative.png" alt="M3G Logo Negative PNG">
+      </a>
+    </div>
+
+    <div class="logo-card dark">
+      <h4>Negative SVG</h4>
+      <a target="_blank" href="./logo/m3g_negative.svg">
+        <img src="./logo/m3g_negative.svg" alt="M3G Logo Negative SVG">
+      </a>
+    </div>
+
+    <div class="logo-card">
+      <h4>Wide SVG</h4>
+      <a target="_blank" href="./logo/m3g_wide.svg">
+        <img src="./logo/m3g_wide.svg" alt="M3G Logo Wide SVG">
+      </a>
+    </div>
+
+    <div class="logo-card dark">
+      <h4>Wide Negative SVG</h4>
+      <a target="_blank" href="./logo/m3g_wide_negative.svg">
+        <img src="./logo/m3g_wide_negative.svg" alt="M3G Logo Wide Negative SVG">
+      </a>
+    </div>
+
+    <div class="logo-card logo-card-wide">
+      <h4>Hand-made</h4>
+      <a target="_blank" href="./logo/m3g-hand.png">
+        <img src="./logo/m3g-hand.png" alt="M3G Logo Hand-made">
+      </a>
+    </div>
+  </div>
+</section>
 
 {% include main/tail.html %}
-
-
-
-
