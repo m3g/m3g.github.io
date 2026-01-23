@@ -382,9 +382,9 @@ a.menutitlelink, a.menutitlelink:visited {
 }
 
 /* ================================
-   RESPONSIVE: Tablet (768px+)
+   RESPONSIVE: Tablet (830px+)
    ================================ */
-@media (min-width: 768px) {
+@media (min-width: 830px) {
   .main-content {
     grid-template-columns: 2fr 1fr;
     align-items: start;
@@ -404,9 +404,9 @@ a.menutitlelink, a.menutitlelink:visited {
 }
 
 /* ================================
-   RESPONSIVE: Mobile (< 768px)
+   RESPONSIVE: Mobile (< 830px)
    ================================ */
-@media (max-width: 767px) {
+@media (max-width: 829px) {
   html {
     font-size: 15px;
   }
