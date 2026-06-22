@@ -5,6 +5,12 @@
 
   <div class="publications-content">
 
+    <div class="cover-slideshow" id="cover-slideshow">
+      <p class="slideshow-label">Journal Covers</p>
+      <div class="slideshow-track" id="slideshow-track"></div>
+      <div class="slideshow-dots" id="slideshow-dots"></div>
+    </div>
+
     <article class="pub-item">
       <p class="pub-header"><span class="pub-number">88.</span> <span class="pub-title">From Hydrogen Bonding to Hydrophobic Control: The Shifting Solvation Mechanism of Ibuprofen in Deep Eutectic Solvents</span></p>
       <p class="pub-details">V. Piccoli, A. Pádua, L. Martínez, <em>J. Phys. Chem. B., 2026.</em> <a target="_blank" href="https://pubs.acs.org/doi/10.1021/acs.jpcb.5c08530">[Full Text]</a></p>
@@ -20,9 +26,14 @@
       <p class="pub-details">G. C. de Andrade, A. F. Pereira, P. H. B. Ferreira, K. D. da Cruz, G. S. de Sousa, M. F. Mota, R. J. de Oliveira, L. Martínez, M. A. Marques, J. L. Silva, G. A. P. de Oliveira, <em>Communications Chemistry, 2026.</em> <a target="_blank" href="https://www.nature.com/articles/s42004-026-02050-2">[Full Text]</a></p>
     </article>
 
-    <article class="pub-item">
-      <p class="pub-header"><span class="pub-number">85.</span> <span class="pub-title">Lipid Architecture in the Zika Virus.</span></p>
-      <p class="pub-details">C. A. Tavares, M. Soñora, S. Pantano, L. Martínez, <em>ACS Phys. Chem. Au, 2026.</em> <a target="_blank" href="https://pubs.acs.org/doi/10.1021/acsphyschemau.5c00113">[Full Text]</a></p>
+    <article class="pub-item has-image">
+      <div class="pub-content">
+        <p class="pub-header"><span class="pub-number">85.</span> <span class="pub-title">Lipid Architecture in the Zika Virus.</span></p>
+        <p class="pub-details">C. A. Tavares, M. Soñora, S. Pantano, L. Martínez, <em>ACS Phys. Chem. Au, 2026.</em> <a target="_blank" href="https://pubs.acs.org/doi/10.1021/acsphyschemau.5c00113">[Full Text]</a></p>
+      </div>
+      <a href="https://pubs.acs.org/doi/10.1021/acsphyschemau.5c00113" class="pub-image-link" target="_blank">
+        <img src="./publications/2026_camila_small.png" alt="Publication figure">
+      </a>
     </article>
 
     <article class="pub-item">
@@ -380,6 +391,16 @@
       <p class="pub-details">L. Bleicher, R. Apar&iacute;cio, F. M. Nunes, L. Mart&iacute;nez, S. M. G. Dias, A. C. M. Figueira, M. A. M. Santos, W. H. Venturelli, R. Silva, P. M. Donate, F. A. R. Neves, L. A. Simeoni, J. D. Baxter, P. Webb, M. S. Skaf, I. Polikarpov, <em>BMC Struct. Biol. 8, 8, 2008.</em> <a target="_blank" href="http://www.biomedcentral.com/1472-6807/8/8">[LINK]</a></p>
     </article>
 
+    <article class="pub-item has-image">
+      <div class="pub-content">
+        <p class="pub-header"><span class="pub-number">16.</span> <span class="pub-title">Ligand Dissociation from Estrogen Receptor Is Mediated by Receptor Dimerization: Evidence from Molecular Dynamics Simulations.</span></p>
+        <p class="pub-details">M. T. Sonoda, L. Mart&iacute;nez, P. Webb, M. S. Skaf, I. Polikarpov, <em>Mol. Endocrinol. 22, 1565-1578, 2008.</em> <a target="_blank" href="./publications/2008_mol_endocr.pdf">[PDF]</a></p>
+      </div>
+      <a href="./publications/2008_mol_endo_cover_large.png" class="pub-image-link">
+        <img src="./publications/2008_mol_endo_cover_small.png" alt="Publication figure">
+      </a>
+    </article>
+
     <article class="pub-item">
       <p class="pub-header"><span class="pub-number">15.</span> <span class="pub-title">Only Subtle Protein Conformational Adaptations Are Required for Ligand Binding to Thyroid Hormone Receptors: Simulations Using a Novel Multipoint Steered Molecular Dynamics Approach,</span></p>
       <p class="pub-details">L. Mart&iacute;nez, I. Polikarpov, M. S. Skaf, <em>J. Phys. Chem. B, 112, 10741-10751, 2008.</em> <a target="_blank" href="./publications/2008_j_phys_chem_b.pdf">[PDF]</a> <a target="_blank" href="https://m3g.github.io/utils/home.html#pathdriven">[LINK]</a></p>
@@ -462,5 +483,55 @@
 
   </div>
 </section>
+
+<script>
+(function () {
+  var links = Array.from(document.querySelectorAll('.pub-image-link'));
+  if (links.length === 0) return;
+
+  var track = document.getElementById('slideshow-track');
+  var dotsContainer = document.getElementById('slideshow-dots');
+  var current = 0;
+  var timer;
+
+  links.forEach(function (link, i) {
+    var srcImg = link.querySelector('img');
+    var slide = document.createElement('a');
+    slide.href = link.href;
+    slide.target = '_blank';
+    slide.className = 'slideshow-slide' + (i === 0 ? ' active' : '');
+    var img = document.createElement('img');
+    img.src = srcImg.src;
+    img.alt = srcImg.alt;
+    slide.appendChild(img);
+    track.appendChild(slide);
+
+    var dot = document.createElement('button');
+    dot.className = 'slideshow-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Cover ' + (i + 1));
+    dot.addEventListener('click', function () { goTo(i); });
+    dotsContainer.appendChild(dot);
+  });
+
+  var slides = track.querySelectorAll('.slideshow-slide');
+  var dots = dotsContainer.querySelectorAll('.slideshow-dot');
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    resetTimer();
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(function () { goTo(current + 1); }, 3000);
+  }
+
+  resetTimer();
+})();
+</script>
 
 {% include main/tail.html %}
