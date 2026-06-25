@@ -1,5 +1,12 @@
-<script type="text/javascript">
-let pics = [
+<div class="group-photo-slider" id="group-photo-slider">
+  <div class="slideshow-track group-photo-track" id="group-photo-track"></div>
+  <div class="slideshow-dots" id="group-photo-dots"></div>
+  <p class="group-photo-caption" id="group-photo-caption"></p>
+</div>
+
+<script>
+(function () {
+var pics = [
   {
     image: './group_photos/grupo2015.jpg',
     caption: "Mariana, Tayane, Luciano, Emília, Gabriel, and Ivan, 2015"
@@ -65,7 +72,55 @@ let pics = [
     caption: "Pamella presenting at the EMLG/JMLG Annual Meeting, 2025."
   },
 ];
-let randomIndex = Math.floor(Math.random() * pics.length);
-let rndpic = pics[randomIndex];
-document.write("<img width=485px src='" +rndpic.image+ "'><br>"+rndpic.caption);
+
+var track = document.getElementById('group-photo-track');
+var dotsContainer = document.getElementById('group-photo-dots');
+var caption = document.getElementById('group-photo-caption');
+if (!track || !dotsContainer || !caption || pics.length === 0) return;
+
+var current = Math.floor(Math.random() * pics.length);
+var timer;
+
+pics.forEach(function (pic, i) {
+  var slide = document.createElement('div');
+  slide.className = 'slideshow-slide' + (i === current ? ' active' : '');
+
+  var img = document.createElement('img');
+  img.src = pic.image;
+  img.alt = pic.caption;
+  slide.appendChild(img);
+  track.appendChild(slide);
+
+  var dot = document.createElement('button');
+  dot.className = 'slideshow-dot' + (i === current ? ' active' : '');
+  dot.setAttribute('aria-label', 'Group photo ' + (i + 1));
+  dot.addEventListener('click', function () { goTo(i); });
+  dotsContainer.appendChild(dot);
+});
+
+var slides = track.querySelectorAll('.slideshow-slide');
+var dots = dotsContainer.querySelectorAll('.slideshow-dot');
+
+function renderCaption() {
+  caption.textContent = pics[current].caption;
+}
+
+function goTo(n) {
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  current = (n + slides.length) % slides.length;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+  renderCaption();
+  resetTimer();
+}
+
+function resetTimer() {
+  clearInterval(timer);
+  timer = setInterval(function () { goTo(current + 1); }, 3000);
+}
+
+renderCaption();
+resetTimer();
+})();
 </script>

@@ -1,6 +1,13 @@
-<div class="pick-container" id="research-pick"></div>
+<div class="pick-container pick-slider" id="research-pick">
+  <h3 class="pick-title">Research Pick</h3>
+  <p class="pick-text" id="research-pick-text"></p>
+  <p class="pick-link-wrapper"><a href="#" target="_blank" class="pick-link" id="research-pick-link">[click here]</a></p>
+  <div class="slideshow-track pick-slideshow-track" id="research-pick-track"></div>
+  <div class="slideshow-dots" id="research-pick-dots"></div>
+</div>
+
 <script>
-(function() {
+(function () {
   var picks = [
     {
       text: "PDBTools.jl: High-Performance Package for Molecular Structure File Handling and Analysis",
@@ -48,14 +55,58 @@
       img: "/main/page_images/mourao2026.jpg"
     }
   ];
-  
-  var pick = picks[Math.floor(Math.random() * picks.length)];
-  var container = document.getElementById('research-pick');
-  
-  container.innerHTML = 
-    '<h3 class="pick-title">Research Pick</h3>' +
-    '<p class="pick-text">' + pick.text + '</p>' +
-    '<p class="pick-link-wrapper"><a href="' + pick.link + '" target="_blank" class="pick-link">[click here]</a></p>' +
-    '<img src="' + pick.img + '" alt="Research highlight" class="pick-image">';
+  var track = document.getElementById('research-pick-track');
+  var dotsContainer = document.getElementById('research-pick-dots');
+  var text = document.getElementById('research-pick-text');
+  var link = document.getElementById('research-pick-link');
+  if (!track || !dotsContainer || !text || !link || picks.length === 0) return;
+
+  var current = Math.floor(Math.random() * picks.length);
+  var timer;
+
+  picks.forEach(function (pick, i) {
+    var slide = document.createElement('div');
+    slide.className = 'slideshow-slide' + (i === current ? ' active' : '');
+
+    var img = document.createElement('img');
+    img.src = pick.img;
+    img.alt = pick.text;
+    img.className = 'pick-image';
+    slide.appendChild(img);
+    track.appendChild(slide);
+
+    var dot = document.createElement('button');
+    dot.className = 'slideshow-dot' + (i === current ? ' active' : '');
+    dot.setAttribute('aria-label', 'Research pick ' + (i + 1));
+    dot.addEventListener('click', function () { goTo(i); });
+    dotsContainer.appendChild(dot);
+  });
+
+  var slides = track.querySelectorAll('.slideshow-slide');
+  var dots = dotsContainer.querySelectorAll('.slideshow-dot');
+
+  function renderPick() {
+    var pick = picks[current];
+    text.textContent = pick.text;
+    link.href = pick.link;
+  }
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    renderPick();
+    resetTimer();
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(function () { goTo(current + 1); }, 3000);
+  }
+
+  renderPick();
+  resetTimer();
 })();
 </script>
